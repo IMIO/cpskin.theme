@@ -4,7 +4,8 @@ Changelog
 0.4.9 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add css for collective.cookiecuttr integration.
+  [bsuttor]
 
 
 0.4.8 (2015-08-07)

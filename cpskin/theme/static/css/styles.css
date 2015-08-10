@@ -349,8 +349,8 @@ dl.actionMenu.activated dt a{
     font-size: 16px;
     padding: 4px 2px;
 }
-    
-#content #viewlet-above-content-title ul li a:before{ 
+
+#content #viewlet-above-content-title ul li a:before{
     color:grey;
 }
 
@@ -523,8 +523,8 @@ ul.navTreeLevel1 li a, ul.navTreeLevel2 li a {
 
 /* --- fin ajout menu dynamique --- */
 
-#portal-globalnav-cpskinmenu.navTreeLevel0 a, 
-#portal-globalnav-cpskinmenu.navTreeLevel0 a:link, 
+#portal-globalnav-cpskinmenu.navTreeLevel0 a,
+#portal-globalnav-cpskinmenu.navTreeLevel0 a:link,
 #portal-globalnav-cpskinmenu.navTreeLevel0 a:visited{
     color:white;
     padding: 0.4em 0.75em !important;
@@ -566,35 +566,35 @@ div#top-navigation div#top-navigation-inner ul#portal-globalnav-cpskinmenu.navTr
 }
 
 #navWrapper #portal-globalnav #portaltab-je-suis a, #navWrapper #portal-globalnav #portaltab-je-trouve a,
-#navWrapper #portal-globalnav #portaltab-je-suis .selected a, #navWrapper #portal-globalnav #portaltab-je-trouve .selected a { 	 	
-	background-color: #f4f4f4; 	 	
+#navWrapper #portal-globalnav #portaltab-je-suis .selected a, #navWrapper #portal-globalnav #portaltab-je-trouve .selected a {
+	background-color: #f4f4f4;
 }
 
-#navWrapper #portal-globalnav #portaltab-je-suis a:hover, #navWrapper #portal-globalnav #portaltab-je-trouve a:hover{ 	 	
-	background-color:#317D9B; 	 	
-} 	 	
-		 	
-#navWrapper #portal-globalnav #portaltab-je-suis .activated, #navWrapper #portal-globalnav #portaltab-je-trouve .activated{ 	 	
-	background-color: #317D9B; 	 	
-	color: #ffffff; 	 	
-} 
+#navWrapper #portal-globalnav #portaltab-je-suis a:hover, #navWrapper #portal-globalnav #portaltab-je-trouve a:hover{
+	background-color:#317D9B;
+}
+
+#navWrapper #portal-globalnav #portaltab-je-suis .activated, #navWrapper #portal-globalnav #portaltab-je-trouve .activated{
+	background-color: #317D9B;
+	color: #ffffff;
+}
 
 .theme1, .theme2, .theme3{
     text-transform: uppercase;
 }
 
-.section-theme1 .width-1\:2 .myimageleft, .section-theme2 .width-1\:2 .myimageleft, 
+.section-theme1 .width-1\:2 .myimageleft, .section-theme2 .width-1\:2 .myimageleft,
 .section-theme3 .width-1\:2 .myimageleft{
     max-height: 69px;
     max-width: 150px;
 }
- 
+
 .section-theme1 .width-1\:2 #accueil #media h3, .section-theme2 .width-1\:2 #accueil #media h3,
 .section-theme3 .width-1\:2 #accueil #media h3{
     font-size: 1em;
 }
 
-.section-theme1 .width-1\:2 .documentByLine, .section-theme2 .width-1\:2 .documentByLine, 
+.section-theme1 .width-1\:2 .documentByLine, .section-theme2 .width-1\:2 .documentByLine,
 .section-theme3 .width-1\:2 .documentByLine{
     font-size: 0.9em;
 }
@@ -634,7 +634,7 @@ div#top-navigation div#top-navigation-inner ul#portal-globalnav-cpskinmenu.navTr
     padding:0.25em 0.25em 0.25em 0.5em !important;
 }
 
-.sf-menu .direct_access li a:before{ 
+.sf-menu .direct_access li a:before{
     content: "\e807";
     font-family: "fontello";
     padding-right:0.25em;
@@ -784,7 +784,7 @@ ul.navTreeLevel0 {
     border: 1px solid lightblue;
 }
 
-.section-je-suis .photoAlbumEntryDescription, .section-je-suis .photoAlbumEntry img , 
+.section-je-suis .photoAlbumEntryDescription, .section-je-suis .photoAlbumEntry img ,
 .section-je-trouve .photoAlbumEntryDescription, .section-je-trouve .photoAlbumEntry img{
     display:none;
 }
@@ -882,7 +882,7 @@ ul.navTreeLevel0 {
 }
 
 #top-navigation #navWrapper #portal-globalnav .menutools-1 a:hover, #top-navigation #navWrapper #portal-globalnav .menutools-2 a:hover,
-#navWrapper #portal-globalnav .toolbox-menutools a:hover,  #portal-globalnav .menutools-1.selected > a, #portal-globalnav  .menutools-2.selected > a, 
+#navWrapper #portal-globalnav .toolbox-menutools a:hover,  #portal-globalnav .menutools-1.selected > a, #portal-globalnav  .menutools-2.selected > a,
  #portal-globalnav .toolbox-menutools.selected > a{
     color:#303030;
     background-color:white;
@@ -1161,7 +1161,7 @@ dl.portlet dt {
 
 .managePortletsLink{
     clear:both;
-} 
+}
 
 dl.portlet dt, .portletWrapper dl.portlet dt a {
     background-color: #ffffff;
@@ -1427,7 +1427,7 @@ dl.portlet dt, .portletWrapper dl.portlet dt a {
     clear: both;
 }
 
-/* >>> FIN COLELCTIVE GEO <<< */ 
+/* >>> FIN COLELCTIVE GEO <<< */
 
 
 /* >>> LIVRE D OR <<< */
@@ -1891,11 +1891,14 @@ iframe .player .title{
 
 /* >>> FIN FOOTER <<< */
 
+/* >>> Cookies <<< */
 
+.cc-cookies {
+position: relative;
+}
 
+.cc-cookies a, .cc-cookies a:hover {
+margin: 0 0.5em;
+}
 
-
-
-
-
-
+/* >>> Fin cookies <<< */
