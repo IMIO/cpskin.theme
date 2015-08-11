@@ -1894,7 +1894,7 @@ iframe .player .title{
 /* >>> Cookies <<< */
 
 .cc-cookies {
-position: relative;
+position: relative !important;
 }
 
 .cc-cookies a, .cc-cookies a:hover {
