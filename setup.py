@@ -47,7 +47,7 @@ setup(name='cpskin.theme',
           # -*- Extra requirements: -*-
       ],
       extras_require=dict(
-          test=['plone.app.testing'],
+          test=['plone.app.testing', 'unittest2'],
       ),
       entry_points={},
 )
