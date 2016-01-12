@@ -12,8 +12,12 @@
   <rules if="$isinminisitemode">
 
       <replace css:content-children="#portal-header">
-          <div id="top-actions" class="minisite">
-            <div id="top-actions-inner" class="minisite">
+          <div id="top-languages">
+            <xsl:copy-of select="//*[@id='portal-languageselector']" />
+          </div>
+
+          <div id="top-actions" class="minisitessss">
+            <div id="top-actions-inner" class="minisites">
             </div>
           </div>
       </replace>
