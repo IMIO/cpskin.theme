@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.4.9 (unreleased)
+0.4.9 (2016-01-12)
 ------------------
 
 - Add css for collective.cookiecuttr integration.
