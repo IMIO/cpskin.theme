@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.4.10 (unreleased)
+0.4.10 (2016-04-19)
 -------------------
 
 - Remove rules that already exists in diazotheme.frameworks
