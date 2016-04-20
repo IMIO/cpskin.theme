@@ -4,7 +4,7 @@ Changelog
 0.4.11 (unreleased)
 -------------------
 
-- Add is_homepage and environment view.
+- Add is_homepage and environment views.
   [bsuttor]
 
 
