@@ -20,4 +20,22 @@
         layer="..interfaces.ICPSkinThemeLayer"
         />
 
+    <browser:page
+        name="is_homepage"
+        for="*"
+        class=".diazo.DiazoView"
+        attribute="is_homepage"
+        permission="zope2.View"
+        layer="..interfaces.ICPSkinThemeLayer"
+        />
+
+    <browser:page
+        name="environment"
+        for="*"
+        class=".diazo.DiazoView"
+        attribute="get_environment"
+        permission="zope2.View"
+        layer="..interfaces.ICPSkinThemeLayer"
+        />
+
 </configure>

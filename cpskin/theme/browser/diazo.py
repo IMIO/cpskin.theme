@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
+from Acquisition import aq_inner
 from Products.Five.browser import BrowserView
+from plone.app.layout.navigation.interfaces import INavigationRoot
 
 from plone.app.theming.utils import getCurrentTheme
-
 
 HAS_MINISITE = False
 try:
@@ -11,6 +12,8 @@ try:
     HAS_MINISITE = True
 except ImportError:
     pass
+
+import os
 
 
 class DiazoView(BrowserView):
@@ -34,3 +37,20 @@ class DiazoView(BrowserView):
 
     def getCurrentTheme(self):
         return getCurrentTheme()
+
+    def is_homepage(self):
+        """
+        Returns true if we are on navigation root
+        """
+        obj = aq_inner(self.context)
+        if INavigationRoot.providedBy(obj):
+            return True
+        return False
+
+    def get_environment(self):
+        """
+        Get value of ENV environment variable.
+        Value should be : dev, staging, preprod or prod.
+        """
+        env = os.getenv('ENV', 'prod')
+        return env.lower()
