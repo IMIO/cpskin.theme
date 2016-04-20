@@ -16,7 +16,7 @@
             <xsl:copy-of select="//*[@id='portal-languageselector']" />
           </div>
 
-          <div id="top-actions" class="minisitessss">
+          <div id="top-actions" class="top-actions-minisites">
             <div id="top-actions-inner" class="minisites">
             </div>
           </div>
