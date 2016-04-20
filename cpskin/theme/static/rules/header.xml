@@ -74,13 +74,4 @@
 
   <drop css:content="#portal-siteactions" />
 
-
-  <replace css:content="#portal-globalnav">
-      <nav id="portal-globalnav">
-          <ul>
-              <xsl:apply-templates select="./*"/>
-          </ul>
-      </nav>
-  </replace>
-
 </rules>

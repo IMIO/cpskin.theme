@@ -1,10 +1,17 @@
 Changelog
 =========
 
-0.4.10 (unreleased)
+0.4.11 (unreleased)
 -------------------
 
 - Nothing changed yet.
+
+
+0.4.10 (2016-04-19)
+-------------------
+
+- Remove rules that already exists in diazotheme.frameworks
+  [laulaz]
 
 
 0.4.9 (2016-01-12)
