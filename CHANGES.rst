@@ -4,6 +4,9 @@ Changelog
 0.4.11 (unreleased)
 -------------------
 
+- Add is_homepage and environment theme parameters
+  [laulaz]
+
 - Add is_homepage and environment views.
   [bsuttor]
 
