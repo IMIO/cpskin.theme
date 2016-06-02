@@ -113,14 +113,6 @@ padding-left:10px;
     padding-left: 10px;
 }
 
-.advb-submenu ul li:before {
-    content: "•";
-    float: left;
-    margin-left: -12px;
-    padding-left: 2px;
-    padding-right: 5px;
-}
-
 #advanced-breadcrumbs .nofollow:after {
     content: "»";
     padding-left: 0.25em;
@@ -133,7 +125,7 @@ padding-left:10px;
 
 .advb-submenu .advb-title {
     padding: 3px 7px 3px 4px;
-    background-color: #205c90;
+    background-color: #34495E;
     float:left;
 }
 
@@ -189,6 +181,7 @@ div.position-0 {
 #portal-header #navWrapper {
     background-color: #ECEAEB;
     margin: 0;
+	height: auto !important;
 }
 
 /* --- logo et search --- */
