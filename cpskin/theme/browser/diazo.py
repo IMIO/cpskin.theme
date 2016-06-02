@@ -2,8 +2,8 @@
 from Acquisition import aq_inner
 from Products.Five.browser import BrowserView
 from plone.app.layout.navigation.interfaces import INavigationRoot
-
 from plone.app.theming.utils import getCurrentTheme
+from zope.component import getMultiAdapter
 
 HAS_MINISITE = False
 try:
@@ -54,3 +54,13 @@ class DiazoView(BrowserView):
         """
         env = os.getenv('ENV', 'prod')
         return env.lower()
+    
+    def is_search_in_banner(self):
+        """
+        Il reste à créé le parametre pour afficher ou pas la recherche dans le banner
+        """
+        context = self.context
+        banner_view = getMultiAdapter((context, self.request),
+                                      name="banner_activation")
+        return banner_view.is_enabled
+      

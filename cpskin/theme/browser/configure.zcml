@@ -37,5 +37,14 @@
         permission="zope2.View"
         layer="..interfaces.ICPSkinThemeLayer"
         />
+    
+    <browser:page
+        name="is_search_in_banner"
+        for="*"
+        class=".diazo.DiazoView"
+        attribute="is_search_in_banner"
+        permission="zope2.View"
+        layer="..interfaces.ICPSkinThemeLayer"
+        />
 
 </configure>
