@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.4.11 (unreleased)
+0.4.11 (2016-06-13)
 -------------------
 
 - Add is_homepage and environment theme parameters
