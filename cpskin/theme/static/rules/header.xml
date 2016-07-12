@@ -6,7 +6,9 @@
   <replace css:content-children="#portaltab-index_html a">
       <span class="icon-home" />
   </replace>
-
+  <before css:content="#portal-top">
+    <xsl:copy-of select="//*[@id='messagesviewlet']" />
+  </before>
 
   <!-- Header / banner specific to minisite mode -->
   <rules if="$isinminisitemode">
@@ -73,5 +75,6 @@
 
 
   <drop css:content="#portal-siteactions" />
+  <drop css:content="#messagesviewlet" />
 
 </rules>
