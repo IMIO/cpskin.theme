@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+       xmlns:css="http://namespaces.plone.org/diazo/css"
+       xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <!-- <after css:theme="#login-forgotten-password" if="$login_message"> -->
+  <after css:content="#login-forgotten-password" if="$login_message" >
+      <div class="login_message">
+          <xsl:value-of select="$login_message" disable-output-escaping="yes" />
+      </div>
+  </after>
+
+</rules>

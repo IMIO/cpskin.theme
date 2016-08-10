@@ -4,7 +4,8 @@ Changelog
 0.4.12 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- If you add a document named 'login-message' on navigation root, its content will be visible on login form.
+  [bsuttor] 
 
 
 0.4.11 (2016-06-13)

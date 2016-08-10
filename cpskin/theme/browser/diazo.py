@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 from Acquisition import aq_inner
 from Products.Five.browser import BrowserView
+from plone import api
 from plone.app.layout.navigation.interfaces import INavigationRoot
 from plone.app.theming.utils import getCurrentTheme
+from plone.outputfilters.filters.resolveuid_and_caption import ResolveUIDAndCaptionFilter
 from zope.component import getMultiAdapter
-
 HAS_MINISITE = False
 try:
     from cpskin.minisite.interfaces import IInMinisite
@@ -54,7 +55,7 @@ class DiazoView(BrowserView):
         """
         env = os.getenv('ENV', 'prod')
         return env.lower()
-    
+
     def is_search_in_banner(self):
         """
         Il reste à créé le parametre pour afficher ou pas la recherche dans le banner
@@ -62,5 +63,18 @@ class DiazoView(BrowserView):
         context = self.context
         banner_view = getMultiAdapter((context, self.request),
                                       name="banner_activation")
+        # import ipdb; ipdb.set_trace()
         return banner_view.is_enabled
-      
+
+    def get_login_message(self):
+        nav_root = api.portal.get_navigation_root(self.context)
+        login_message_page = getattr(nav_root, 'login-message', None)
+        if not login_message_page:
+            return u''
+        login_message = login_message_page.text.raw
+        login_message = login_message.replace(
+            'http://resolveuid/', 'resolveuid/')
+        parser = ResolveUIDAndCaptionFilter(login_message_page)
+        transform_text = parser(login_message)
+        # return login_message_page.absolute_url()
+        return transform_text

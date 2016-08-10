@@ -37,7 +37,7 @@
         permission="zope2.View"
         layer="..interfaces.ICPSkinThemeLayer"
         />
-    
+
     <browser:page
         name="is_search_in_banner"
         for="*"
@@ -47,4 +47,12 @@
         layer="..interfaces.ICPSkinThemeLayer"
         />
 
+    <browser:page
+        name="get_login_message"
+        for="*"
+        class=".diazo.DiazoView"
+        attribute="get_login_message"
+        permission="zope2.View"
+        layer="..interfaces.ICPSkinThemeLayer"
+        />
 </configure>
