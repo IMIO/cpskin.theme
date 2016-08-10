@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.4.12 (unreleased)
+0.4.12 (2016-08-10)
 -------------------
 
 - If you add a document named 'login-message' on navigation root, its content will be visible on login form.
