@@ -14,9 +14,6 @@
 
     <include file="profiles.zcml" />
 
-    <!-- Unregister unused themes -->
-    <includeOverrides file="overrides.zcml" />
-
     <!-- CPSkin themes -->
     <plone:static directory="static" name="cpskin.theme.base" type="theme" />
 
