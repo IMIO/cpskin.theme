@@ -14,6 +14,5 @@ class TestProfiles(unittest.TestCase):
 
     def test_installation(self):
         portal = self.layer['portal']
-        applyProfile(portal, 'cpskin.theme:members-configuration')
         applyProfile(portal, 'cpskin.theme:uninstall')
         applyProfile(portal, 'cpskin.theme:default')
