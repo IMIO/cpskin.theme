@@ -4,7 +4,8 @@ Changelog
 0.4.13 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Set version of profile.
+  [bsuttor]
 
 
 0.4.12 (2016-08-10)
