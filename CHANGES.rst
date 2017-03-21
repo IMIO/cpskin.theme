@@ -4,7 +4,8 @@ Changelog
 0.4.14 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Setup initial LESS related code and files
+  [laulaz]
 
 
 0.4.13 (2017-02-16)

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<object name="portal_less">
+
+ <stylesheet title="CPSkin LESS Variables"
+    id="++theme++cpskin.theme.base/less/variables.less"
+    rendering="link"
+    compression="none" />
+
+ <stylesheet title="CPSkin LESS Header Styles"
+    id="++theme++cpskin.theme.base/less/styles.less"
+    rendering="link"
+    compression="none" />
+
+ <stylesheet title="CPSkin LESS Mobile Styles"
+    id="++theme++cpskin.theme.base/less/mobile.less"
+    media="handheld, screen and (max-device-width: 480px), screen and (max-width: 480px)"
+    rendering="link"
+    compression="none" />
+
+ <stylesheet title="CPSkin LESS Medium Mobile Styles"
+    id="++theme++cpskin.theme.base/less/mobilemedium.less"
+    media="handheld, screen and (max-device-width: 768px), screen and (max-width: 768px)"
+    rendering="link"
+    compression="none" />
+
+ <stylesheet title="CPSkin LESS Large Mobile Styles"
+    id="++theme++cpskin.theme.base/less/mobilelarge.less"
+    media="handheld, screen and (max-device-width: 1024px), screen and (max-width: 1024px)"
+    rendering="link"
+    compression="none" />
+
+</object>
