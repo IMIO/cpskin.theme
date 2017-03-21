@@ -3,30 +3,49 @@
 
  <stylesheet title="CPSkin LESS Variables"
     id="++theme++cpskin.theme.base/less/variables.less"
+    enabled="1"
     rendering="link"
+    applyPrefix="True"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
     compression="none" />
 
  <stylesheet title="CPSkin LESS Header Styles"
     id="++theme++cpskin.theme.base/less/styles.less"
+    enabled="1"
     rendering="link"
-    compression="none" />
+    applyPrefix="True"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    compression="none"
+    insert-after="++theme++cpskin.theme.base/less/variables.css" />
 
  <stylesheet title="CPSkin LESS Mobile Styles"
     id="++theme++cpskin.theme.base/less/mobile.less"
     media="handheld, screen and (max-device-width: 480px), screen and (max-width: 480px)"
+    enabled="1"
     rendering="link"
-    compression="none" />
+    applyPrefix="True"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    compression="none"
+    insert-after="++theme++cpskin.theme.base/less/styles.css" />
 
  <stylesheet title="CPSkin LESS Medium Mobile Styles"
     id="++theme++cpskin.theme.base/less/mobilemedium.less"
     media="handheld, screen and (max-device-width: 768px), screen and (max-width: 768px)"
+    enabled="1"
     rendering="link"
-    compression="none" />
+    applyPrefix="True"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    compression="none"
+    insert-after="++theme++cpskin.theme.base/less/mobile.css" />
 
  <stylesheet title="CPSkin LESS Large Mobile Styles"
     id="++theme++cpskin.theme.base/less/mobilelarge.less"
     media="handheld, screen and (max-device-width: 1024px), screen and (max-width: 1024px)"
+    enabled="1"
     rendering="link"
-    compression="none" />
+    applyPrefix="True"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    compression="none"
+    insert-after="++theme++cpskin.theme.base/less/mobilemedium.css" />
 
 </object>
