@@ -15,24 +15,11 @@
 
     <include file="profiles.zcml" />
 
-    <adapter
-      name="themeless"
-      for="* zope.publisher.interfaces.IRequest"
-      provides="zope.traversing.interfaces.ITraversable"
-      factory=".traversal.ThemeLessTraverser"
-      />
-
     <!-- CPSkin themes -->
     <plone:static
       directory="static"
       type="theme"
       name="cpskin.theme.base"
-      />
-
-    <plone:static
-      directory="static/less"
-      type="themeless"
-      name="cpskin.theme.base.less"
       />
 
 </configure>
