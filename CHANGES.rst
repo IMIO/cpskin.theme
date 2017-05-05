@@ -4,7 +4,9 @@ Changelog
 0.4.14 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Duplicate CSS rules for now to handle #slider -> #slider-a-la-une and
+  #carousel -> #carousel-a-la-une ids at the same time (#16991)
+  [laulaz]
 
 
 0.4.13 (2017-02-16)
