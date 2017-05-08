@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 from Acquisition import aq_inner
-from Products.Five.browser import BrowserView
 from plone import api
 from plone.app.layout.navigation.interfaces import INavigationRoot
 from plone.app.theming.utils import getCurrentTheme
 from plone.outputfilters.filters.resolveuid_and_caption import ResolveUIDAndCaptionFilter
+from Products.Five.browser import BrowserView
 from zope.component import getMultiAdapter
 HAS_MINISITE = False
 try:
@@ -13,6 +13,7 @@ try:
     HAS_MINISITE = True
 except ImportError:
     pass
+
 
 import os
 
@@ -25,6 +26,9 @@ class DiazoView(BrowserView):
         return (self.isInMinisiteMode() or self.isInPortalMode())
 
     def isInMinisiteMode(self):
+        """
+        Returns true if we are in minisite mode
+        """
         if not HAS_MINISITE:
             return False
         request = self.request
