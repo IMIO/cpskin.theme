@@ -29,6 +29,16 @@
     expression="request/HTTP_X_THEME_ENABLED | nothing"
     compression="none"
     insert-after="portal_resources/cpskin/variables.less" />
+ 
+ <stylesheet title="CPSkin LESS Contact"
+    id="++theme++cpskin.theme.base/less/contact.less"
+    media=""
+    enabled="1"
+    rendering="link"
+    applyPrefix="True"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    compression="none"
+    insert-after="++theme++cpskin.theme.base/less/styles.less" />
 
  <stylesheet title="CPSkin LESS Custom Styles"
     id="portal_resources/cpskin/styles.less"
@@ -38,8 +48,8 @@
     applyPrefix="True"
     expression="request/HTTP_X_THEME_ENABLED | nothing"
     compression="none"
-    insert-after="++theme++cpskin.theme.base/less/styles.less" />
-
+    insert-after="++theme++cpskin.theme.base/less/contact.less" />
+ 
  <stylesheet title="CPSkin LESS Mobile Styles"
     id="++theme++cpskin.theme.base/less/mobile.less"
     media="handheld, screen and (max-device-width: 480px), screen and (max-width: 480px)"

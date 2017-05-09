@@ -3,9 +3,9 @@
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
        xmlns:css="http://namespaces.plone.org/diazo/css">
 
-  <replace css:content-children="#portaltab-index_html a">
+  <!--replace css:content-children="#portaltab-index_html a">
       <span class="icon-home" />
-  </replace>
+  </replace-->
   <before css:content="#portal-top">
     <xsl:copy-of select="//*[@id='messagesviewlet']" />
   </before>
@@ -71,6 +71,24 @@
 
       <drop css:content="#minisite-search" />
 
+  </rules>
+  
+    <!-- Logo to minisite horizontal navigation and minisite action-->
+  <rules if="$ms_horizontal_navigation">
+    <before css:content-children="#container-minisite-globalnav">
+      <div id="minisite-actions-inner">
+        <xsl:copy-of select="//*[@id='minisite-actions']" />
+      </div>
+          <div id="minisite-navigation-inner">
+              <div id="minisite-logo-nav">
+                  <xsl:copy-of select="//*[@id='minisite-logo']" />
+                  <xsl:copy-of select="//*[@id='minisite-globalnav']" />
+              </div> 
+          </div>   
+    </before>
+    <drop css:content="#minisite-logo" />
+    <drop css:content="#minisite-actions" />
+     <drop css:content="#minisite-globalnav" />
   </rules>
 
 
