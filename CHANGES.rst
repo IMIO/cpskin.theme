@@ -4,7 +4,7 @@ Changelog
 0.4.14 (unreleased)
 -------------------
 
-- Setup initial LESS related code and files
+- Setup initial LESS related code, files and migration from ploneCustom.css
   [laulaz]
 
 
