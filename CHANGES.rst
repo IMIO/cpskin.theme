@@ -4,6 +4,9 @@ Changelog
 0.4.14 (unreleased)
 -------------------
 
+- Fix LESS files sort order in portal_less
+  [laulaz]
+
 - Setup initial LESS related code, files and migration from ploneCustom.css
   [laulaz]
 
