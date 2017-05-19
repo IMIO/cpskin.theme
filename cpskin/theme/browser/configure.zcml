@@ -12,6 +12,15 @@
         />
 
     <browser:page
+        name="withMinisiteHorizontalNav"
+        for="*"
+        class=".diazo.DiazoView"
+        attribute="withMinisiteHorizontalNav"
+        permission="zope2.View"
+        layer="..interfaces.ICPSkinThemeLayer"
+        />
+
+    <browser:page
         name="currentTheme"
         for="*"
         class=".diazo.DiazoView"

@@ -4,6 +4,10 @@ Changelog
 0.4.14 (unreleased)
 -------------------
 
+- Avoid explicit dependency to cpskin.minisite via a Diazo parameter. Use
+  local method instead (with check on cpskin.minisite availability)
+  [laulaz]
+
 - Fix LESS files sort order in portal_less
   [laulaz]
 
