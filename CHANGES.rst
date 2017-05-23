@@ -4,6 +4,9 @@ Changelog
 0.4.14 (unreleased)
 -------------------
 
+- Theme parameters harmonization
+  [laulaz]
+
 - Avoid explicit dependency to cpskin.minisite via a Diazo parameter. Use
   local method instead (with check on cpskin.minisite availability)
   [laulaz]
