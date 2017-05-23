@@ -33,9 +33,11 @@ def migrate_existing_custom_to_less():
     custom = getattr(portal_skins, 'custom', None)
     if not custom:
         return
-    ploneCustom = getattr(custom, 'ploneCustom.css', None)
-    if not ploneCustom:
+    if not 'ploneCustom.css' in custom.objectIds():
+        # getattr() doesn't work here : FSDTMLMethod is always returned for
+        # ploneCustom.css even if it doesn't exist.
         return
+    ploneCustom = getattr(custom, 'ploneCustom.css', None)
     customCSS = ploneCustom.read()
     folder = portal_resources[CUSTOM_FOLDER_NAME]
     folder.writeFile(
