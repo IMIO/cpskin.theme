@@ -1,8 +1,8 @@
 Changelog
 =========
 
-0.4.15 (unreleased)
--------------------
+0.5 (2017-05-29)
+----------------
 
 - Add dependency on cpskin.core (at install) to access banner_activation view
   [laulaz]
