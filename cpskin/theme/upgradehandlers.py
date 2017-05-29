@@ -22,8 +22,9 @@ def upgrade_to_less(context):
         'profile-cpskin.theme:default',
         'lessregistry'
     )
-    addCustomLessFiles()
-    migrate_existing_custom_to_less()
+    added = addCustomLessFiles()
+    if added:
+        migrate_existing_custom_to_less()
     logger.info('LESS files installed and configurations done !')
 
 

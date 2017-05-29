@@ -17,6 +17,7 @@ def installTheme(context):
 
 
 def addCustomLessFiles():
+    added = False
     portal_resources = getUtility(IResourceDirectory, name='persistent')
     if CUSTOM_FOLDER_NAME not in portal_resources:
         portal_resources.makeDirectory(CUSTOM_FOLDER_NAME)
@@ -33,6 +34,8 @@ def addCustomLessFiles():
             StringIO('/*\nPut your custom LESS styles here.\n*/\n\n'),
         )
         logger.info('Custom styles LESS files added to portal_resources')
+        added = True
+    return added
 
 
 def uninstallTheme(context):
