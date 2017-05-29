@@ -4,7 +4,21 @@ Changelog
 0.4.15 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add dependency on cpskin.core (at install) to access banner_activation view
+  [laulaz]
+
+- Theme parameters harmonization
+  [laulaz]
+
+- Avoid explicit dependency to cpskin.minisite via a Diazo parameter. Use
+  local method instead (with check on cpskin.minisite availability)
+  [laulaz]
+
+- Fix LESS files sort order in portal_less
+  [laulaz]
+
+- Setup initial LESS related code, files and migration from ploneCustom.css
+  [laulaz]
 
 
 0.4.14 (2017-05-10)

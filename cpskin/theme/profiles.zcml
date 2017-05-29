@@ -21,4 +21,13 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
 
+    <genericsetup:upgradeStep
+        title="CPSKIN Theme: upgrade to v2 (LESS)"
+        description="Upgrade step for CPSKIN Theme to v2 (LESS)"
+        handler=".upgradehandlers.upgrade_to_less"
+        source="1"
+        destination="2"
+        profile="cpskin.theme:default"
+        />
+
 </configure>

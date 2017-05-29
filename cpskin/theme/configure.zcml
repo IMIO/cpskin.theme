@@ -7,6 +7,7 @@
     <browser:jbot directory="static/overrides" />
     <include package="plone.app.theming" />
     <include package="diazotheme.frameworks" />
+    <include package="collective.lesscss" />
     <include package="cpskin.core" />
     <include package="cpskin.locales" />
 
@@ -15,6 +16,10 @@
     <include file="profiles.zcml" />
 
     <!-- CPSkin themes -->
-    <plone:static directory="static" name="cpskin.theme.base" type="theme" />
+    <plone:static
+      directory="static"
+      type="theme"
+      name="cpskin.theme.base"
+      />
 
 </configure>

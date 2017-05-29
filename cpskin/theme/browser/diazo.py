@@ -8,8 +8,10 @@ from Products.Five.browser import BrowserView
 from zope.component import getMultiAdapter
 HAS_MINISITE = False
 try:
+    from cpskin.minisite.browser.interfaces import IHNavigationActivated
     from cpskin.minisite.interfaces import IInMinisite
     from cpskin.minisite.interfaces import IInPortal
+    from cpskin.minisite.utils import get_minisite_object
     HAS_MINISITE = True
 except ImportError:
     pass
@@ -39,6 +41,15 @@ class DiazoView(BrowserView):
             return False
         request = self.request
         return IInPortal.providedBy(request)
+
+    def withMinisiteHorizontalNav(self):
+        if not HAS_MINISITE:
+            return False
+        if not self.isInMinisiteMode():
+            return False
+        request = self.request
+        minisite_root = get_minisite_object(request)
+        return IHNavigationActivated.providedBy(minisite_root)
 
     def getCurrentTheme(self):
         return getCurrentTheme()

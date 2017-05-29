@@ -41,6 +41,7 @@ setup(name='cpskin.theme',
           'plone.api',
           'plone.app.theming',
           'diazotheme.frameworks',
+          'collective.lesscss',
           'cpskin.core',
           'cpskin.locales',
           'z3c.jbot'
