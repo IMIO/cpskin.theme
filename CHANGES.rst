@@ -4,6 +4,9 @@ Changelog
 0.4.14 (unreleased)
 -------------------
 
+- Add dependency on cpskin.core (at install) to access banner_activation view
+  [laulaz]
+
 - Theme parameters harmonization
   [laulaz]
 

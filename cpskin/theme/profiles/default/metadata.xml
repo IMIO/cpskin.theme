@@ -4,5 +4,6 @@
   <dependencies>
     <dependency>profile-plone.app.theming:default</dependency>
     <dependency>profile-collective.lesscss:default</dependency>
+    <dependency>profile-cpskin.core:default</dependency>
   </dependencies>
 </metadata>
