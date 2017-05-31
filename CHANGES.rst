@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.1 (unreleased)
+0.5.1 (2017-05-31)
 ------------------
 
 - Handle ploneCustom.css migration to LESS for both DTML method and File
