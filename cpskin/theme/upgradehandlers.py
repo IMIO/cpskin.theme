@@ -39,12 +39,21 @@ def migrate_existing_custom_to_less():
         # ploneCustom.css even if it doesn't exist.
         return
     ploneCustom = getattr(custom, 'ploneCustom.css', None)
-    customCSS = ploneCustom.read()
+    title = ploneCustom.title
+    if hasattr(ploneCustom, 'data'):
+        # File
+        customCSS = ploneCustom.data
+        ploneCustom.update_data('/*\nMigrated to LESS.\n*/')
+    elif hasattr(ploneCustom, 'read'):
+        # DTML method
+        customCSS = ploneCustom.read()
+        ploneCustom.manage_edit(
+            data='/*\nMigrated to LESS.\n*/',
+            title=title
+        )
     folder = portal_resources[CUSTOM_FOLDER_NAME]
     folder.writeFile(
         'styles.less',
         StringIO(customCSS),
     )
-    title = ploneCustom.title
-    ploneCustom.manage_edit(data='/*\nMigrated to LESS.\n*/', title=title)
     logger.info('ploneCustom.css migrated to styles.less in portal_resources')

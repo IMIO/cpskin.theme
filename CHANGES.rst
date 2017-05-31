@@ -4,7 +4,8 @@ Changelog
 0.5.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Handle ploneCustom.css migration to LESS for both DTML method and File
+  [laulaz]
 
 
 0.5 (2017-05-29)
