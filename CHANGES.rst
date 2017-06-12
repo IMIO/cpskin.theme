@@ -4,7 +4,9 @@ Changelog
 0.5.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix LESS upgrade to keep CSS order even if reinstalled (which is the case
+  during auto upgrade-portals) : #17714
+  [laulaz]
 
 
 0.5.1 (2017-05-31)

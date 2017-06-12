@@ -18,13 +18,13 @@ def upgrade_to_less(context):
         'profile-cpskin.theme:default',
         'plone.app.registry'
     )
-    context.runImportStepFromProfile(
-        'profile-cpskin.theme:default',
-        'lessregistry'
-    )
     added = addCustomLessFiles()
     if added:
         migrate_existing_custom_to_less()
+        context.runImportStepFromProfile(
+            'profile-cpskin.theme:default',
+            'lessregistry'
+        )
     logger.info('LESS files installed and configurations done !')
 
 
