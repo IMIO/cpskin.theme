@@ -5,10 +5,20 @@
        xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <!-- <after css:theme="#login-forgotten-password" if="$login_message"> -->
-  <after css:content="#login-forgotten-password" if="$login_message" >
-      <div class="login_message">
+<rules css:if-content="body.template-login_form, body.template-logged_out">
+   <replace css:content-children="#content-core">
+    <div id="login-password">
+        <xsl:copy-of select="./*[@id='login_form']"/>
+        <xsl:copy-of select="./*[@id='login-forgotten-password']"/>
+    </div>
+    <div class="login_message">
           <xsl:value-of select="$login_message" disable-output-escaping="yes" />
+          <xsl:copy-of select="./*[@id='login-new-user']"/>
       </div>
-  </after>
-
+  </replace>
+  <drop css:content="#login_form"/>
+  <drop css:content="#login-forgotten-password"/>
+  <drop css:content="#login-new-user"/>
+</rules>
+ 
 </rules>
