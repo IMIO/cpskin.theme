@@ -2246,9 +2246,79 @@ body.in-minisite-in-portal {
 }
 
 /*   PAGE LOGIN   */
+.overlay-login #content-core,
+body.template-logged_out #content-core,
+body.template-login_form #content-core{
+    display:table;
+}
 #login-password, .login_message {
+    display: table-cell;
+    width: 50%;
+}
+body.template-logged_out #content,
+body.template-login_form #content, .pb-ajax #login-form {
+    text-align: left;
+}
+#pb_1 .pb-ajax > div {
+    box-sizing: border-box;
+    padding: 0;
+    width: 100%;
+}
+#login-password,
+.login_message {
+    box-sizing: border-box;
+    padding: 4em;
+    vertical-align: top;
+}
+.login_message {
+    background: #e5eef2 none repeat scroll 0 0;
+}
+.login_message h2 {
+    color: #333;
+    margin: 1em 0;
+}
+.login_message h2:first-child{
+    margin-top:0;
+}
+#login-form .field {
+    margin-bottom: 8em;
+}
+#fieldset-openid-login label,
+#login-form label {
+    display: block;
+    margin-right: 0.5em;
+    padding-top: 0.2em;
+    text-align: left;
+}
+div.overlay label {
+    margin-bottom: 1em;
+}
+div.formControls {
+    margin: 1em 1em 1em 0;
+}
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #bcbcbc;
+    box-sizing: border-box;
+    float: left;
+    height: 45px;
+    padding-left: 0.3em;
+    width: 70%;
+}
+#login-form .context {
+    background: #949494 none repeat scroll 0 0;
+    border: 0 solid #9e9e9e;
+    border-radius: 3px;
+    color: #ffffff;
+    display: block;
+    padding: 0.5em 1em;
+    text-align: left;
+}
+[id="login-forgotten-password"] {
     display: inline-block;
-    max-width: 50%;
+    margin-top: 5em;
+    max-width: 70%;
 }
 
 
