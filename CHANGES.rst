@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.2 (unreleased)
+0.5.2 (2017-06-15)
 ------------------
 
 - Many CSS changes
