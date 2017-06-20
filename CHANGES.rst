@@ -4,7 +4,8 @@ Changelog
 0.5.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix: login_message fails if text field is empty.
+  [bsuttor]
 
 
 0.5.2 (2017-06-15)
