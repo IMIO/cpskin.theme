@@ -14,8 +14,8 @@
         <xsl:copy-of select="./*[@id='login-new-user']"/>
     </div>
     <div class="login_message">
-          <xsl:value-of select="$login_message" disable-output-escaping="yes" />
-      </div>
+        <xsl:value-of select="$login_message" disable-output-escaping="yes" />
+    </div>
   </replace>
   <drop css:content="#login_form"/>
   <drop css:content="#login-forgotten-password"/>
