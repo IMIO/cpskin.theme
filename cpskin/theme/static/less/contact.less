@@ -31,17 +31,31 @@
 
 /*  compte citoyen  */
 
+.citizen a {
+    background: lightgrey;
+    padding: 0.5em 1em;
+    color: black !important;
+}
+
 .section-annuaire.userrole-citizen-editor #portal-columns {
     max-width: 1240px;
 }
 
-.citizen legend {
+#content .citizen legend {
+    padding: 0.5em 0.25em 0.25em;
+    top: 1em;
+    position: relative;
+    color: white;
     font-size: 125% !important;
-    margin-top: -0.25em !important;
+    margin-bottom: 1em;
+    text-transform: uppercase;
 }
 
 fieldset.citizen {
-    border: 1px solid lightgray !important;
+    border: 0px solid lightgray !important;
+    background: gray;
+    padding-top: 2em;
+    margin: 0 -2em;
 }
 
 .template-claim-citizen #content > form {
@@ -67,6 +81,7 @@ fieldset.citizen {
 }
 
 /* fin compte citoyen  */
+
 
 #content #map {
     width: 100% !important;
@@ -363,7 +378,7 @@ body.template-facetednavigation_view .contact-entry {
 }
 
 .widget-fieldset input[type="text"] {
-   pposition: relative;
+    position: relative;
     padding-right: 40px;
     width: calc(169px);
     border: 1px solid #aaaaaa !important;

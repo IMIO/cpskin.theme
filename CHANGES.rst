@@ -4,6 +4,9 @@ Changelog
 0.5.3 (unreleased)
 ------------------
 
+- Add sticky right actions panel (for portlets and TOC) : #17748
+  [laulaz]
+
 - Fix: login_message fails if text field is empty.
   [bsuttor]
 

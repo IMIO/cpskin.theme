@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+       xmlns:css="http://namespaces.plone.org/diazo/css">
+
+  <replace css:content-children="#table-of-contents-container">
+      <xsl:copy-of select="//dl[@id='document-toc']" />
+  </replace>
+  <drop css:content="#viewlet-above-content-body #document-toc" />
+
+  <replace css:content-children="#useful-links-related-contents">
+      <xsl:copy-of select="//div[@class='relatedItems']" />
+  </replace>
+  <drop css:content="#viewlet-below-content-body div.relatedItems" />
+
+  <rules css:if-content="#useful-links-portlets">
+      <replace css:content-children="#useful-links-portlets">
+          <xsl:copy-of select="//div[@id='portal-column-two']/*" />
+      </replace>
+      <drop css:content="#portal-column-two" />
+  </rules>
+
+  <replace css:content-children="#other-actions">
+      <xsl:copy-of select="//*[@class='sc_social_bookmarks_viewlet']" />
+      <xsl:copy-of select="//div[@id='viewlet-above-content-title']/*[@class!='visualClear']" />
+  </replace>
+  <drop css:content="#viewlet-below-content-body .sc_social_bookmarks_viewlet" />
+  <drop css:content="#viewlet-above-content-title" />
+
+</rules>
