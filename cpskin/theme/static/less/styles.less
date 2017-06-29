@@ -1,3 +1,113 @@
+
+/*  compte citoyen  */
+
+.citizen a {
+    background: lightgrey;
+    padding: 0.5em 1em;
+    color: black !important;
+}
+
+.section-annuaire.userrole-citizen-editor #portal-columns {
+    max-width: 1240px;
+}
+
+#content .citizen legend {
+    padding: 0.5em 0.25em 0.25em;
+    top: 1em;
+    position: relative;
+    color: white;
+    font-size: 125% !important;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+fieldset.citizen {
+    border: 0px solid lightgray !important;
+    background: gray;
+    padding-top: 2em;
+    margin: 0 -2em;
+}
+
+.template-claim-citizen #content > form {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.citizen-info-viewlet{
+    display:none;
+}
+
+.section-citizen-dashboard.template-facetednavigation_view #faceted-results {
+    padding-left: 0;
+}
+
+.section-citizen-dashboard table.listing {
+    border-left: 0px solid #ddd;
+    width: 100%;
+}
+
+.section-citizen-dashboard table.listing td {
+    border-right: 1px solid #fff;
+}
+
+.pretty_link.state-created {
+    text-align: center;
+}
+
+.td_cell_citizen-state-column .line-state.active {
+    background: transparent !important;
+    z-index: 0;
+}
+
+.td_cell_citizen-state-column{
+    overflow: hidden;
+}
+
+.line-state.active::before {
+    content: "";
+    height: 14em;
+    width: 14em;
+    background: white;
+    position: absolute;
+    left: -16.5em;
+    top: -6.2em;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.line-state.active:after {
+    content: "";
+    height: 14em;
+    width: 14em;
+    background: grey;
+    position: absolute;
+    right: 2.5em;
+    top: -6.2em;
+    bottom: 0;
+    transform: rotate(45deg);
+    z-index: -2;
+}
+
+.odd .line-state.active:before {
+    background: #f2f2f2;
+}
+
+.line-state {
+    display: inherit;
+    padding: 0 1em 0 1.5em;
+    position: relative;
+}
+
+.userrole-citizen-editor #personaltools-dashboard,
+.userrole-citizen-editor #personaltools-undo, 
+.userrole-citizen-editor #personaltools-preferences,
+.userrole-citizen-editor #contentview-user_data-personal-preferences {
+    display: none;
+}
+
+
+/* fin compte citoyen  */
+
 /* affichage right panel  */
 
 
@@ -103,6 +213,7 @@
     display: block;
     height: 2em;
     position: relative;
+    z-index:1;
 }
 
 .right-action-panel {
@@ -131,6 +242,16 @@
 
 /*  Fin right actions  */
 
+/* citizen  */
+
+.citizen {
+    float: right;
+    background: lightgray;
+    padding: 1em;
+    border-radius: 2px;
+}
+
+/* fin citizen  */
 
 /* >>> breadcrumbs a supprimer lorsque la modifie sera apportee <<< */
 
@@ -307,6 +428,7 @@ div.position-0 {
     margin-left: -100%;
 }
 
+
 #portal-top #cpskin-banner, #portal-top #cpskin-banner img {
     margin: 0.5em auto;
     max-width: 1200px;
@@ -338,6 +460,11 @@ div.position-0 {
     margin: 0 auto;
     max-width:1200px;
     position:relative;
+}
+
+#hidden-search{
+    z-index:9;
+    height: 0px !important;
 }
 
 #portal-searchbox {
