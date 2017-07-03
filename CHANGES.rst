@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.3 (unreleased)
+0.5.3 (2017-07-03)
 ------------------
 
 - Add sticky right actions panel (for portlets and TOC) : #17748
