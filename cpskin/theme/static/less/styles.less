@@ -222,6 +222,10 @@ fieldset.citizen {
     padding-top: 11em;
 }
 
+.nav-is-stuck #right-actions-viewlet-inner a{
+        top: 0;
+}
+
 .nav-is-stuck #right-actions-viewlet-inner a::after {
     color: #0e2240;
 }
@@ -251,6 +255,11 @@ fieldset.citizen {
 
 #right-actions-viewlet-inner {
 	width: 2em;
+	padding-top:4em;
+}
+
+#right-actions-viewlet-inner a{
+    top: -3.5em;
 }
 
 #right-actions-viewlet-inner > a {
@@ -273,11 +282,15 @@ fieldset.citizen {
 .shown-right-panel {
     background: #f2f2f2 none repeat scroll 0 0;
     display: block;
-    margin-top: -2.1em;
+    margin-top: -5.1em;
     position: absolute;
     right: 3em;
     width: 18em;
     z-index: 1;
+}
+
+.nav-is-stuck .shown-right-panel {
+    margin-top: -3.1em;
 }
 
 #document-toc {
@@ -1261,7 +1274,7 @@ ul.navTreeLevel0 {
     z-index: -1;
 }
 
-#faceted-results .photoAlbumEntryTitle, .section-je-suis #faceted-results .photoAlbumEntryTitle, .section-je-trouve #faceted-results .photoAlbumEntryTitle {
+#content-core #faceted-results .photoAlbumEntryTitle, .section-je-suis #faceted-results .photoAlbumEntryTitle, .section-je-trouve #faceted-results .photoAlbumEntryTitle {
     background: transparent none repeat scroll 0 0;
     bottom: 0;
     color: #000;
@@ -1286,7 +1299,7 @@ ul.navTreeLevel0 {
     font-size: 110%;
     font-weight: normal;
     line-height: 0;
-    margin-right: 1.75em;
+    margin-right: 2em;
     position: relative;
     top: 0.25em;
     transform: rotate(-44deg);
