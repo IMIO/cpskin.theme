@@ -75,7 +75,7 @@ fieldset.citizen {
     z-index: -1;
 }
 
-.line-state.active:after {
+.line-state.active::after {
     content: "";
     height: 14em;
     width: 14em;
@@ -88,7 +88,7 @@ fieldset.citizen {
     z-index: -2;
 }
 
-.odd .line-state.active:before {
+.odd .line-state.active::before {
     background: #f2f2f2;
 }
 
@@ -118,7 +118,7 @@ fieldset.citizen {
     position: absolute;
     right: -5px;
     text-transform: uppercase;
-    top: 3em;
+    top: 11em;
     transform: rotate(-90deg);
 }
 #other-actions::after {
@@ -128,11 +128,11 @@ fieldset.citizen {
     height: 18px;
     left: 0;
     position: absolute;
-    top: 77px;
+    top: 11em;
     width: 0.55em;
 }
 #other-actions {
-    padding-top: 101px;
+    padding-top: 13em;
     position: relative;
 }
 
@@ -164,6 +164,33 @@ fieldset.citizen {
     display:block;
 }
 
+#right-actions-viewlet .sc_social_bookmarks li a img {
+    display: none;
+}
+
+#right-actions-viewlet .sc_social_bookmarks_wrapper{
+    background: transparent;
+}
+
+#right-actions-viewlet .icons_only a,
+#right-actions-viewlet .iconifiedDocumentActions a{
+    color:#0f2241;
+}
+
+#right-actions-viewlet .sc_social_bookmarks li a.icon-Facebook::before {
+    content: "\e809";
+    color:black;
+    font-family:fontello;
+}
+
+#right-actions-viewlet .sc_social_bookmarks li .icon-Twitter::before {
+    content: "\e80e";
+}
+
+#right-actions-viewlet [class^="icon-"]::before, #right-actions-viewlet [class*=" icon-"]::before {
+    margin-left: 0.1em;
+    }
+
 /* fin affichage right panel  */
 
 /*  right actions  */
@@ -172,6 +199,7 @@ fieldset.citizen {
     position: absolute;
     right: -3em;
     width: 2em;
+    top:4em;
 }
 
 #right-actions-viewlet .iconifiedDocumentActions {
@@ -179,6 +207,23 @@ fieldset.citizen {
     padding: 0.25em 0 0;
     text-align: left;
     top: 2.25em;
+    margin:0;
+}
+
+.nav-is-stuck #right-actions-viewlet-inner{
+   padding-top: 6em;
+}
+
+.nav-is-stuck #other-actions::before,
+.nav-is-stuck #other-actions::after {
+    top: 9em;
+}
+.nav-is-stuck #other-actions {
+    padding-top: 11em;
+}
+
+.nav-is-stuck #right-actions-viewlet-inner a::after {
+    color: #0e2240;
 }
 
 #right-actions-viewlet-inner > a::after{
@@ -586,7 +631,7 @@ dl.actionMenu.activated dt a{
     float: left;
 }
 
-.sc_social_bookmarks_wrapper {
+#right-actions-viewlet .sc_social_bookmarks_wrapper {
     border: 0px solid #ccc;
     padding:0px;
 }
@@ -1180,6 +1225,77 @@ ul.navTreeLevel0 {
     width: 33%;
 }
 
+/*  Vue faceted liste  */
+
+#faceted-results .photoAlbumEntry {
+    border-bottom: 1px solid lightgray;
+    box-sizing: border-box;
+    margin: 0;
+    padding-bottom: 0;
+    width: 100%;
+    padding: 0;
+}
+
+#faceted-results .photoAlbumEntry a::after {
+    background: #fff none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.75s ease 0.1s;
+    width: 0;
+    z-index: -1;
+}
+
+#faceted-results .photoAlbumEntry a:hover::after {
+    background: #f2f2f2 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#faceted-results .photoAlbumEntryTitle, .section-je-suis #faceted-results .photoAlbumEntryTitle, .section-je-trouve #faceted-results .photoAlbumEntryTitle {
+    background: transparent none repeat scroll 0 0;
+    bottom: 0;
+    color: #000;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    width: 93%;
+    font-weight: bold;
+    font-size: 85%;
+}
+
+.photoAlbumEntryTitle::before, .faceted-criteria-hide-show, .faceted-criteria-hide {
+    display: none;
+}
+
+/*  Fin vue faceted liste  */
+
+.photoAlbumEntry a::before {
+    border-radius: 11px;
+    color: black;
+    content: "⌟";
+    float: right;
+    font-size: 110%;
+    font-weight: normal;
+    line-height: 0;
+    margin-right: 1.75em;
+    position: relative;
+    top: 0.25em;
+    transform: rotate(-44deg);
+    width: 1em;
+}
+
+#faceted-form #faceted-results .photoAlbumEntry a::after {
+    transition: all 0.1s ease 0.1s;
+}
 
 /* ---  Je suis, je trouve --- */
 
