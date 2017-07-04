@@ -1,10 +1,17 @@
 Changelog
 =========
 
-0.5.4 (unreleased)
+0.5.5 (unreleased)
 ------------------
 
 - Nothing changed yet.
+
+
+0.5.4 (2017-07-04)
+------------------
+
+- Change css for login page and view facted list
+  [mgennart]
 
 
 0.5.3 (2017-07-03)
