@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.5.5 (unreleased)
+0.5.5 (2017-07-05)
 ------------------
 
-- Nothing changed yet.
-
+- Change css for view facted list.
+  [mgennart]
 
 0.5.4 (2017-07-04)
 ------------------
