@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.5.6 (unreleased)
+0.5.6 (2017-07-06)
 ------------------
 
-- Nothing changed yet.
+- Add fontello icon.
+  [mgennart]
 
 
 0.5.5 (2017-07-05)
