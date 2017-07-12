@@ -37,6 +37,25 @@ def clean_portal_skins(context):
         psk.manage_skinLayers(chosen=[skin], del_skin=1)
         logger.info('Deleted unused skin in portal_skins : {0}'.format(skin))
 
+    cpskin_skins_folders = [
+        'classic_images',
+        'dream_images',
+        'dreamRightPortlet_images',
+        'dreamRightPortletBasic_images',
+        'dreambasic_images',
+        'modern_images',
+        'retro_images',
+        'slab_images',
+        'smart_images',
+        'trendy_images',
+        'trendybasic_images',
+    ]
+    for folder in cpskin_skins_folders:
+        if folder not in psk.objectIds():
+            continue
+        psk._delObject(folder)
+        logger.info('Deleted unused folder in portal_skins : {0}'.format(folder))
+
 
 def upgrade_to_less(context):
     context.runAllImportStepsFromProfile('profile-collective.lesscss:default')
