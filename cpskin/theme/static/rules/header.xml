@@ -5,7 +5,7 @@
 
   <replace css:content-children="#portaltab-index_html a">
       <span class="icon-home" />
-  </replace
+  </replace>
   <before css:content="#portal-top">
     <xsl:copy-of select="//*[@id='messagesviewlet']" />
   </before>
