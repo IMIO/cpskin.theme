@@ -4,7 +4,8 @@ Changelog
 0.5.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Change fields order on organization pages : #17751
+  [laulaz]
 
 
 0.5.6 (2017-07-06)

@@ -24,6 +24,7 @@
   <xi:include href="/++theme++cpskin.theme.base/rules/content.xml"/>
   <xi:include href="/++theme++cpskin.theme.base/rules/right_actions.xml"/>
   <xi:include href="/++theme++cpskin.theme.base/rules/login.xml"/>
+  <xi:include href="/++theme++cpskin.theme.base/rules/annuaire.xml"/>
 
   <!-- Copy over the content -->
   <replace css:theme="body" css:content="body" />
