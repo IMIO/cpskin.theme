@@ -4,6 +4,9 @@ Changelog
 0.5.7 (unreleased)
 ------------------
 
+- Fix icon-home commented code by mistake
+  [laulaz]
+
 - Change fields order on organization pages : #17751
   [laulaz]
 
