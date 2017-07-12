@@ -22,6 +22,15 @@
         />
 
     <genericsetup:upgradeStep
+        title="CPSKIN Theme: upgrade to v3 (portal_skins cleanup)"
+        description="Upgrade step for CPSKIN Theme to clean portal_skins"
+        handler=".upgradehandlers.clean_portal_skins"
+        source="2"
+        destination="3"
+        profile="cpskin.theme:default"
+        />
+
+    <genericsetup:upgradeStep
         title="CPSKIN Theme: upgrade to v2 (LESS)"
         description="Upgrade step for CPSKIN Theme to v2 (LESS)"
         handler=".upgradehandlers.upgrade_to_less"

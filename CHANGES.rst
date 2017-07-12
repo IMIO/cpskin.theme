@@ -4,6 +4,9 @@ Changelog
 0.5.7 (unreleased)
 ------------------
 
+- Add upgrade to clean portal_skins from all cpskin (unused) skins
+  [laulaz]
+
 - Fix icon-home commented code by mistake
   [laulaz]
 

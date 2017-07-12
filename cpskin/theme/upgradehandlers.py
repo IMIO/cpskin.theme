@@ -12,6 +12,32 @@ from cpskin.theme.setuphandlers import CUSTOM_FOLDER_NAME
 logger = logging.getLogger('cpskin.theme')
 
 
+def clean_portal_skins(context):
+    """
+    Clean up all (unused) cpskin skins
+    """
+    psk = api.portal.get_tool('portal_skins')
+    cpskin_skins = [
+        'classic theme',
+        'dream theme',
+        'dreamRightPortlet theme',
+        'dreamRightPortletBasic theme',
+        'dreambasic theme',
+        'modern theme',
+        'retro theme',
+        'slab theme',
+        'smart theme',
+        'trendy theme',
+        'trendybasic theme',
+    ]
+    installed_skins = psk.getSkinSelections()
+    for skin in cpskin_skins:
+        if skin not in installed_skins:
+            continue
+        psk.manage_skinLayers(chosen=[skin], del_skin=1)
+        logger.info('Deleted unused skin in portal_skins : {0}'.format(skin))
+
+
 def upgrade_to_less(context):
     context.runAllImportStepsFromProfile('profile-collective.lesscss:default')
     context.runImportStepFromProfile(
