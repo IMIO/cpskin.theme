@@ -1,14 +1,69 @@
 
 /*  compte citoyen  */
 
+/* citizen  */
+
+.citizen {
+    background: #3d8acd none repeat scroll 0 0;
+    float: right;
+    margin-bottom: 1em;
+    padding: 0;
+    position: absolute;
+    right: 0;
+}
+
+.citizen h3 {
+    display:none;
+}
+
+#viewlet-below-content-title .citizen a, .citizen>div {
+    background: transparent;
+    padding: 0.5em 1.1em;
+    color: white !important;
+    float: left;
+}
+
+#portal-columns #viewlet-below-content-title .citizen a:hover {
+    color: white !important;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#content .citizen ul {
+    margin-bottom: 0;
+    margin-top: 0.5em;
+}
+
+.subsection-citizen-map .faceted-criteria-reset {
+    display: none;
+}
+
+/* fin citizen  */
+
+.user-citizen form p {
+    margin-top: 2em;
+}
+
+.formControls input, .citizen input {
+    background: #3d8acd;
+    padding: 1em 1.5em;
+    border: 1px solid #dddddd;
+    margin-right: 0.25em;
+    margin-left: 0.25em;
+    cursor: pointer;
+    border-radius: 2px;
+    color: white;
+}
+
+.formControls input:hover, .citizen input:hover {
+    background: #0E2240;
+    color: white;
+}
+
 .citizen a {
     background: lightgrey;
     padding: 0.5em 1em;
     color: black !important;
-}
-
-.section-annuaire.userrole-citizen-editor #portal-columns {
-    max-width: 1240px;
 }
 
 #content .citizen legend {
@@ -33,9 +88,9 @@ fieldset.citizen {
     max-width: 1200px;
 }
 
-.citizen-info-viewlet{
+/*.citizen-info-viewlet{
     display:none;
-}
+}*/
 
 .section-citizen-dashboard.template-facetednavigation_view #faceted-results {
     padding-left: 0;
@@ -46,15 +101,24 @@ fieldset.citizen {
     width: 100%;
 }
 
+.section-citizen-dashboard table.listing th,
 .section-citizen-dashboard table.listing td {
-    border-right: 1px solid #fff;
+    border-right: 0px solid #fff;
+}
+
+td:last-child.pretty_link {
+    text-align: center;
 }
 
 .pretty_link.state-created {
     text-align: center;
 }
 
-.td_cell_citizen-state-column .line-state.active {
+.td_cell_citizen-state-column div {
+    z-index: 1;
+}
+
+#faceted-results .dashboard-listing .td_cell_citizen-state-column .line-state.active {
     background: transparent !important;
     z-index: 0;
 }
@@ -98,10 +162,11 @@ fieldset.citizen {
     position: relative;
 }
 
-.userrole-citizen-editor #personaltools-dashboard,
-.userrole-citizen-editor #personaltools-undo, 
-.userrole-citizen-editor #personaltools-preferences,
-.userrole-citizen-editor #contentview-user_data-personal-preferences {
+.user-citizen #personaltools-dashboard,
+.user-citizen #personaltools-undo, 
+.user-citizen #personaltools-preferences,
+.user-citizen #contentview-user_data-personal-preferences,
+.user-citizen #content div.documentByLine {
     display: none;
 }
 
@@ -236,6 +301,7 @@ fieldset.citizen {
     left: 0.25em;
     position: absolute;
     top: 0;
+    font-size: 110%;
 }
 
 #useful-links-button::after {
@@ -300,16 +366,7 @@ fieldset.citizen {
 
 /*  Fin right actions  */
 
-/* citizen  */
 
-.citizen {
-    float: right;
-    background: lightgray;
-    padding: 1em;
-    border-radius: 2px;
-}
-
-/* fin citizen  */
 
 /* >>> breadcrumbs a supprimer lorsque la modifie sera apportee <<< */
 
@@ -344,6 +401,7 @@ body, h1, h2, h3, h4, h5, h6, #portal-globalnav li a{
 body #visual-portal-wrapper {
     float:left;
     width: 100% !important;
+    overflow: hidden;
 }
 
 /* --- Font size ---  */
@@ -2297,7 +2355,7 @@ iframe .player .title{
 }
 
 #footer-sitemap div.footer-static {
-    margin-left: 2%;
+    margin-left: 0;
     padding-bottom: 0.25em;
     padding-left: 0.5em;
 }
@@ -2345,7 +2403,7 @@ iframe .player .title{
 
 /*   Vue faceted agenda   */
 
-.day {
+#faceted-results .day {
     float: left;
     width: 100%;
 }
