@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.7 (unreleased)
+0.5.7 (2017-07-17)
 ------------------
 
 - Add upgrade to clean portal_skins from all cpskin (unused) skins / folders
