@@ -4,7 +4,8 @@ Changelog
 0.5.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Update css.
+  [osnickers]
 
 
 0.5.7 (2017-07-17)
