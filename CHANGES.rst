@@ -1,10 +1,17 @@
 Changelog
 =========
 
-0.5.8 (unreleased)
+0.5.9 (unreleased)
 ------------------
 
 - Nothing changed yet.
+
+
+0.5.8 (2017-07-17)
+------------------
+
+- Update css.
+  [osnickers]
 
 
 0.5.7 (2017-07-17)
