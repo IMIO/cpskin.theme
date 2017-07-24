@@ -4,7 +4,8 @@ Changelog
 0.5.9 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Css adaptations.
+  [bsuttor]
 
 
 0.5.8 (2017-07-17)
