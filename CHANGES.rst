@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.9 (unreleased)
+0.5.9 (2017-07-24)
 ------------------
 
 - Css adaptations.
