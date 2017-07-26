@@ -64,4 +64,13 @@
         permission="zope2.View"
         layer="..interfaces.ICPSkinThemeLayer"
         />
+    
+    <browser:page
+        name="isInPortalMode"
+        for="*"
+        class=".diazo.DiazoView"
+        attribute="isInPortalMode"
+        permission="zope2.View"
+        layer="..interfaces.ICPSkinThemeLayer"
+        />
 </configure>
