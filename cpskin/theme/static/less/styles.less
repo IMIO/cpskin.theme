@@ -1167,8 +1167,8 @@ ul.navTreeLevel0 {
     border: 1px solid lightblue;
 }
 
-.section-je-suis .photoAlbumEntryDescription, .section-je-suis .photoAlbumEntry img ,
-.section-je-trouve .photoAlbumEntryDescription, .section-je-trouve .photoAlbumEntry img{
+.section-je-suis .photoAlbumEntry img ,
+.section-je-trouve .photoAlbumEntry img{
     display:none;
 }
 
@@ -1209,16 +1209,6 @@ ul.navTreeLevel0 {
     width: 100%;
 }
 
-#faceted-results .photoAlbumEntry a {
-    border-bottom: 0 solid white !important;
-    font-size: 100%;
-    height: auto;
-    margin: 0;
-    padding-left: 0.5em;
-    text-align: left;
-    width: 100%;
-}
-
 .section-albums .photoAlbumEntry img {
     border: 0 solid #ccc;
     border-radius: 3px;
@@ -1231,12 +1221,6 @@ ul.navTreeLevel0 {
     line-height: 1.25em;
     min-height: 48px;
     padding: 0.75em 0 0;
-}
-
-#faceted-results .photoAlbumEntryTitle {
-    height: auto;
-    width: 98%;
-    font-size:108%;
 }
 
 .photoAlbumEntryTitle::before {
@@ -1305,12 +1289,22 @@ ul.navTreeLevel0 {
 /*  Vue faceted liste  */
 
 #faceted-results .photoAlbumEntry {
-    border-bottom: 1px solid lightgray;
     box-sizing: border-box;
     margin: 0;
     padding-bottom: 0;
     width: 100%;
     padding: 0;
+}
+
+#faceted-results .photoAlbumEntry a {
+    border-bottom: 1px solid #e6e6e6 !important;
+    font-size: 100%;
+    height: auto;
+    margin: 0;
+    padding-left: 0.5em;
+    text-align: left;
+    width: 88% !important;
+    color:#bebebe;
 }
 
 #faceted-results .photoAlbumEntry a::after {
@@ -1327,14 +1321,14 @@ ul.navTreeLevel0 {
 }
 
 #faceted-results .photoAlbumEntry a:hover::after {
-    background: #f2f2f2 none repeat scroll 0 0;
+    background: #f5f6fb none repeat scroll 0 0;
     bottom: 0;
     content: "";
     display: block;
     left: 0;
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 91% !important;
     z-index: -1;
 }
 
@@ -1346,11 +1340,16 @@ ul.navTreeLevel0 {
     transition: all 0.5s ease 0s;
     width: 93%;
     font-weight: bold;
-    font-size: 85%;
+    height: auto;
 }
+
 
 .photoAlbumEntryTitle::before, .faceted-criteria-hide-show, .faceted-criteria-hide {
     display: none;
+}
+
+#faceted-results .photoAlbumEntry a:hover .photoAlbumEntryTitle {
+    color: #3548b1 !important;
 }
 
 /*  Fin vue faceted liste  */
@@ -1362,10 +1361,9 @@ ul.navTreeLevel0 {
     float: right;
     font-size: 110%;
     font-weight: normal;
-    line-height: 0;
-    margin-right: 2em;
+    margin-right: 0;
     position: relative;
-    top: 0.25em;
+    top: 45% !important;
     transform: rotate(-44deg);
     width: 1em;
 }
@@ -1376,7 +1374,7 @@ ul.navTreeLevel0 {
 
 /* ---  Je suis, je trouve --- */
 
-#content .widget-fieldset legend {
+#formfield-form-widgets-date_adoption_historique.empty, #formfield-form-widgets-date_adoption.empty, #formfield-form-widgets-date_publication_historique.empty, #formfield-form-widgets-date_publication.empty, #formfield-form-widgets-date_echeance.empty {
     font-size: 125%;
     font-weight: normal;
     margin-bottom: 0.1em;
