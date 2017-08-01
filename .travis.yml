@@ -1,13 +1,18 @@
 language: python
+cache:
+  directories:
+    - eggs
+    - downloads
 python: 2.7
 install:
-  - mkdir -p buildout-cache/downloads
-  - python bootstrap.py -c travis.cfg
-  - bin/buildout -c travis.cfg -N
+  - python bootstrap.py
+  - bin/buildout -N buildout:download-cache=downloads annotate
+  - bin/buildout buildout:download-cache=downloads
 script:
+  - bin/code-analysis
   - bin/test
-  - bin/coverage run bin/test
 after_success:
+  - bin/createcoverage
   - pip install -q coveralls==0.5
   - coveralls
 notifications:
