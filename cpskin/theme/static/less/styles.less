@@ -1742,13 +1742,14 @@ dl.portlet dt, .portletWrapper dl.portlet dt a {
 .flexslider {
     border: 0px solid #FFFFFF;
     border-radius: 0px;
+    box-shadow: none;
 }
 
 .flexslider ul.slides li {
     margin-bottom: 0 !important;
 }
 
-#slider.flexslider .flex-caption {
+#slider-a-la-une.flexslider .flex-caption {
     background-color: #000000;
     height: 80px;
     margin-top: -93px;
@@ -1781,13 +1782,13 @@ dl.portlet dt, .portletWrapper dl.portlet dt a {
     margin: 0;
 }
 
-#flex #carousel ul li{
+#flex #carousel-a-la-une ul li{
     background-color:#666666;
     margin-right: 4px;
     width:233px !important;
 }
 
-#carousel .flex-caption h2 {
+#carousel-a-la-une .flex-caption h2 {
     font-size: 12px;
     font-weight: normal;
     height: 52px;
@@ -1795,8 +1796,13 @@ dl.portlet dt, .portletWrapper dl.portlet dt a {
     padding: 8px;
 }
 
-#carousel .flex-caption h2 a {
+#carousel-a-la-une .flex-caption h2 a {
     letter-spacing: 0.05em;
+}
+
+#slider-a-la-une .read-next-link,
+#carousel-a-la-une .read-next-link {
+    display: none;
 }
 
 /* >>> FIN SLIDER <<< */
