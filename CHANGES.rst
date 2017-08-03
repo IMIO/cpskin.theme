@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.12 (unreleased)
+0.5.12 (2017-08-03)
 -------------------
 
 - Fix data acquisition error on upgrade step.
