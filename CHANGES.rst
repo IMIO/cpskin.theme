@@ -4,7 +4,8 @@ Changelog
 0.5.12 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix data acquisition error on upgrade step.
+  [bsuttor]
 
 
 0.5.11 (2017-08-02)
@@ -137,7 +138,7 @@ Changelog
 -------------------
 
 - If you add a document named 'login-message' on navigation root, its content will be visible on login form.
-  [bsuttor] 
+  [bsuttor]
 
 
 0.4.11 (2016-06-13)

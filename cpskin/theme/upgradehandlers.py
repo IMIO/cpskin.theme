@@ -85,7 +85,7 @@ def migrate_existing_custom_to_less():
         return
     ploneCustom = getattr(custom, 'ploneCustom.css', None)
     title = ploneCustom.title
-    if hasattr(ploneCustom, 'data'):
+    if hasattr(ploneCustom, 'data') and getattr(ploneCustom, 'update_data', False):
         # File
         customCSS = ploneCustom.data
         ploneCustom.update_data('/*\nMigrated to LESS.\n*/')
