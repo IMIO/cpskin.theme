@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.5.13 (unreleased)
+0.5.13 (2017-08-16)
 -------------------
 
-- Nothing changed yet.
+- Add font mglabs in file fontello
+  [mgennart]
 
 
 0.5.12 (2017-08-03)
