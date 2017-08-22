@@ -444,17 +444,6 @@ h3 {
 h4 {
     font-weight: normal;
 }
-
-/* --- hamburger navigation mobile --- */
-@font-face {
-    font-family: 'mglabs';
-    src: url('../font/mglabs.eot');
-    src: url('../font/mglabs.eot'),
-          url('../font/mglabs.woff'),
-          url('../font/mglabs.ttf'),
-          url('../font/mglabs.svg');
-}
-
 #visual-portal-wrapper a:focus{
     outline: thin dotted;
 }
@@ -526,7 +515,7 @@ div#mobile-first-level-wrapper a {
 #mobnav-btn::before,
 .advb-title::before {
     content: "\f008" !important;
-    font-family: "mglabs" !important;
+    font-family: "fontello" !important;
     padding-right: 0.25em;
 }
 
@@ -1743,13 +1732,14 @@ dl.portlet dt, .portletWrapper dl.portlet dt a {
 .flexslider {
     border: 0px solid #FFFFFF;
     border-radius: 0px;
+    box-shadow: none;
 }
 
 .flexslider ul.slides li {
     margin-bottom: 0 !important;
 }
 
-#slider.flexslider .flex-caption {
+#slider-a-la-une.flexslider .flex-caption {
     background-color: #000000;
     height: 80px;
     margin-top: -93px;
@@ -1782,13 +1772,13 @@ dl.portlet dt, .portletWrapper dl.portlet dt a {
     margin: 0;
 }
 
-#flex #carousel ul li{
+#flex #carousel-a-la-une ul li{
     background-color:#666666;
     margin-right: 4px;
     width:233px !important;
 }
 
-#carousel .flex-caption h2 {
+#carousel-a-la-une .flex-caption h2 {
     font-size: 12px;
     font-weight: normal;
     height: 52px;
@@ -1796,8 +1786,13 @@ dl.portlet dt, .portletWrapper dl.portlet dt a {
     padding: 8px;
 }
 
-#carousel .flex-caption h2 a {
+#carousel-a-la-une .flex-caption h2 a {
     letter-spacing: 0.05em;
+}
+
+#slider-a-la-une .read-next-link,
+#carousel-a-la-une .read-next-link {
+    display: none;
 }
 
 /* >>> FIN SLIDER <<< */
@@ -2176,20 +2171,6 @@ li.bloc-item a h3 {
     overflow: hidden;
 	position: relative;
 }
-
-li.bloc-item a h3::after {
-    content: "\00a0";
-    display: block;
-    bottom: 0;
-    position: absolute;
-    width: 38%;
-    left: 52%;
-	background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(234,234,234,0.99) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(234,234,234,0.99) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(234,234,234,0.99) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6eaeaea',GradientType=1 ); /* IE6-9 */
-}
-
 
 #content .results ul {
     margin-bottom: 0;

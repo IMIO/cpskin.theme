@@ -19,3 +19,9 @@ var/
 src/
 include/
 lib/
+local/
+share/
+.coverage
+htmlcov/
+pip-selfcheck.json
+

@@ -1,10 +1,31 @@
 Changelog
 =========
 
-0.5.11 (unreleased)
+0.5.14 (unreleased)
 -------------------
 
 - Nothing changed yet.
+
+
+0.5.13 (2017-08-16)
+-------------------
+
+- Add font mglabs in file fontello
+  [mgennart]
+
+
+0.5.12 (2017-08-03)
+-------------------
+
+- Fix data acquisition error on upgrade step.
+  [bsuttor]
+
+
+0.5.11 (2017-08-02)
+-------------------
+
+- Change css for slider.
+   [mgennart]
 
 
 0.5.10 (2017-07-26)
@@ -130,7 +151,7 @@ Changelog
 -------------------
 
 - If you add a document named 'login-message' on navigation root, its content will be visible on login form.
-  [bsuttor] 
+  [bsuttor]
 
 
 0.4.11 (2016-06-13)
