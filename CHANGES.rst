@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.5.15 (unreleased)
+0.5.15 (2017-08-22)
 -------------------
 
-- Nothing changed yet.
+- Change font-size #portal-top for mobile
+  [mgennart]
 
 
 0.5.14 (2017-08-22)
