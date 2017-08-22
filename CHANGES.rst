@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.5.14 (unreleased)
+0.5.14 (2017-08-22)
 -------------------
 
-- Nothing changed yet.
+- Change css for img.
+  [mgennart]
 
 
 0.5.13 (2017-08-16)
