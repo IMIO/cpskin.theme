@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.5.16 (unreleased)
+0.5.16 (2017-08-24)
 -------------------
 
-- Nothing changed yet.
+- Change css for image to contact.
+  [mgennart]
 
 
 0.5.15 (2017-08-22)
