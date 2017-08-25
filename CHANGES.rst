@@ -4,7 +4,9 @@ Changelog
 0.5.17 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Use new div to be able to fill schedule, etc. in Diazo even if activity is
+  empty : #18469
+  [laulaz]
 
 
 0.5.16 (2017-08-24)

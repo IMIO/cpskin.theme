@@ -5,7 +5,7 @@
 
   <rules css:if-content="body.portaltype-organization">
 
-    <replace css:content-children="#activity">
+    <replace css:content-children="#before-activity">
       <div id="contact-schedule">
         <xsl:copy-of select="//div[@id='organization']/div[@class='contact-details']" />
         <xsl:copy-of select="//div[@id='organization']/fieldset[@class='Schedule']" />
