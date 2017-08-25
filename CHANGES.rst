@@ -4,6 +4,10 @@ Changelog
 0.5.17 (unreleased)
 -------------------
 
+- Avoid camelcase in manifest.cfg
+  See http://blog.affinitic.be/2014/08/12/beware-of-uppercase-letters-in-your-config-files/
+  [laulaz]
+
 - Remove useless social links on contact card
   [laulaz]
 
