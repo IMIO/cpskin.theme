@@ -4,6 +4,9 @@ Changelog
 0.5.17 (unreleased)
 -------------------
 
+- Remove useless social links on contact card
+  [laulaz]
+
 - Use new div to be able to fill schedule, etc. in Diazo even if activity is
   empty : #18469
   [laulaz]

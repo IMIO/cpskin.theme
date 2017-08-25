@@ -25,6 +25,7 @@
       <xsl:copy-of select="//div[@id='viewlet-above-content-title']/*[@class!='visualClear']" />
   </replace>
   <drop css:content="#viewlet-below-content-body .sc_social_bookmarks_viewlet" />
+  <drop css:content="#organization .sc_social_bookmarks_viewlet" />
   <drop css:content="#viewlet-above-content-title" />
 
 </rules>
