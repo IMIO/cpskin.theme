@@ -63,6 +63,14 @@ class DiazoView(BrowserView):
             return True
         return False
 
+    def is_folder_view(self):
+        """
+        Returns true if we are on an index view
+        """
+        context = self.context
+        layout = context.getLayout()
+        return (layout == 'folderview')
+
     def get_environment(self):
         """
         Get value of ENV environment variable.
