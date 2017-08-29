@@ -4,7 +4,8 @@ Changelog
 0.5.18 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix blank page print problem : #18514
+  [laulaz]
 
 
 0.5.17 (2017-08-25)
