@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.18 (unreleased)
+0.5.18 (2017-08-29)
 -------------------
 
 - Fix blank page print problem : #18514
