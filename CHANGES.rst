@@ -4,7 +4,8 @@ Changelog
 0.5.21 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix print margin problem when there is a portlet : #18514
+  [laulaz]
 
 
 0.5.20 (2017-08-31)
