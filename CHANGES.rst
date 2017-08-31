@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.21 (unreleased)
+0.5.21 (2017-08-31)
 -------------------
 
 - Fix print margin problem when there is a portlet : #18514
