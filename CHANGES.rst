@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.20 (unreleased)
+0.5.20 (2017-08-31)
 -------------------
 
 - Nothing changed yet.
