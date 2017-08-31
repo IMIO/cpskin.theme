@@ -10,13 +10,15 @@ Changelog
 0.5.20 (2017-08-31)
 -------------------
 
-- Nothing changed yet.
+- Fix bad release
+  [boulch]
 
 
 0.5.19 (2017-08-31)
 -------------------
 
-- Nothing changed yet.
+- Update styles.less
+  [osnickers]
 
 
 0.5.18 (2017-08-29)
