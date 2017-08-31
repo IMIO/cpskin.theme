@@ -182,29 +182,36 @@ td:last-child.pretty_link {
 /* affichage right panel  */
 
 
-#other-actions::before {
+#other-actions div:first-child::before {
     color: gray;
     content: "Partager";
     font-size: 11px;
     position: absolute;
-    right: -5px;
+    right: -7px;
     text-transform: uppercase;
-    top: 11em;
+    top: -8em;
     transform: rotate(-90deg);
 }
-#other-actions::after {
+
+#other-actions div:first-child::after {
     border-right: 1px solid gray;
     bottom: 0;
     content: "";
     height: 18px;
     left: 0;
     position: absolute;
-    top: 11em;
+    top: -1.5em;
     width: 0.55em;
 }
+
 #other-actions {
-    padding-top: 13em;
+    padding-top: 9em;
     position: relative;
+}
+
+#other-actions li a {
+    float: left;
+    margin-top: 0.1em;
 }
 
 .shown-right-panel {
@@ -262,15 +269,15 @@ td:last-child.pretty_link {
     position: absolute;
     right: -3em;
     width: 2em;
-    top:4em;
+    top:2em;
 }
 
 #right-actions-viewlet .iconifiedDocumentActions {
     float: left;
     padding: 0.25em 0 0;
     text-align: left;
-    top: 2.25em;
     margin:0;
+    position: relative;
 }
 
 .nav-is-stuck #right-actions-viewlet-inner{
@@ -291,6 +298,7 @@ td:last-child.pretty_link {
 
 .nav-is-stuck #right-actions-viewlet-inner a::after {
     color: #0e2240;
+    text-shadow: 0 0 0 transparent;
 }
 
 #right-actions-viewlet-inner > a::after{
@@ -300,6 +308,7 @@ td:last-child.pretty_link {
     position: absolute;
     top: 0;
     font-size: 110%;
+    text-shadow: 0 0 2px black;
 }
 
 #useful-links-button::after {
@@ -320,6 +329,7 @@ td:last-child.pretty_link {
 #right-actions-viewlet-inner {
 	width: 2em;
 	padding-top:4em;
+    z-index: 1;
 }
 
 #right-actions-viewlet-inner a{
@@ -370,6 +380,8 @@ td:last-child.pretty_link {
 
 #portal-columns{
 	padding-top:1em;
+    padding-right:3.5em;
+    box-sizing: border-box;
 }
 
 #content-core {
@@ -1068,9 +1080,9 @@ ul.navTreeLevel0 {
     vertical-align:top;
 }
 
-#portal-globalnav-cpskinmenu .direct_access .firstItem a {
+/*#portal-globalnav-cpskinmenu .direct_access .firstItem a {
     margin-top: 0em !important;
-}
+}*/
 
 .navTreeClose {
     font-size: 22px;
