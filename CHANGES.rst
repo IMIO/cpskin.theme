@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.22 (unreleased)
+0.5.22 (2017-09-01)
 -------------------
 
 - Clear right-actions-viewlet.
