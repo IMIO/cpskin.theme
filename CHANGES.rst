@@ -4,7 +4,8 @@ Changelog
 0.5.22 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Clear right-actions-viewlet.
+  [osnickers].
 
 
 0.5.21 (2017-08-31)
