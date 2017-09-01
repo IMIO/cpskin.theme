@@ -1,10 +1,31 @@
 Changelog
 =========
 
-0.5.19 (unreleased)
+0.5.22 (unreleased)
 -------------------
 
 - Nothing changed yet.
+
+
+0.5.21 (2017-08-31)
+-------------------
+
+- Fix print margin problem when there is a portlet : #18514
+  [laulaz]
+
+
+0.5.20 (2017-08-31)
+-------------------
+
+- Fix bad release
+  [boulch]
+
+
+0.5.19 (2017-08-31)
+-------------------
+
+- Update styles.less
+  [osnickers]
 
 
 0.5.18 (2017-08-29)

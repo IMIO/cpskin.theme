@@ -11,6 +11,6 @@
     display: none;
 }
 
-div.position-0 {
+#portal-column-content {
     margin-left: 0 !important;
 }
