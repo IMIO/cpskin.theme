@@ -181,6 +181,9 @@ td:last-child.pretty_link {
 
 /* affichage right panel  */
 
+#other-actions .leadImage {
+    display: none;
+}
 
 #other-actions div:first-child::before {
     color: gray;
@@ -205,7 +208,7 @@ td:last-child.pretty_link {
 }
 
 #other-actions {
-    padding-top: 9em;
+    padding-top: 10em;
     position: relative;
 }
 
@@ -219,6 +222,37 @@ td:last-child.pretty_link {
     padding:1em;
     max-height: 30em;
     overflow-y: auto;
+    background: #fff none repeat scroll 0 0;
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-top: -5.75em;
+    position: absolute;
+    right: 3em;
+    width: 18em;
+    z-index: 1;
+}
+
+
+.shown-right-panel dt {
+    color: grey;
+    margin-bottom: 0.75em;
+}
+
+.shown-right-panel #document-toc .portletHeader {
+    color: grey;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 1em;
+    padding-left: 0;
+}
+
+.shown-right-panel dd {
+    margin-bottom: 0.25em;
+}
+
+.shown-right-panel dd li, .shown-right-panel dd li a {
+    color: #3548b1 !important;
 }
 
 .shown-right-panel #document-toc{
@@ -245,7 +279,7 @@ td:last-child.pretty_link {
 #right-actions-viewlet .icons_only a,
 #right-actions-viewlet .iconifiedDocumentActions a{
     color:#0f2241;
-    margin-top: 0.25em;
+    margin-top: 0.5em;
 }
 
 #right-actions-viewlet .sc_social_bookmarks li a.icon-Facebook::before {
@@ -305,11 +339,198 @@ td:last-child.pretty_link {
 #right-actions-viewlet-inner > a::after{
     color: white;
     font-family: fontello;
-    left: 0.25em;
+    left: 0.1em;
     position: absolute;
     top: 0;
     font-size: 110%;
-    text-shadow: 0 0 2px black;
+}
+
+
+#portal-column-content.position-1\:4.width-3\:4 .event.summary.details::before {
+    background: #3548b1 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 1.3em;
+}
+#content ul, .portletStaticText ul {
+    list-style-type: disc;
+}
+#content ul {
+    margin-bottom: 1em;
+}
+#content ul, #content ol {
+}
+#content ul, .portletStaticText ul {
+    list-style-type: disc;
+    margin-left: 2em;
+}
+.event.summary.details, .event.summary.details ul {
+    margin-left: 0;
+}
+.event.summary.details {
+    background: #3548b1 none repeat scroll 0 0;
+    color: white;
+    margin-bottom: 2em;
+    margin-left: 0;
+    padding: 2em 0;
+    position: relative;
+    width: 100%;
+}
+.event.summary {
+    clear: right;
+    float: right;
+}
+* ul, ol {
+    list-style: outside none none;
+}
+* ul, ol {
+    list-style: outside none none;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+#content-core {
+    color: #333333;
+}
+#content-core {
+    color: #333333;
+}
+#content {
+    font-size: 80%;
+    line-height: 1.5em;
+}
+#content {
+    font-size: 100%;
+}
+#content {
+    font-size: 100%;
+}
+#content {
+    font-size: 80%;
+    line-height: 1.5em;
+}
+body {
+    color: black;
+    font: 100% Arial,FreeSans,sans-serif;
+}
+body, h1, h2, h3, h4, h5, h6, #portal-globalnav li a {
+    font-family: Open Sans;
+}
+body, h1, h2, h3, h4, h5, h6, #portal-globalnav li a {
+    font-family: Open Sans;
+}
+body {
+    color: black;
+    font: 100% Arial,FreeSans,sans-serif;
+}
+
+#portal-column-content.position-1\:4.width-3\:4 .event.summary.details::before {
+    background: #3548b1 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 1.3em;
+}
+#content ul, .portletStaticText ul {
+    list-style-type: disc;
+}
+#content ul {
+    margin-bottom: 1em;
+}
+#content ul, #content ol {
+}
+#content ul, .portletStaticText ul {
+    list-style-type: disc;
+    margin-left: 2em;
+}
+.event.summary.details, .event.summary.details ul {
+    margin-left: 0;
+}
+.event.summary.details {
+    background: #3548b1 none repeat scroll 0 0;
+    color: white;
+    margin-bottom: 2em;
+    margin-left: 0;
+    padding: 2em 0;
+    position: relative;
+    width: 100%;
+}
+.event.summary {
+    clear: right;
+    float: right;
+}
+* ul, ol {
+    list-style: outside none none;
+}
+* ul, ol {
+    list-style: outside none none;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+#content-core {
+    color: #333333;
+}
+#content-core {
+    color: #333333;
+}
+#content {
+    font-size: 80%;
+    line-height: 1.5em;
+}
+#content {
+    font-size: 100%;
+}
+#content {
+    font-size: 100%;
+}
+#content {
+    font-size: 80%;
+    line-height: 1.5em;
+}
+body {
+    color: black;
+    font: 100% Arial,FreeSans,sans-serif;
+}
+body, h1, h2, h3, h4, h5, h6, #portal-globalnav li a {
+    font-family: Open Sans;
+}
+body, h1, h2, h3, h4, h5, h6, #portal-globalnav li a {
+    font-family: Open Sans;
+}
+body {
+    color: black;
+    font: 100% Arial,FreeSans,sans-serif;
+}
+#right-actions-viewlet-inner > a::before {
+    background: white none repeat scroll 0 0;
+    border-radius: 0 4px 4px 0;
+    content: "";
+    height: 1.75em;
+    left: -1em;
+    opacity: 0.4;
+    position: absolute;
+    top: -0.25em;
+    width: 3.25em;
+}
+
+.nav-is-stuck #right-actions-viewlet-inner > a::before{
+    opacity: 1;
 }
 
 #useful-links-button::after {
@@ -354,18 +575,8 @@ td:last-child.pretty_link {
     width: 18em;
 }
 
-.shown-right-panel {
-    background: #f2f2f2 none repeat scroll 0 0;
-    display: block;
-    margin-top: -5.1em;
-    position: absolute;
-    right: 3em;
-    width: 18em;
-    z-index: 1;
-}
-
 .nav-is-stuck .shown-right-panel {
-    margin-top: -3.1em;
+    margin-top: -2.25em;
 }
 
 #document-toc {
@@ -1472,9 +1683,9 @@ div.width-1\:2 {
 }
 
 img.image-right {
+    border: 0 solid white;
     clear: both;
-    margin:0.5em 0 0.5em 0.5em;
-    border:0px solid white;
+    margin: 0.5em 1em 1.5em 1.5em;
 }
 
 /* --- Affiche actions vue content dossier bas de page --- */
