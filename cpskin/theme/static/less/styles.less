@@ -192,7 +192,7 @@ td:last-child.pretty_link {
     position: absolute;
     right: -7px;
     text-transform: uppercase;
-    top: -8em;
+    top: -7em;
     transform: rotate(-90deg);
 }
 
@@ -203,12 +203,12 @@ td:last-child.pretty_link {
     height: 18px;
     left: 0;
     position: absolute;
-    top: -1.5em;
+    top: -1em;
     width: 0.55em;
 }
 
 #other-actions {
-    padding-top: 10em;
+    padding-top: 11.5em;
     position: relative;
 }
 
@@ -219,13 +219,13 @@ td:last-child.pretty_link {
 
 .shown-right-panel {
     width: 20em !important;
-    padding:1em;
+    padding:1em 1em 1.5em 1em;
     max-height: 30em;
     overflow-y: auto;
     background: #fff none repeat scroll 0 0;
     box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.2);
     display: block;
-    margin-top: -5.75em;
+    margin-top: -6.5em;
     position: absolute;
     right: 3em;
     width: 18em;
@@ -336,13 +336,14 @@ td:last-child.pretty_link {
     text-shadow: 0 0 0 transparent;
 }
 
-#right-actions-viewlet-inner > a::after{
+#right-actions-viewlet-inner > a::after {
     color: white;
     font-family: fontello;
+    font-size: 110%;
     left: 0.1em;
     position: absolute;
+    text-shadow: 0 0 7px #0e213f;
     top: 0;
-    font-size: 110%;
 }
 
 
@@ -355,14 +356,39 @@ td:last-child.pretty_link {
     top: 0;
     width: 1.3em;
 }
-#content ul, .portletStaticText ul {
-    list-style-type: disc;
+
+.event.summary.details, .event.summary.details ul {
+    margin-left: 0;
 }
+.event.summary.details {
+    background: #3548b1 none repeat scroll 0 0;
+    color: white;
+    margin-bottom: 2em;
+    margin-left: 0;
+    padding: 2em 0;
+    position: relative;
+    width: 100%;
+}
+.event.summary {
+    clear: right;
+    float: right;
+}
+
+
+#portal-column-content.position-1\:4.width-3\:4 .event.summary.details::before {
+    background: #3548b1 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 1.3em;
+}
+
 #content ul {
     margin-bottom: 1em;
 }
-#content ul, #content ol {
-}
+
 #content ul, .portletStaticText ul {
     list-style-type: disc;
     margin-left: 2em;
@@ -389,144 +415,17 @@ td:last-child.pretty_link {
 * ul, ol {
     list-style: outside none none;
 }
-* {
-    margin: 0;
-    padding: 0;
-}
-* {
-    margin: 0;
-    padding: 0;
-}
-#content-core {
-    color: #333333;
-}
-#content-core {
-    color: #333333;
-}
-#content {
-    font-size: 80%;
-    line-height: 1.5em;
-}
-#content {
-    font-size: 100%;
-}
-#content {
-    font-size: 100%;
-}
-#content {
-    font-size: 80%;
-    line-height: 1.5em;
-}
-body {
-    color: black;
-    font: 100% Arial,FreeSans,sans-serif;
-}
-body, h1, h2, h3, h4, h5, h6, #portal-globalnav li a {
-    font-family: Open Sans;
-}
-body, h1, h2, h3, h4, h5, h6, #portal-globalnav li a {
-    font-family: Open Sans;
-}
-body {
-    color: black;
-    font: 100% Arial,FreeSans,sans-serif;
-}
 
-#portal-column-content.position-1\:4.width-3\:4 .event.summary.details::before {
-    background: #3548b1 none repeat scroll 0 0;
-    bottom: 0;
-    content: "";
-    position: absolute;
-    right: 100%;
-    top: 0;
-    width: 1.3em;
-}
-#content ul, .portletStaticText ul {
-    list-style-type: disc;
-}
-#content ul {
-    margin-bottom: 1em;
-}
-#content ul, #content ol {
-}
-#content ul, .portletStaticText ul {
-    list-style-type: disc;
-    margin-left: 2em;
-}
-.event.summary.details, .event.summary.details ul {
-    margin-left: 0;
-}
-.event.summary.details {
-    background: #3548b1 none repeat scroll 0 0;
-    color: white;
-    margin-bottom: 2em;
-    margin-left: 0;
-    padding: 2em 0;
-    position: relative;
-    width: 100%;
-}
-.event.summary {
-    clear: right;
-    float: right;
-}
-* ul, ol {
-    list-style: outside none none;
-}
-* ul, ol {
-    list-style: outside none none;
-}
-* {
-    margin: 0;
-    padding: 0;
-}
-* {
-    margin: 0;
-    padding: 0;
-}
-#content-core {
-    color: #333333;
-}
-#content-core {
-    color: #333333;
-}
-#content {
-    font-size: 80%;
-    line-height: 1.5em;
-}
-#content {
-    font-size: 100%;
-}
-#content {
-    font-size: 100%;
-}
-#content {
-    font-size: 80%;
-    line-height: 1.5em;
-}
-body {
-    color: black;
-    font: 100% Arial,FreeSans,sans-serif;
-}
-body, h1, h2, h3, h4, h5, h6, #portal-globalnav li a {
-    font-family: Open Sans;
-}
-body, h1, h2, h3, h4, h5, h6, #portal-globalnav li a {
-    font-family: Open Sans;
-}
-body {
-    color: black;
-    font: 100% Arial,FreeSans,sans-serif;
-}
 #right-actions-viewlet-inner > a::before {
     background: white none repeat scroll 0 0;
     border-radius: 0 4px 4px 0;
     content: "";
-    height: 1.75em;
+    height: 2.2em;
     left: -1em;
-    opacity: 0.4;
+    opacity: 0.3;
     position: absolute;
-    top: -0.25em;
-    width: 3.25em;
+    top: -0.5em;
+    width: 3em;
 }
 
 .nav-is-stuck #right-actions-viewlet-inner > a::before{
@@ -550,7 +449,7 @@ body {
 
 #right-actions-viewlet-inner {
 	width: 2em;
-	padding-top:4em;
+	padding-top:3em;
     z-index: 1;
 }
 
@@ -562,8 +461,9 @@ body {
     color: transparent;
     display: block;
     height: 2em;
+    margin-bottom: 0.5em;
     position: relative;
-    z-index:1;
+    z-index: 1;
 }
 
 .right-action-panel {
@@ -576,7 +476,7 @@ body {
 }
 
 .nav-is-stuck .shown-right-panel {
-    margin-top: -2.25em;
+    margin-top: -3em;
 }
 
 #document-toc {
@@ -1497,12 +1397,17 @@ ul.navTreeLevel0 {
 
 /*  Vue faceted liste  */
 
+.template-facetednavigation_view #faceted-results{
+    margin-bottom: 1.75em;
+}
+
 #faceted-results .photoAlbumEntry {
     box-sizing: border-box;
     margin: 0;
     padding-bottom: 0;
     width: 100%;
     padding: 0;
+    z-index: 0;
 }
 
 #faceted-results .photoAlbumEntry a {
@@ -1563,7 +1468,7 @@ ul.navTreeLevel0 {
 
 /*  Fin vue faceted liste  */
 
-.photoAlbumEntry a::before {
+.template-facetednavigation_view .photoAlbumEntry a::before {
     border-radius: 11px;
     color: black;
     content: "⌟";
@@ -1572,7 +1477,7 @@ ul.navTreeLevel0 {
     font-weight: normal;
     margin-right: 0;
     position: relative;
-    top: 45% !important;
+    top: -0.25em;
     transform: rotate(-44deg);
     width: 1em;
 }
@@ -2424,7 +2329,6 @@ li.bloc-item a h3 {
 }
 
 .voir-tout{
-    text-transform: lowercase;
     float:right;
     border-bottom:0px solid white !important;
     position: relative;
