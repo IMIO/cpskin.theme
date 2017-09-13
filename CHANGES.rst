@@ -1,10 +1,17 @@
 Changelog
 =========
 
-0.5.26 (unreleased)
+0.5.27 (unreleased)
 -------------------
 
 - Nothing changed yet.
+
+
+0.5.26 (2017-09-13)
+-------------------
+
+- Keep related content also below content (not only in right actions) : #18688
+  [laulaz]
 
 
 0.5.25 (2017-09-13)
