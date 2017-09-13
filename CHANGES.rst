@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.26 (unreleased)
+0.5.26 (2017-09-13)
 -------------------
 
 - Keep related content also below content (not only in right actions) : #18688
