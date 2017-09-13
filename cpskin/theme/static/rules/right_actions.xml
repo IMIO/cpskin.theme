@@ -11,7 +11,6 @@
   <replace css:content-children="#useful-links-related-contents">
       <xsl:copy-of select="//div[@class='relatedItems']" />
   </replace>
-  <drop css:content="#viewlet-below-content-body div.relatedItems" />
 
   <rules css:if-content="#useful-links-portlets">
       <replace css:content-children="#useful-links-portlets">

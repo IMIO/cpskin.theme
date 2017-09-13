@@ -4,7 +4,8 @@ Changelog
 0.5.26 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Keep related content also below content (not only in right actions) : #18688
+  [laulaz]
 
 
 0.5.25 (2017-09-13)
