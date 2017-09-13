@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.5.27 (unreleased)
+0.5.27 (2017-09-13)
 -------------------
 
-- Nothing changed yet.
+- Change css for .template-facetednavigation_view .select2-results.
+  [mgennart]
 
 
 0.5.26 (2017-09-13)
