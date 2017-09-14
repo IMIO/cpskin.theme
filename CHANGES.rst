@@ -4,7 +4,7 @@ Changelog
 0.5.28 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Change css.
 
 
 0.5.27 (2017-09-13)
