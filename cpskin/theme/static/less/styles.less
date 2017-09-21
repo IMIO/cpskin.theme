@@ -342,7 +342,7 @@ td:last-child.pretty_link {
     font-size: 110%;
     left: 0.1em;
     position: absolute;
-    text-shadow: 0 0 7px #0e213f;
+    text-shadow: 0 0 4px #0e213f;
     top: 0;
 }
 
@@ -1991,8 +1991,34 @@ dl.portlet dt, .portletWrapper dl.portlet dt a {
     margin-bottom: -1px;
 }
 
-#viewlet-below-content-body > div {
+#viewlet-below-content-body > div.relatedItems {
+    padding-top: 1em;
+}
+
+#viewlet-below-content-body > div.relatedItems dl {
+    background: #f2f2f2 none repeat scroll 0 0;
+    border-left: 5px solid #bebebe;
     clear: both;
+    margin-top: 2em;
+    padding: 2em;
+}
+
+#viewlet-below-content-body > div.relatedItems dt {
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    float:left;
+}
+#viewlet-below-content-body > div.relatedItems dt:before{
+    content:"\e838";
+    font-family: fontello;
+    margin-right: 0.75em;
+}
+
+
+#viewlet-below-content-body #relatedItemBox > dd {
+    margin-bottom: 0.25em;
+    margin-left: 1em;
+    clear:both;
 }
 
 /* >>> FIN COLELCTIVE GEO <<< */
