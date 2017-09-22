@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.5.29 (unreleased)
+0.5.29 (2017-09-22)
 -------------------
 
-- Nothing changed yet.
+- Change css.
+  [osnickers]
 
 
 0.5.28 (2017-09-14)
