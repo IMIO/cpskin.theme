@@ -4,7 +4,8 @@ Changelog
 0.5.30 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Check if context is dexterity to check is_folder_view.
+  [bsuttor]
 
 
 0.5.29 (2017-09-22)

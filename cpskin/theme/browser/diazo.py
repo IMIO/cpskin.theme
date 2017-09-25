@@ -3,6 +3,7 @@ from Acquisition import aq_inner
 from plone import api
 from plone.app.layout.navigation.interfaces import INavigationRoot
 from plone.app.theming.utils import getCurrentTheme
+from plone.dexterity.interfaces import IDexterityContent 
 from plone.outputfilters.filters.resolveuid_and_caption import ResolveUIDAndCaptionFilter  # noqa
 from Products.Five.browser import BrowserView
 from zope.component import getMultiAdapter
@@ -68,8 +69,11 @@ class DiazoView(BrowserView):
         Returns true if we are on an index view
         """
         context = self.context
-        layout = context.getLayout()
-        return (layout == 'folderview')
+        if IDexterityContent.providedBy(self.context):
+            layout = context.getLayout()
+            return (layout == 'folderview')
+        else:
+            return False
 
     def get_environment(self):
         """
