@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.30 (unreleased)
+0.5.30 (2017-09-25)
 -------------------
 
 - Check if context is dexterity to check is_folder_view.
