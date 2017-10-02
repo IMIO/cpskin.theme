@@ -1,10 +1,24 @@
 Changelog
 =========
 
-0.5.29 (unreleased)
+0.5.31 (unreleased)
 -------------------
 
 - Nothing changed yet.
+
+
+0.5.30 (2017-09-25)
+-------------------
+
+- Check if context is dexterity to check is_folder_view.
+  [bsuttor]
+
+
+0.5.29 (2017-09-22)
+-------------------
+
+- Change css.
+  [osnickers]
 
 
 0.5.28 (2017-09-14)
