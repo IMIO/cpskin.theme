@@ -190,7 +190,7 @@ td:last-child.pretty_link {
     content: "Partager";
     font-size: 11px;
     position: absolute;
-    right: -7px;
+    right: -0.9em;
     text-transform: uppercase;
     top: -7em;
     transform: rotate(-90deg);
@@ -268,7 +268,8 @@ td:last-child.pretty_link {
     display:block;
 }
 
-#right-actions-viewlet .sc_social_bookmarks li a img {
+#right-actions-viewlet .sc_social_bookmarks li a img,
+.timezone{
     display: none;
 }
 
@@ -302,9 +303,9 @@ td:last-child.pretty_link {
 
 #right-actions-viewlet {
     position: absolute;
-    right: -3em;
+    right: 0.5em;
+    top: 2em;
     width: 2em;
-    top:2em;
 }
 
 #right-actions-viewlet .iconifiedDocumentActions {
@@ -313,6 +314,7 @@ td:last-child.pretty_link {
     text-align: left;
     margin:0;
     position: relative;
+    width: 1.9em;
 }
 
 .nav-is-stuck #right-actions-viewlet-inner{
@@ -492,17 +494,16 @@ td:last-child.pretty_link {
 
 #portal-columns{
 	padding-top:1em;
-    padding-right:3.5em;
     box-sizing: border-box;
 }
 
-
-#portal-column-two > div {
-    margin-right: -3.5em;
-    padding-left: 1.25em;
+#portal-columns #portal-column-content {
+    padding-right: 3.5em;
+    box-sizing: border-box;
 }
 
-.main-homepage #portal-columns{
+.main-homepage #portal-columns #portal-column-content,
+.template-folderview #portal-columns #portal-column-content{
     padding-right:0;
 }
 
