@@ -92,18 +92,10 @@ fieldset.citizen {
 
 /*  navigation par facettes  */
 
+
 .section-annuaire #portal-columns {
    max-width: 100%;
    width: 100%;
-}
-
-.section-annuaire #content-core/*,
-#content header,
-#viewlet-below-content-title,
-#edit-bar,
-#organization*/ {
-   margin: 0 auto;
-   padding: 0 2em;
 }
 
 #content .widget-fieldset li {
@@ -129,8 +121,51 @@ fieldset.citizen {
     background-position: 0 4px;
 }
 
+#top-area .faceted-widget.faceted-criteria-widget.section-filtres-actifs {
+    box-sizing: border-box;
+    clear: left;
+    float: left;
+    margin-top: 1em;
+    padding-bottom: 0em;
+    padding-left: 1em;
+    padding-top: 0em;
+    position: relative;
+    width: 100%;
+}
+
+.widget-fieldset.faceted-criteria legend,
+.widget-fieldset.faceted-criteria dl,
+.widget-fieldset.faceted-criteria dl dt,
+.widget-fieldset.faceted-criteria dl dd,
+.widget-fieldset.faceted-criteria div {
+    float: left;
+}
+
+#visual-portal-wrapper #portal-columns #content .faceted-text-widget.section-recherche legend,
+#visual-portal-wrapper #portal-columns #content .faceted-text-widget.section-search legend,
+.widget-fieldset.faceted-criteria dd a {
+    display: none;
+}
+
+#content .faceted-criteria dd {
+    font-weight: normal;
+    margin-left: 0;
+}
+
+.faceted-criteria dt span::after {
+    content: "-";
+    margin-left: 1em;
+}
+
 #content legend {
     padding: 0.5em 0.25em 0.25em;
+}
+
+.faceted-widget.faceted-layout-widget.section-affichage {
+    bottom: -1.35em;
+    position: absolute;
+    right: 20%;
+    z-index: 1;
 }
 
 .section-affichage fieldset legend {
@@ -141,18 +176,72 @@ fieldset.citizen {
     margin-top: 1em;
 }
 
-.section-affichage fieldset form ul li {
-    clear: both;
+#content #top-area .widget-fieldset.faceted-criteria {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#content #top-area .widget-fieldset.faceted-criteria > legend, #content #top-area .widget-fieldset.faceted-criteria > dl {
+    color: #7086a6;
+    padding: 0 1em 0em 0;
+    margin-bottom:0;
+}
+
+
+#content .faceted-widget.faceted-layout-widget.section-affichage li {
+    clear: none;
+    margin-right: 0.25em;
+    min-width: 10px;
 }
 
 .section-affichage .widget-fieldset ul li label {
     padding: 0.4em 1em 0 2em;
-}
-
-.section-affichage .widget-fieldset ul li label {
     color: #545454;
     font-size: 17px;
     text-transform: none;
+}
+
+.faceted-widget.faceted-layout-widget.section-affichage label[title="Vue cartographique"]::before {
+    content: "\e837";
+    font-family: fontello;
+    margin-right: 0.5em;
+}
+
+
+.faceted-widget.faceted-layout-widget.section-affichage label[title="Vue annuaire"]::before {
+    content: "\f00a";
+    font-family: fontello;
+    font-size: 14px;
+    margin-right: 0.75em;
+}
+
+#content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li input:checked + label {
+    background: white none repeat scroll 0 0;
+    color: black;
+    padding-bottom: 0.4em;
+    padding-left: 1em;
+    text-shadow: 0 0 0 transparent;
+}
+
+
+#content #top-area .faceted-widget.faceted-layout-widget.section-affichage input {
+    display: none;
+}
+
+#content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li label {
+    display: inline-block;
+    height: 18px;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    z-index: 1;
+}
+
+#content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li label:hover {
+    background: white none repeat scroll 0 0;
+    color: black;
+    padding-bottom: 0.4em;
+    padding-left: 1em;
+    text-shadow: 0 0 0 transparent;
 }
 
 #faceted-form .select2-container .select2-choice, .widget-fieldset input[type="text"] {
@@ -267,6 +356,7 @@ div.faceted-select2-container {
 
 #top-area {
     position: relative;
+    padding-bottom:2em;
 }
 
 #faceted-form .faceted-sections-buttons {
@@ -584,14 +674,6 @@ fieldset#form-groups-related_contacts,
 
 .faceted-drag-drop.faceted-widgets.faceted-default-widgets.faceted-top-widgets {
     padding-right: 13em;
-}
-
-.faceted-widget.faceted-criteria-widget.section-filtres-actifs {
-    float: right;
-    width: 18em;
-    margin-right: -18em;
-    margin-top:-3em;
-    margin-bottom: -2.5em;
 }
 
 .faceted-widget.faceted-criteria-widget.section-filtres-actifs legend{
