@@ -1,4 +1,8 @@
 
+.template-full_view #right-actions-viewlet-inner {
+    display: none;
+}
+
 /*  compte citoyen  */
 
 /* citizen  */
@@ -185,15 +189,21 @@ td:last-child.pretty_link {
     display: none;
 }
 
-#other-actions div:first-child::before {
+#other-actions div:first-child{
+    position: relative;
+}
+
+#other-actions > div:first-child::before {
     color: gray;
     content: "Partager";
     font-size: 11px;
     position: absolute;
-    right: -0.9em;
+    left: 0.4em;
     text-transform: uppercase;
     top: -7em;
     transform: rotate(-90deg);
+    float: left;
+    width: 1em;
 }
 
 #other-actions div:first-child::after {
@@ -293,9 +303,7 @@ td:last-child.pretty_link {
     content: "\e80e";
 }
 
-#right-actions-viewlet [class^="icon-"]::before, #right-actions-viewlet [class*=" icon-"]::before {
-    margin-left: 0.1em;
-    }
+
 
 /* fin affichage right panel  */
 
@@ -342,49 +350,9 @@ td:last-child.pretty_link {
     color: white;
     font-family: fontello;
     font-size: 110%;
-    left: 0.1em;
     position: absolute;
     text-shadow: 0 0 4px #0e213f;
     top: 0;
-}
-
-
-#portal-column-content.position-1\:4.width-3\:4 .event.summary.details::before {
-    background: #3548b1 none repeat scroll 0 0;
-    bottom: 0;
-    content: "";
-    position: absolute;
-    right: 100%;
-    top: 0;
-    width: 1.3em;
-}
-
-.event.summary.details, .event.summary.details ul {
-    margin-left: 0;
-}
-.event.summary.details {
-    background: #3548b1 none repeat scroll 0 0;
-    color: white;
-    margin-bottom: 2em;
-    margin-left: 0;
-    padding: 2em 0;
-    position: relative;
-    width: 100%;
-}
-.event.summary {
-    clear: right;
-    float: right;
-}
-
-
-#portal-column-content.position-1\:4.width-3\:4 .event.summary.details::before {
-    background: #3548b1 none repeat scroll 0 0;
-    bottom: 0;
-    content: "";
-    position: absolute;
-    right: 100%;
-    top: 0;
-    width: 1.3em;
 }
 
 #content ul {
@@ -394,28 +362,6 @@ td:last-child.pretty_link {
 #content ul, .portletStaticText ul {
     list-style-type: disc;
     margin-left: 2em;
-}
-.event.summary.details, .event.summary.details ul {
-    margin-left: 0;
-}
-.event.summary.details {
-    background: #3548b1 none repeat scroll 0 0;
-    color: white;
-    margin-bottom: 2em;
-    margin-left: 0;
-    padding: 2em 0;
-    position: relative;
-    width: 100%;
-}
-.event.summary {
-    clear: right;
-    float: right;
-}
-* ul, ol {
-    list-style: outside none none;
-}
-* ul, ol {
-    list-style: outside none none;
 }
 
 #right-actions-viewlet-inner > a::before {
@@ -1239,6 +1185,10 @@ ul.navTreeLevel0 {
 
 /* --- portlet navigation --- */
 
+#portal-column-one{
+    box-sizing: border-box;
+}
+
 #portal-columns  dl.portletNavigationTree dd.portletItem{
 	padding-left:0;
 }
@@ -1411,10 +1361,6 @@ ul.navTreeLevel0 {
 }
 
 /*  Vue faceted liste  */
-
-.template-facetednavigation_view #faceted-results{
-    margin-bottom: 1.75em;
-}
 
 #faceted-results .photoAlbumEntry {
     box-sizing: border-box;
