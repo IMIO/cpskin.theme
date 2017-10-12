@@ -98,10 +98,6 @@ fieldset.citizen {
     max-width: 1200px;
 }
 
-/*.citizen-info-viewlet{
-    display:none;
-}*/
-
 .section-citizen-dashboard.template-facetednavigation_view #faceted-results {
     padding-left: 0;
 }
@@ -612,8 +608,11 @@ div.position-0 {
     margin-left: -100%;
 }
 
-
-#portal-top #cpskin-banner, #portal-top #cpskin-banner img {
+#portal-top #cpskin-banner{
+    box-sizing: border-box;
+}
+#portal-top #cpskin-banner,
+#portal-top #cpskin-banner img {
     margin: 0.5em auto;
     max-width: 1200px;
 }
@@ -1148,11 +1147,6 @@ ul.navTreeLevel0 {
 #portal-globalnav-cpskinmenu-tabs li, #portal-globalnav-cpskinmenu li{
     vertical-align:top;
 }
-
-/*#portal-globalnav-cpskinmenu .direct_access .firstItem a {
-    margin-top: 0em !important;
-}*/
-
 .navTreeClose {
     font-size: 22px;
     color: grey;
@@ -2581,18 +2575,12 @@ iframe .player .title{
 
 #container-minisite-globalnav {
     box-sizing: border-box;
-    display: inline-block;
-    min-width: 100%;
-    position: relative;
+    margin:0 auto;
+    max-width: 1200px;
 }
-
-#container-minisite-globalnav ul {
-    display: table-cell;
-    margin: 0;
-    vertical-align: middle;
-    width: 100%;
+#minisite-globalnav{
+    background: #fff;
 }
-
 #container-minisite-globalnav [id="minisite-actions"] + #minisite-globalnav {
     display:block;
 }
@@ -2601,47 +2589,12 @@ iframe .player .title{
     display: inline-block;
     margin: 1% 1% 1% 2.3%;
 }
-
-[id="minisite-globalnav"] li:first-child {
-    display: none;
+.minisite-home::before {
+    content: "\e811";
+    font-family: fontello;
+    font-size: 130%;
 }
-
-[id="minisite-navigation-inner"] {
-    clear:right;
-    margin: 0 auto;
-    max-width: 1920px;
-}
-
-[id="minisite-logo-nav"] {
-    display: table;
-    margin: 0 auto;
-    max-width: 1400px;
-}
-
-/*   logo minisite  */
-
-[id="minisite-navigation-inner"] #minisite-logo {
-    display: table-cell;
-    float: none;
-    max-width: 200px;
-    padding-left: 0;
-    position: relative;
-    top: 0;
-    vertical-align: top;
-}
-
-#minisite-logo a >img{
-    max-width: 200px;
-}
-
 /*   actions minisite   */
-
-#minisite-actions-inner {
-    width: 100%;
-    background: #C5CAE9;
-    float: left;
-}
-
 #minisite-actions {
     text-align: right;
     width: 1200px;
@@ -2684,11 +2637,14 @@ body.template-login_form #content, .pb-ajax #login-form {
 #login-password,
 .login-message-inner {
     box-sizing: border-box;
-    padding: 4em;
     vertical-align: top;
 }
-.login-message-inner {
+#login-password{
+    padding: 4em;
+}
+.login-message-inner div{
     background: #e5eef2;
+    padding: 4em;
 }
 .login-message-inner h2 {
     color: #333;
