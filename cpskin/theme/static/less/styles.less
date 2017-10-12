@@ -194,9 +194,9 @@ td:last-child.pretty_link {
     content: "Partager";
     font-size: 11px;
     position: absolute;
-    left: 0.4em;
+    left: 5px;
     text-transform: uppercase;
-    top: -7em;
+    top: -5em;
     transform: rotate(-90deg);
     float: left;
     width: 1em;
@@ -207,9 +207,9 @@ td:last-child.pretty_link {
     bottom: 0;
     content: "";
     height: 18px;
-    left: 0;
+    left: 1px;
     position: absolute;
-    top: -1em;
+    top: -1.5em;
     width: 0.55em;
 }
 
@@ -305,6 +305,16 @@ td:last-child.pretty_link {
 
 /*  right actions  */
 
+a[name*="section"] {
+    top: -14em;
+    position: relative;
+}
+
+.nav-is-stuck a[name*="section"] {
+    top: -8em;
+    position: relative;
+}
+
 #right-actions-viewlet {
     position: absolute;
     right: 0.5em;
@@ -349,6 +359,7 @@ td:last-child.pretty_link {
     position: absolute;
     text-shadow: 0 0 4px #0e213f;
     top: 0;
+    left:0;
 }
 
 #content ul {
@@ -1338,7 +1349,8 @@ ul.navTreeLevel0 {
 }
 
 .eea-preview-items .photoAlbumEntryDescription {
-    padding-right: 2em;
+    display: inline-block;
+    width: 96%;
 }
 
 .eea-view {
@@ -1634,7 +1646,7 @@ div.width-1\:2 li.bloc-item .documentByLine{
 
 /* --- Portlets generaux --- */
 
-div.position-3\:4 {
+/*div.position-3\:4 {
     margin-left: -18.875%;
 }
 
@@ -1649,6 +1661,7 @@ div.width-3\:4 {
 div.position-1\:4 {
     margin-left: -78.875%;
 }
+*/
 
 dl.portlet a:link{
     border-bottom-width:0px;
