@@ -4,7 +4,9 @@ Changelog
 0.5.33 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Remove login-message div if no message is configured : #19127
+  Also add 'no-login-message' class to allow full width login form.
+  [laulaz]
 
 
 0.5.32 (2017-10-06)
