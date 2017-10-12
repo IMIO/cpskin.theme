@@ -4,6 +4,11 @@ Changelog
 0.5.33 (unreleased)
 -------------------
 
+- Add new horizontalNavActivated theme parameter to have conditions on any
+  minisite mode (>< ms_horizontal_navigation that applies only in minisite
+  mode).
+  [laulaz]
+
 - Remove login-message div if no message is configured : #19127
   Also add 'no-login-message' class to allow full width login form.
   [laulaz]
