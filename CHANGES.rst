@@ -1,8 +1,18 @@
 Changelog
 =========
 
-0.5.33 (unreleased)
+0.5.34 (unreleased)
 -------------------
+
+- Nothing changed yet.
+
+
+0.5.33 (2017-10-13)
+-------------------
+
+- Add upgrade step which add add_ms_horizontal_navigation_any_mode variable
+  on theme parameters.
+  [bsuttor]
 
 - Add new horizontalNavActivated theme parameter to have conditions on any
   minisite mode (>< ms_horizontal_navigation that applies only in minisite
