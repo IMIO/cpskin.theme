@@ -13,7 +13,7 @@ import logging
 logger = logging.getLogger('cpskin.theme')
 
 
-def add_theme_variable(key, value):
+def add_theme_parameter_expression(key, value):
     params = api.portal.get_registry_record(
         'parameterExpressions',
         interface=IThemeSettings
@@ -28,7 +28,7 @@ def add_theme_variable(key, value):
 
 
 def add_ms_horizontal_navigation_any_mode_variable(context):
-    add_theme_variable(
+    add_theme_parameter_expression(
         'ms_horizontal_navigation_any_mode',
         'context/@@horizontalNavActivated'
     )
