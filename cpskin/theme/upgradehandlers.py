@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
-
+from cpskin.theme.setuphandlers import addCustomLessFiles
+from cpskin.theme.setuphandlers import CUSTOM_FOLDER_NAME
 from plone import api
 from plone.resource.interfaces import IResourceDirectory
 from six import StringIO
 from zope.component import getUtility
+
 import logging
 
-from cpskin.theme.setuphandlers import addCustomLessFiles
-from cpskin.theme.setuphandlers import CUSTOM_FOLDER_NAME
 
 logger = logging.getLogger('cpskin.theme')
 
