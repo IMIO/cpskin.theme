@@ -1,4 +1,8 @@
 
+.template-full_view #right-actions-viewlet-inner {
+    display: none;
+}
+
 /*  compte citoyen  */
 
 /* citizen  */
@@ -94,10 +98,6 @@ fieldset.citizen {
     max-width: 1200px;
 }
 
-/*.citizen-info-viewlet{
-    display:none;
-}*/
-
 .section-citizen-dashboard.template-facetednavigation_view #faceted-results {
     padding-left: 0;
 }
@@ -185,15 +185,21 @@ td:last-child.pretty_link {
     display: none;
 }
 
-#other-actions div:first-child::before {
+#other-actions div:first-child{
+    position: relative;
+}
+
+#other-actions > div:first-child::before {
     color: gray;
     content: "Partager";
     font-size: 11px;
     position: absolute;
-    right: -7px;
+    left: 5px;
     text-transform: uppercase;
-    top: -7em;
+    top: -5em;
     transform: rotate(-90deg);
+    float: left;
+    width: 1em;
 }
 
 #other-actions div:first-child::after {
@@ -201,9 +207,9 @@ td:last-child.pretty_link {
     bottom: 0;
     content: "";
     height: 18px;
-    left: 0;
+    left: 1px;
     position: absolute;
-    top: -1em;
+    top: -1.5em;
     width: 0.55em;
 }
 
@@ -268,7 +274,8 @@ td:last-child.pretty_link {
     display:block;
 }
 
-#right-actions-viewlet .sc_social_bookmarks li a img {
+#right-actions-viewlet .sc_social_bookmarks li a img,
+.timezone{
     display: none;
 }
 
@@ -292,19 +299,27 @@ td:last-child.pretty_link {
     content: "\e80e";
 }
 
-#right-actions-viewlet [class^="icon-"]::before, #right-actions-viewlet [class*=" icon-"]::before {
-    margin-left: 0.1em;
-    }
+
 
 /* fin affichage right panel  */
 
 /*  right actions  */
 
+a[name*="section"] {
+    top: -14em;
+    position: relative;
+}
+
+.nav-is-stuck a[name*="section"] {
+    top: -8em;
+    position: relative;
+}
+
 #right-actions-viewlet {
     position: absolute;
-    right: -3em;
+    right: 0.5em;
+    top: 2em;
     width: 2em;
-    top:2em;
 }
 
 #right-actions-viewlet .iconifiedDocumentActions {
@@ -313,6 +328,7 @@ td:last-child.pretty_link {
     text-align: left;
     margin:0;
     position: relative;
+    width: 1.9em;
 }
 
 .nav-is-stuck #right-actions-viewlet-inner{
@@ -340,49 +356,10 @@ td:last-child.pretty_link {
     color: white;
     font-family: fontello;
     font-size: 110%;
-    left: 0.1em;
     position: absolute;
     text-shadow: 0 0 4px #0e213f;
     top: 0;
-}
-
-
-#portal-column-content.position-1\:4.width-3\:4 .event.summary.details::before {
-    background: #3548b1 none repeat scroll 0 0;
-    bottom: 0;
-    content: "";
-    position: absolute;
-    right: 100%;
-    top: 0;
-    width: 1.3em;
-}
-
-.event.summary.details, .event.summary.details ul {
-    margin-left: 0;
-}
-.event.summary.details {
-    background: #3548b1 none repeat scroll 0 0;
-    color: white;
-    margin-bottom: 2em;
-    margin-left: 0;
-    padding: 2em 0;
-    position: relative;
-    width: 100%;
-}
-.event.summary {
-    clear: right;
-    float: right;
-}
-
-
-#portal-column-content.position-1\:4.width-3\:4 .event.summary.details::before {
-    background: #3548b1 none repeat scroll 0 0;
-    bottom: 0;
-    content: "";
-    position: absolute;
-    right: 100%;
-    top: 0;
-    width: 1.3em;
+    left:0;
 }
 
 #content ul {
@@ -392,28 +369,6 @@ td:last-child.pretty_link {
 #content ul, .portletStaticText ul {
     list-style-type: disc;
     margin-left: 2em;
-}
-.event.summary.details, .event.summary.details ul {
-    margin-left: 0;
-}
-.event.summary.details {
-    background: #3548b1 none repeat scroll 0 0;
-    color: white;
-    margin-bottom: 2em;
-    margin-left: 0;
-    padding: 2em 0;
-    position: relative;
-    width: 100%;
-}
-.event.summary {
-    clear: right;
-    float: right;
-}
-* ul, ol {
-    list-style: outside none none;
-}
-* ul, ol {
-    list-style: outside none none;
 }
 
 #right-actions-viewlet-inner > a::before {
@@ -486,23 +441,26 @@ td:last-child.pretty_link {
 
 /*  Fin right actions  */
 
+// social
 
+#viewlet-social-like {
+    float: left;
+}
 
 /* >>> breadcrumbs a supprimer lorsque la modifie sera apportee <<< */
 
 #portal-columns{
 	padding-top:1em;
-    padding-right:3.5em;
     box-sizing: border-box;
 }
 
-
-#portal-column-two > div {
-    margin-right: -3.5em;
-    padding-left: 1.25em;
+#portal-columns #portal-column-content {
+    padding-right: 3.5em;
+    box-sizing: border-box;
 }
 
-.main-homepage #portal-columns{
+.main-homepage #portal-columns #portal-column-content,
+.template-folderview #portal-columns #portal-column-content{
     padding-right:0;
 }
 
@@ -665,8 +623,11 @@ div.position-0 {
     margin-left: -100%;
 }
 
-
-#portal-top #cpskin-banner, #portal-top #cpskin-banner img {
+#portal-top #cpskin-banner{
+    box-sizing: border-box;
+}
+#portal-top #cpskin-banner,
+#portal-top #cpskin-banner img {
     margin: 0.5em auto;
     max-width: 1200px;
 }
@@ -1201,11 +1162,6 @@ ul.navTreeLevel0 {
 #portal-globalnav-cpskinmenu-tabs li, #portal-globalnav-cpskinmenu li{
     vertical-align:top;
 }
-
-/*#portal-globalnav-cpskinmenu .direct_access .firstItem a {
-    margin-top: 0em !important;
-}*/
-
 .navTreeClose {
     font-size: 22px;
     color: grey;
@@ -1237,6 +1193,10 @@ ul.navTreeLevel0 {
 /* --- fin cpskin menu --- */
 
 /* --- portlet navigation --- */
+
+#portal-column-one{
+    box-sizing: border-box;
+}
 
 #portal-columns  dl.portletNavigationTree dd.portletItem{
 	padding-left:0;
@@ -1393,7 +1353,8 @@ ul.navTreeLevel0 {
 }
 
 .eea-preview-items .photoAlbumEntryDescription {
-    padding-right: 2em;
+    display: inline-block;
+    width: 96%;
 }
 
 .eea-view {
@@ -1410,10 +1371,6 @@ ul.navTreeLevel0 {
 }
 
 /*  Vue faceted liste  */
-
-.template-facetednavigation_view #faceted-results{
-    margin-bottom: 1.75em;
-}
 
 #faceted-results .photoAlbumEntry {
     box-sizing: border-box;
@@ -1693,7 +1650,7 @@ div.width-1\:2 li.bloc-item .documentByLine{
 
 /* --- Portlets generaux --- */
 
-div.position-3\:4 {
+/*div.position-3\:4 {
     margin-left: -18.875%;
 }
 
@@ -1708,6 +1665,7 @@ div.width-3\:4 {
 div.position-1\:4 {
     margin-left: -78.875%;
 }
+*/
 
 dl.portlet a:link{
     border-bottom-width:0px;
@@ -2634,18 +2592,12 @@ iframe .player .title{
 
 #container-minisite-globalnav {
     box-sizing: border-box;
-    display: inline-block;
-    min-width: 100%;
-    position: relative;
+    margin:0 auto;
+    max-width: 1200px;
 }
-
-#container-minisite-globalnav ul {
-    display: table-cell;
-    margin: 0;
-    vertical-align: middle;
-    width: 100%;
+#minisite-globalnav{
+    background: #fff;
 }
-
 #container-minisite-globalnav [id="minisite-actions"] + #minisite-globalnav {
     display:block;
 }
@@ -2654,47 +2606,12 @@ iframe .player .title{
     display: inline-block;
     margin: 1% 1% 1% 2.3%;
 }
-
-[id="minisite-globalnav"] li:first-child {
-    display: none;
+.minisite-home::before {
+    content: "\e811";
+    font-family: fontello;
+    font-size: 130%;
 }
-
-[id="minisite-navigation-inner"] {
-    clear:right;
-    margin: 0 auto;
-    max-width: 1920px;
-}
-
-[id="minisite-logo-nav"] {
-    display: table;
-    margin: 0 auto;
-    max-width: 1400px;
-}
-
-/*   logo minisite  */
-
-[id="minisite-navigation-inner"] #minisite-logo {
-    display: table-cell;
-    float: none;
-    max-width: 200px;
-    padding-left: 0;
-    position: relative;
-    top: 0;
-    vertical-align: top;
-}
-
-#minisite-logo a >img{
-    max-width: 200px;
-}
-
 /*   actions minisite   */
-
-#minisite-actions-inner {
-    width: 100%;
-    background: #C5CAE9;
-    float: left;
-}
-
 #minisite-actions {
     text-align: right;
     width: 1200px;
@@ -2737,11 +2654,14 @@ body.template-login_form #content, .pb-ajax #login-form {
 #login-password,
 .login-message-inner {
     box-sizing: border-box;
-    padding: 4em;
     vertical-align: top;
 }
-.login-message-inner {
+#login-password{
+    padding: 4em;
+}
+.login-message-inner div{
     background: #e5eef2;
+    padding: 4em;
 }
 .login-message-inner h2 {
     color: #333;
@@ -2790,5 +2710,8 @@ div.formControls {
     margin-top: 5em;
     max-width: 70%;
 }
-
+//ckeditor
+.image-dummy {
+    text-align: center;
+}
 

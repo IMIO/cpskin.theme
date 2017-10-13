@@ -21,6 +21,15 @@
         />
 
     <browser:page
+        name="horizontalNavActivated"
+        for="*"
+        class=".diazo.DiazoView"
+        attribute="horizontalNavActivated"
+        permission="zope2.View"
+        layer="..interfaces.ICPSkinThemeLayer"
+        />
+
+    <browser:page
         name="currentTheme"
         for="*"
         class=".diazo.DiazoView"

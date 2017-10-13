@@ -1,10 +1,48 @@
 Changelog
 =========
 
-0.5.31 (unreleased)
+0.5.35 (unreleased)
 -------------------
 
 - Nothing changed yet.
+
+
+0.5.34 (2017-10-13)
+-------------------
+
+- Change css.
+  [osnickers]
+
+
+0.5.33 (2017-10-13)
+-------------------
+
+- Add upgrade step which add add_ms_horizontal_navigation_any_mode variable
+  on theme parameters.
+  [bsuttor]
+
+- Add new horizontalNavActivated theme parameter to have conditions on any
+  minisite mode (>< ms_horizontal_navigation that applies only in minisite
+  mode).
+  [laulaz]
+
+- Remove login-message div if no message is configured : #19127
+  Also add 'no-login-message' class to allow full width login form.
+  [laulaz]
+
+
+0.5.32 (2017-10-06)
+-------------------
+
+- Change CSS Other actions.
+  [osnickers]
+
+
+0.5.31 (2017-10-02)
+-------------------
+
+- Change CSS Other actions.
+  [osnickers]
 
 
 0.5.30 (2017-09-25)

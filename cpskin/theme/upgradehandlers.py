@@ -1,15 +1,37 @@
 # -*- coding: utf-8 -*-
-
+from cpskin.theme.setuphandlers import addCustomLessFiles
+from cpskin.theme.setuphandlers import CUSTOM_FOLDER_NAME
 from plone import api
+from plone.app.theming.interfaces import IThemeSettings
 from plone.resource.interfaces import IResourceDirectory
 from six import StringIO
 from zope.component import getUtility
+
 import logging
 
-from cpskin.theme.setuphandlers import addCustomLessFiles
-from cpskin.theme.setuphandlers import CUSTOM_FOLDER_NAME
 
 logger = logging.getLogger('cpskin.theme')
+
+
+def add_theme_parameter_expression(key, value):
+    params = api.portal.get_registry_record(
+        'parameterExpressions',
+        interface=IThemeSettings
+    )
+    if key not in params.keys():
+        params[key] = value
+        api.portal.set_registry_record(
+            'parameterExpressions',
+            params,
+            interface=IThemeSettings
+        )
+
+
+def add_ms_horizontal_navigation_any_mode_variable(context):
+    add_theme_parameter_expression(
+        'ms_horizontal_navigation_any_mode',
+        'context/@@horizontalNavActivated'
+    )
 
 
 def clean_portal_skins(context):

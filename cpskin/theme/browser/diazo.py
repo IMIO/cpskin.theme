@@ -52,6 +52,15 @@ class DiazoView(BrowserView):
         minisite_root = get_minisite_object(request)
         return IHNavigationActivated.providedBy(minisite_root)
 
+    def horizontalNavActivated(self):
+        if not HAS_MINISITE:
+            return False
+        if not self.isInMinisite():
+            return False
+        request = self.request
+        minisite_root = get_minisite_object(request)
+        return IHNavigationActivated.providedBy(minisite_root)
+
     def getCurrentTheme(self):
         return getCurrentTheme()
 
