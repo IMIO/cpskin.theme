@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.33 (unreleased)
+0.5.33 (2017-10-13)
 -------------------
 
 - Add upgrade step which add add_ms_horizontal_navigation_any_mode variable
