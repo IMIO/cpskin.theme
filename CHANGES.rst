@@ -4,7 +4,8 @@ Changelog
 0.5.36 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add new rule / markup to add foldable social viewlet in right actions #19300
+  [laulaz]
 
 
 0.5.35 (2017-10-20)
