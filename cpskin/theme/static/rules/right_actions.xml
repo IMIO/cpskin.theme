@@ -19,7 +19,7 @@
       <drop css:content="#portal-column-two" />
   </rules>
 
-  <replace css:content-children="#other-actions" css:if="#viewlet-social-like">
+  <replace css:content-children="#other-actions" css:if-content="#viewlet-social-like">
       <xsl:copy-of select="//*[@class='sc_social_bookmarks_viewlet']" />
       <xsl:copy-of select="//div[@id='viewlet-above-content-title']/*[@class!='visualClear']" />
       <a href="#" id="social-share">Share</a>
@@ -27,7 +27,7 @@
         <xsl:copy-of select="//div[@id='viewlet-social-like']" />
       </div>
   </replace>
-  <replace css:content-children="#other-actions" css:if-not="#viewlet-social-like">
+  <replace css:content-children="#other-actions" css:if-not-content="#viewlet-social-like">
       <xsl:copy-of select="//*[@class='sc_social_bookmarks_viewlet']" />
       <xsl:copy-of select="//div[@id='viewlet-above-content-title']/*[@class!='visualClear']" />
   </replace>
