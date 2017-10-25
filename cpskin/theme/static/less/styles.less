@@ -202,7 +202,7 @@ td:last-child.pretty_link {
     width: 1em;
 }
 
-#other-actions div:first-child::after {
+#other-actions > div:first-child::after {
     border-right: 1px solid gray;
     bottom: 0;
     content: "";
@@ -373,7 +373,7 @@ a[name*="section"] {
 
 #right-actions-viewlet-inner > a::before {
     background: white none repeat scroll 0 0;
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 2px 2px 0;
     content: "";
     height: 2.2em;
     left: -1em;
@@ -773,6 +773,10 @@ dl.actionMenu.activated dt a{
 
 #portal-personaltools dt {
     margin: 0 1em;
+}
+
+div#viewlet-social-like {
+    padding-left: 1.2em;
 }
 
 #social-viewlet, #portal-personaltools-wrapper, #portal-siteactions{
@@ -1963,6 +1967,7 @@ dl.portlet dt, .portletWrapper dl.portlet dt a {
     clear: both;
     margin-top: 2em;
     padding: 2em;
+    margin-right:1.25em;
 }
 
 #viewlet-below-content-body > div.relatedItems dt {

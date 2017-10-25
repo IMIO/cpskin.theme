@@ -22,7 +22,7 @@
   <replace css:content-children="#other-actions" css:if-content="#viewlet-social-like">
       <xsl:copy-of select="//*[@class='sc_social_bookmarks_viewlet']" />
       <xsl:copy-of select="//div[@id='viewlet-above-content-title']/*[@class!='visualClear']" />
-      <a href="#" id="social-share">Share</a>
+      <a href="#" id="social-share"></a>
       <div id="social-share-container" class="right-panel hidden-right-panel">
         <xsl:copy-of select="//div[@id='viewlet-social-like']" />
       </div>

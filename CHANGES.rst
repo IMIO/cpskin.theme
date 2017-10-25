@@ -7,6 +7,8 @@ Changelog
 - Add new rule / markup to add foldable social viewlet in right actions #19300
   [laulaz]
 
+- Change share css.
+  [osnickers]
 
 0.5.35 (2017-10-20)
 -------------------
