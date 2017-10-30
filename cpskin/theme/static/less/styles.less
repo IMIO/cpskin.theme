@@ -185,7 +185,7 @@ td:last-child.pretty_link {
     display: none;
 }
 
-#other-actions div:first-child{
+#other-actions > div:first-child{
     position: relative;
 }
 
@@ -299,7 +299,10 @@ td:last-child.pretty_link {
     content: "\e80e";
 }
 
-
+.fb_iframe_widget span {
+    width: 100% !important;
+    height: 1em !important;
+}
 
 /* fin affichage right panel  */
 
@@ -409,7 +412,7 @@ a[name*="section"] {
 }
 
 #right-actions-viewlet-inner a{
-    top: -3.5em;
+    top: -55px;
 }
 
 #right-actions-viewlet-inner > a {
@@ -455,7 +458,7 @@ a[name*="section"] {
 }
 
 #portal-columns #portal-column-content {
-    padding-right: 3.5em;
+    padding-right: 55px;
     box-sizing: border-box;
 }
 
@@ -825,8 +828,10 @@ float:left;
 margin:0;
 }
 
-.iconifiedDocumentActions a img{
-    display: none;
+.iconifiedDocumentActions ul li a img {
+    position: absolute;
+    left: 0;
+    opacity: 0;
 }
 
 #content .sc_social_bookmarks li a.icon-Facebook::before{
@@ -838,7 +843,7 @@ margin:0;
 }
 
 .icon-sendtomanager::before {
-    content: "\e819";
+    content: "\e84e";
 }
 
 #content .iconifiedDocumentActions li a.icon-print::before{
