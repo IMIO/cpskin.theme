@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.5.38 (unreleased)
+0.5.38 (2017-10-30)
 -------------------
 
-- Nothing changed yet.
-
+- Change css for cpprdinates.
+   [mgennart]
 
 0.5.37 (2017-10-26)
 -------------------
