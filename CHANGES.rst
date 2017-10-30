@@ -4,7 +4,7 @@ Changelog
 0.5.38 (2017-10-30)
 -------------------
 
-- Change css for cpprdinates.
+- Change css for coordinates.
    [mgennart]
 
 0.5.37 (2017-10-26)
