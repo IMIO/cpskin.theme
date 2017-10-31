@@ -1,11 +1,17 @@
 Changelog
 =========
 
-0.5.38 (unreleased)
+0.5.39 (unreleased)
 -------------------
 
 - Nothing changed yet.
 
+
+0.5.38 (2017-10-30)
+-------------------
+
+- Change css for coordinates.
+   [mgennart]
 
 0.5.37 (2017-10-26)
 -------------------
