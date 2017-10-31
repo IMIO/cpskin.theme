@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.5.39 (unreleased)
+0.5.39 (2017-10-31)
 -------------------
 
-- Nothing changed yet.
+- Change css.
+  [mgennart]
 
 
 0.5.38 (2017-10-30)
