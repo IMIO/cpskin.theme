@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.5.40 (unreleased)
+0.5.40 (2017-11-03)
 -------------------
 
-- Nothing changed yet.
+- change css for contact.
+  [mgennart]
 
 
 0.5.39 (2017-10-31)
