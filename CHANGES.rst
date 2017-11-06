@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.5.41 (unreleased)
+0.5.41 (2017-11-06)
 -------------------
 
-- Nothing changed yet.
+- Delete div.width-1\:2 and add box-sizing to #top-navigation.
+  [mgennart]
 
 
 0.5.40 (2017-11-03)
