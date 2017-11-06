@@ -189,32 +189,9 @@ td:last-child.pretty_link {
     position: relative;
 }
 
-#other-actions > div:first-child::before {
-    color: gray;
-    content: "Partager";
-    font-size: 11px;
-    position: absolute;
-    left: 5px;
-    text-transform: uppercase;
-    top: -5em;
-    transform: rotate(-90deg);
-    float: left;
-    width: 1em;
-}
-
-#other-actions > div:first-child::after {
-    border-right: 1px solid gray;
-    bottom: 0;
-    content: "";
-    height: 18px;
-    left: 1px;
-    position: absolute;
-    top: -1.5em;
-    width: 0.55em;
-}
 
 #other-actions {
-    padding-top: 11.5em;
+    padding-top: 0em;
     position: relative;
 }
 
@@ -2659,10 +2636,11 @@ iframe .player .title{
 }
 
 /*   PAGE LOGIN   */
-.overlay-login #content-core,
+.overlay.overlay-login #content-core,
 body.template-logged_out #content-core,
 body.template-login_form #content-core{
     display:table;
+    padding:0;
 }
 #login-password, .login_message {
     display: table-cell;
