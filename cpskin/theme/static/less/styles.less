@@ -185,36 +185,13 @@ td:last-child.pretty_link {
     display: none;
 }
 
-#other-actions div:first-child{
+#other-actions > div:first-child{
     position: relative;
 }
 
-#other-actions > div:first-child::before {
-    color: gray;
-    content: "Partager";
-    font-size: 11px;
-    position: absolute;
-    left: 5px;
-    text-transform: uppercase;
-    top: -5em;
-    transform: rotate(-90deg);
-    float: left;
-    width: 1em;
-}
-
-#other-actions div:first-child::after {
-    border-right: 1px solid gray;
-    bottom: 0;
-    content: "";
-    height: 18px;
-    left: 1px;
-    position: absolute;
-    top: -1.5em;
-    width: 0.55em;
-}
 
 #other-actions {
-    padding-top: 11.5em;
+    padding-top: 0em;
     position: relative;
 }
 
@@ -287,6 +264,7 @@ td:last-child.pretty_link {
 #right-actions-viewlet .iconifiedDocumentActions a{
     color:#0f2241;
     margin-top: 0.5em;
+    position: relative;
 }
 
 #right-actions-viewlet .sc_social_bookmarks li a.icon-Facebook::before {
@@ -299,7 +277,10 @@ td:last-child.pretty_link {
     content: "\e80e";
 }
 
-
+.fb_iframe_widget span {
+    width: 100% !important;
+    height: 1em !important;
+}
 
 /* fin affichage right panel  */
 
@@ -313,6 +294,7 @@ a[name*="section"] {
 .nav-is-stuck a[name*="section"] {
     top: -8em;
     position: relative;
+    float: left;
 }
 
 #right-actions-viewlet {
@@ -373,7 +355,7 @@ a[name*="section"] {
 
 #right-actions-viewlet-inner > a::before {
     background: white none repeat scroll 0 0;
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 2px 2px 0;
     content: "";
     height: 2.2em;
     left: -1em;
@@ -408,8 +390,8 @@ a[name*="section"] {
     z-index: 1;
 }
 
-#right-actions-viewlet-inner a{
-    top: -3.5em;
+#right-actions-viewlet-inner > a{
+    top: -55px;
 }
 
 #right-actions-viewlet-inner > a {
@@ -455,12 +437,12 @@ a[name*="section"] {
 }
 
 #portal-columns #portal-column-content {
-    padding-right: 3.5em;
+    padding-right: 55px;
     box-sizing: border-box;
 }
 
 .main-homepage #portal-columns #portal-column-content,
-.template-folderview #portal-columns #portal-column-content{
+.template-folderview .with-full #portal-columns #portal-column-content{
     padding-right:0;
 }
 
@@ -775,6 +757,10 @@ dl.actionMenu.activated dt a{
     margin: 0 1em;
 }
 
+div#viewlet-social-like {
+    padding-left: 1.2em;
+}
+
 #social-viewlet, #portal-personaltools-wrapper, #portal-siteactions{
     float:left;
     clear:none;
@@ -821,8 +807,11 @@ float:left;
 margin:0;
 }
 
-.iconifiedDocumentActions a img{
-    display: none;
+.iconifiedDocumentActions ul li a img {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    top:0;
 }
 
 #content .sc_social_bookmarks li a.icon-Facebook::before{
@@ -834,7 +823,7 @@ margin:0;
 }
 
 .icon-sendtomanager::before {
-    content: "\e819";
+    content: "\e84e";
 }
 
 #content .iconifiedDocumentActions li a.icon-print::before{
@@ -948,6 +937,9 @@ dl.portlet ul.navTree .navTreeCurrentItem{
     text-decoration:none;
 	position: absolute;
 	right: 21%;
+}
+#top-navigation{
+    box-sizing: border-box;
 }
 
 /* --- ajout menu dynamique --- */
@@ -1499,10 +1491,6 @@ ul.navTreeLevel0 {
 
 /* >>> CONTENT <<< */
 
-div.width-1\:2 {
-    width: 57.75%;
-}
-
 #portal-columns {
     clear: both;
     float: none;
@@ -1561,7 +1549,7 @@ div.width-1\:2 {
 img.image-right {
     border: 0 solid white;
     clear: both;
-    margin: 0.5em 1em 1.5em 1.5em;
+    margin: 0.5em 2.5em 1.75em 1.75em;
 }
 
 /* --- Affiche actions vue content dossier bas de page --- */
@@ -1925,6 +1913,19 @@ dl.portlet dt, .portletWrapper dl.portlet dt a {
 
 /* >>> COLLECTIVE GEO <<< */
 
+.leaflet-popup-content a:after {
+    content: "Lire la suite";
+    float: right;
+    position: absolute;
+    bottom: 3em;
+    right: 2em;
+    font-weight: bold;
+}
+
+.leaflet-popup-content p {
+    margin-bottom: 3em !important;
+}
+
 .leaflet-container{
     z-index:0;
 }
@@ -1963,6 +1964,7 @@ dl.portlet dt, .portletWrapper dl.portlet dt a {
     clear: both;
     margin-top: 2em;
     padding: 2em;
+    margin-right:1.25em;
 }
 
 #viewlet-below-content-body > div.relatedItems dt {
@@ -2633,10 +2635,11 @@ iframe .player .title{
 }
 
 /*   PAGE LOGIN   */
-.overlay-login #content-core,
+.overlay.overlay-login #content-core,
 body.template-logged_out #content-core,
 body.template-login_form #content-core{
     display:table;
+    padding:0;
 }
 #login-password, .login_message {
     display: table-cell;

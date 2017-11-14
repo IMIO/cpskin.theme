@@ -30,6 +30,12 @@
     display: inline-block;
 }
 
+div#other-contacts {
+    padding-left: 1em;
+    padding-bottom: 1em;
+    clear:both;
+}
+
 /*   Fin fiche annuaire  */
 
 /*  compte citoyen  */
@@ -334,11 +340,11 @@ div.faceted-select2-container {
 }
 
 .faceted-sections-buttons a::after {
-    background: #B62B32 none repeat scroll 0 0;
-    color: white;
-    font-weight: bold;
-    margin-left: 0.25em;
-    padding: 0 0.5em;
+    background: #fff none repeat scroll 0 0;
+    color: #0e2240;
+    font-weight: bold;  
+    margin-left: 0.5em;
+    padding: 0.25em 0.5em;
 }
 
 .faceted-sections-buttons-less::after {
@@ -360,11 +366,9 @@ div.faceted-select2-container {
 }
 
 #faceted-form .faceted-sections-buttons {
-    bottom: -4px;
-    float: right;
-    margin-right: 2em;
-    padding-top: 1em;
-    position: relative !important;
+    z-index: 1;
+    right: 55px;
+    margin-top:3px;
 }
 
 #faceted-top-column::before {
@@ -436,7 +440,7 @@ body.template-facetednavigation_view .contact-entry {
     margin-right: 1%;
     overflow: hidden;
     padding: 1em;
-    width: 19%;
+    width: 24%;
 }
 
 .template-facetednavigation_view .contact-title,
@@ -541,6 +545,11 @@ body.template-facetednavigation_view .contact-entry {
 #belowContentContact #ul-belowContentContact {
     list-style-type: none;
     margin-left: 0;
+    padding-right:0;
+}
+
+#aboveContentContact #ul-aboveContentContact{
+    margin-bottom:0 !important;
 }
 
 .subsection-vie-politique-conseil-communal-annuaire-des-conseillers h4{
@@ -680,6 +689,11 @@ fieldset#form-groups-related_contacts,
 .faceted-widget.faceted-criteria-widget.section-filtres-actifs legend{
     text-transform: uppercase;
 }
+.related-contact-title {
+    display: block;
+    text-transform: uppercase;
+}
+
 .related-contact .photo {
     float: left;
 }

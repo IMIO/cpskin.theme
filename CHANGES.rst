@@ -1,11 +1,67 @@
 Changelog
 =========
 
-0.5.35 (unreleased)
+0.5.43 (unreleased)
 -------------------
 
 - Nothing changed yet.
 
+
+0.5.42 (2017-11-06)
+-------------------
+
+- Change share css.
+  [osnickers]
+
+
+0.5.41 (2017-11-06)
+-------------------
+
+- Delete div.width-1\:2 and add box-sizing to #top-navigation.
+  [mgennart]
+
+
+0.5.40 (2017-11-03)
+-------------------
+
+- change css for contact.
+  [mgennart]
+
+
+0.5.39 (2017-10-31)
+-------------------
+
+- Change css.
+  [mgennart]
+
+
+0.5.38 (2017-10-30)
+-------------------
+
+- Change css for coordinates.
+   [mgennart]
+
+0.5.37 (2017-10-26)
+-------------------
+
+- Add new icon fontello
+  [mgennart]
+
+
+0.5.36 (2017-10-25)
+-------------------
+
+- Add new rule / markup to add foldable social viewlet in right actions #19300
+  [laulaz]
+
+- Change share css.
+  [osnickers]
+
+0.5.35 (2017-10-20)
+-------------------
+
+- Add new fontello icon
+  [mgennart]
 
 0.5.34 (2017-10-13)
 -------------------
