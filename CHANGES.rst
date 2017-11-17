@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.45 (unreleased)
+0.5.45 (2017-11-17)
 -------------------
 
 - Fix display bug with css for social share
