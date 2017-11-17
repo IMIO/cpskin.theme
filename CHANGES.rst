@@ -4,7 +4,8 @@ Changelog
 0.5.45 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix display bug with css for social share
+  [amariscal]
 
 
 0.5.44 (2017-11-17)
