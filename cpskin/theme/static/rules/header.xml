@@ -69,6 +69,7 @@
           </div>
       </replace>
 
+      <drop css:content="#portal-siteactions" />
       <drop css:content="#minisite-search" />
 
   </rules>

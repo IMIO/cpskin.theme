@@ -1,10 +1,24 @@
 Changelog
 =========
 
-0.5.43 (unreleased)
+0.5.45 (unreleased)
 -------------------
 
 - Nothing changed yet.
+
+
+0.5.44 (2017-11-17)
+-------------------
+
+- Delete copied portal-siteactions to avoid duplicate
+  [laulaz]
+
+
+0.5.43 (2017-11-14)
+-------------------
+
+- Change css.
+  [osnickers]
 
 
 0.5.42 (2017-11-06)
