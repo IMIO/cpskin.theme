@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.44 (unreleased)
+0.5.44 (2017-11-17)
 -------------------
 
 - Delete copied portal-siteactions to avoid duplicate
