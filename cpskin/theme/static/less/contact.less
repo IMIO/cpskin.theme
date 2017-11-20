@@ -18,6 +18,13 @@
     display: none;
 }
 
+.addnewcontactfromorganization.link-overlay::after {
+    content: "-";
+    height: 3em;
+    float: right !important;
+    color: white;
+}
+
 #fax{
     float:left;
 }
@@ -151,6 +158,24 @@ fieldset.citizen {
 #visual-portal-wrapper #portal-columns #content .faceted-text-widget.section-search legend,
 .widget-fieldset.faceted-criteria dd a {
     display: none;
+}
+
+.faceted-widget.faceted-text-widget.section-recherche fieldset form::after,
+.faceted-widget.faceted-text-widget.section-search fieldset form::after {
+    background: transparent none repeat scroll 0 0;
+    bottom: 0;
+    color: white;
+    content: "";
+    display: block;
+    float: right;
+    font-family: "fontello";
+    height: 20px;
+    padding: 0 0 5px 4px;
+    position: absolute;
+    right: 10px;
+    top: 0.25em;
+    width: 20px;
+    z-index: 0;
 }
 
 #content .faceted-criteria dd {
@@ -448,8 +473,9 @@ body.template-facetednavigation_view .contact-entry {
     font-size: 100%;
 }
 
-.template-facetednavigation_view #viewlet-above-content-title .iconifiedDocumentActions {
-    display:none;
+.template-facetednavigation_view #viewlet-above-content-title .iconifiedDocumentActions,
+.organization_type {
+    display: none;
 }
 
 #faceted-form .select2-container .select2-choice {
@@ -467,7 +493,7 @@ body.template-facetednavigation_view .contact-entry {
     cursor: pointer;
     float: right;
     font-size: 120%;
-    padding: 0;
+    padding: 0.4em 1em;
     position: absolute;
     width: 1.5em;
     z-index: 1;
