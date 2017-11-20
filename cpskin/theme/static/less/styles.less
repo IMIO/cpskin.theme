@@ -1,4 +1,3 @@
-
 .template-full_view #right-actions-viewlet-inner {
     display: none;
 }
@@ -238,7 +237,14 @@ td:last-child.pretty_link {
     z-index: 1;
 }
 
-
+#social-share::after {
+    content: "\f1e0";
+    font-family: fontello;
+    color: #0f2241;
+    float: left;
+    margin-top: 9px;
+    margin-left: 3px;
+}
 .shown-right-panel dt {
     color: grey;
     margin-bottom: 0.75em;
@@ -445,6 +451,28 @@ a[name*="section"] {
 
 #viewlet-social-like {
     float: left;
+}
+#social-share-container {
+    width: 10em !important;
+    bottom: -7em;
+    position: absolute;
+    right: 3em;
+    background-color: #fff;
+    z-index: 10;
+    padding: 1em;
+    box-shadow: -10px 10px 20px rgba(0,0,0,0.2);
+    display: block;
+}
+
+#social-share-container.shown-right-panel {
+    opacity: 1;
+    display: block;
+}
+#social-share-container.hidden-right-panel {
+    opacity: 0;
+    display: block;
+    right:-1000%;
+    position: relative;
 }
 
 /* >>> breadcrumbs a supprimer lorsque la modifie sera apportee <<< */
