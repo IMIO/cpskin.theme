@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.5.46 (unreleased)
+0.5.46 (2017-11-20)
 -------------------
 
-- Nothing changed yet.
-
+- Change css for faceted.
+  [mgennart]
 
 0.5.45 (2017-11-17)
 -------------------
