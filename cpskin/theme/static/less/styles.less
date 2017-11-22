@@ -293,6 +293,7 @@ td:last-child.pretty_link {
 #right-actions-viewlet .iconifiedDocumentActions a{
     color:#0f2241;
     margin-top: 0.5em;
+    position: relative;
 }
 
 #right-actions-viewlet .sc_social_bookmarks li a.icon-Facebook::before {
@@ -452,6 +453,14 @@ a[name*="section"] {
 #viewlet-social-like {
     float: left;
 }
+
+#viewlet-social-like.vertical > div {
+    float: left !important;
+    clear: both;
+    margin-bottom: 0.5em;
+    height: 1.5em;
+}
+
 #social-share-container {
     width: 10em !important;
     bottom: -7em;
@@ -867,8 +876,12 @@ float:left;
 margin:0;
 }
 
-.iconifiedDocumentActions a img{
-    display: none;
+.iconifiedDocumentActions ul li a img {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    top: 0;
+    width:100%;
 }
 
 #content .sc_social_bookmarks li a.icon-Facebook::before{
