@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.48 (unreleased)
+0.5.48 (2017-11-23)
 -------------------
 
 - Delete position on babel-edit.
