@@ -1,11 +1,17 @@
 Changelog
 =========
 
-0.5.47 (unreleased)
+0.5.48 (unreleased)
 -------------------
 
 - Nothing changed yet.
 
+
+0.5.47 (2017-11-22)
+-------------------
+
+- Change css for share.
+  [osnickers]
 
 0.5.46 (2017-11-20)
 -------------------
