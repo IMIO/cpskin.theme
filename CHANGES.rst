@@ -4,8 +4,8 @@ Changelog
 0.5.48 (unreleased)
 -------------------
 
-- Nothing changed yet.
-
+- Delete position on babel-edit.
+  [mgennart]
 
 0.5.47 (2017-11-22)
 -------------------
