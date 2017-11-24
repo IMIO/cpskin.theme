@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.5.49 (unreleased)
+0.5.49 (2017-11-24)
 -------------------
 
-- Nothing changed yet.
-
+- Specify other-actions for iconifiedDocumentActions ul li a img.
+  [mgennart]
 
 0.5.48 (2017-11-23)
 -------------------
