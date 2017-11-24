@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.5.50 (unreleased)
+0.5.50 (2017-11-24)
 -------------------
 
-- Nothing changed yet.
+- Add position for #right-actions-viewlet  #other-actions ul li a.
+  [mgennart]
 
 
 0.5.49 (2017-11-24)
