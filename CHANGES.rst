@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.5.51 (unreleased)
+0.5.51 (2017-11-27)
 -------------------
 
-- Nothing changed yet.
+- Delete div.width-1\:2 for content, add max-width to li.bloc-item a h3 and change width to .bloc-item.
+  [mgennart]
 
 
 0.5.50 (2017-11-24)
