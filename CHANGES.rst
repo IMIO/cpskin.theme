@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.5.52 (unreleased)
+0.5.52 (2017-11-28)
 -------------------
 
-- Nothing changed yet.
+- Add variable for the width of the bloc-item, change display for content .results ul , delete other-actions > div:first-child::before end other-actions > div:first-child::after.
+  [mgennart]
 
 
 0.5.51 (2017-11-27)
