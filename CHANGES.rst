@@ -1,6 +1,78 @@
 Changelog
 =========
 
+0.5.53 (unreleased)
+-------------------
+
+- Nothing changed yet.
+
+
+0.5.52 (2017-11-28)
+-------------------
+
+- Add variable for the width of the bloc-item, change display for content .results ul , delete other-actions > div:first-child::before end other-actions > div:first-child::after.
+  [mgennart]
+
+
+0.5.51 (2017-11-27)
+-------------------
+
+- Delete div.width-1\:2 for content, add max-width to li.bloc-item a h3 and change width to .bloc-item.
+  [mgennart]
+
+
+0.5.50 (2017-11-24)
+-------------------
+
+- Add position for #right-actions-viewlet  #other-actions ul li a.
+  [mgennart]
+
+
+0.5.49 (2017-11-24)
+-------------------
+
+- Specify other-actions for iconifiedDocumentActions ul li a img.
+  [mgennart]
+
+0.5.48 (2017-11-23)
+-------------------
+
+- Delete position on babel-edit.
+  [mgennart]
+
+0.5.47 (2017-11-22)
+-------------------
+
+- Change css for share.
+  [osnickers]
+
+0.5.46 (2017-11-20)
+-------------------
+
+- Change css for faceted.
+  [mgennart]
+
+0.5.45 (2017-11-17)
+-------------------
+
+- Fix display bug with css for social share
+  [amariscal]
+
+
+0.5.44 (2017-11-17)
+-------------------
+
+- Delete copied portal-siteactions to avoid duplicate
+  [laulaz]
+
+
+0.5.43 (2017-11-14)
+-------------------
+
+- Change css.
+  [osnickers]
+
+
 0.5.42 (2017-11-06)
 -------------------
 
