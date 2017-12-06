@@ -1,11 +1,44 @@
 Changelog
 =========
 
-0.5.48 (unreleased)
+0.5.53 (unreleased)
 -------------------
 
 - Nothing changed yet.
 
+
+0.5.52 (2017-11-28)
+-------------------
+
+- Add variable for the width of the bloc-item, change display for content .results ul , delete other-actions > div:first-child::before end other-actions > div:first-child::after.
+  [mgennart]
+
+
+0.5.51 (2017-11-27)
+-------------------
+
+- Delete div.width-1\:2 for content, add max-width to li.bloc-item a h3 and change width to .bloc-item.
+  [mgennart]
+
+
+0.5.50 (2017-11-24)
+-------------------
+
+- Add position for #right-actions-viewlet  #other-actions ul li a.
+  [mgennart]
+
+
+0.5.49 (2017-11-24)
+-------------------
+
+- Specify other-actions for iconifiedDocumentActions ul li a img.
+  [mgennart]
+
+0.5.48 (2017-11-23)
+-------------------
+
+- Delete position on babel-edit.
+  [mgennart]
 
 0.5.47 (2017-11-22)
 -------------------
