@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.53 (unreleased)
+0.5.53 (2017-12-07)
 -------------------
 
 - Change height #hidden-search.
