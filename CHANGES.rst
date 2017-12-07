@@ -4,8 +4,8 @@ Changelog
 0.5.53 (unreleased)
 -------------------
 
-- Nothing changed yet.
-
+- Change height #hidden-search.
+  [mgennart]
 
 0.5.52 (2017-11-28)
 -------------------
