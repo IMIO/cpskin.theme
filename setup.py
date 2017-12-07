@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-version = '0.5.53'
+version = '0.5.54.dev0'
 
 from setuptools import setup, find_packages
 
