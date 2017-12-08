@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.5.54 (unreleased)
+0.5.54 (2017-12-08)
 -------------------
 
-- Nothing changed yet.
-
+- Add icon fontello for pdf.
+  [mgennart]
 
 0.5.53 (2017-12-07)
 -------------------
