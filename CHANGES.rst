@@ -1,8 +1,8 @@
 Changelog
 =========
 
-0.5.56 (unreleased)
--------------------
+0.6.0 (2017-12-20)
+------------------
 
 - Add variable for bloc-item on homepage, add css for type reglement, change css for slider and other-actions.
   [mgennart]
