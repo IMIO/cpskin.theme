@@ -29,9 +29,14 @@
     float:left;
 }
 
-#fax .tel, #fax label {
-    clear: both;
-    float: left;
+.contact-details p label,
+#contact-schedule #phone a,
+#contact-schedule #cell_phone a{
+    display: flex;
+}
+#contact-schedule #phone a,
+#contact-schedule #cell_phone a{
+    margin:0 0 0.25em 0;
 }
 .contact-details a {
     display: inline-block;
@@ -164,7 +169,7 @@ fieldset.citizen {
 .faceted-widget.faceted-text-widget.section-search fieldset form::after {
     background: transparent none repeat scroll 0 0;
     bottom: 0;
-    color: white;
+    color: #333;
     content: "";
     display: block;
     float: right;
@@ -172,8 +177,8 @@ fieldset.citizen {
     height: 20px;
     padding: 0 0 5px 4px;
     position: absolute;
-    right: 10px;
-    top: 0.25em;
+    right: 0.25em;
+    top: 0.35em;
     width: 20px;
     z-index: 0;
 }
@@ -247,13 +252,19 @@ fieldset.citizen {
 }
 
 #content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li input:checked + label {
-    background: white none repeat scroll 0 0;
-    color: black;
-    padding-bottom: 0.4em;
+    background: @grey-bg;
+    color: #ffffff;
+    padding-bottom: 0.6em;
     padding-left: 1em;
     text-shadow: 0 0 0 transparent;
 }
-
+#content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li label:hover {
+    background: @grey-bg;
+    padding-bottom: 0.6em;
+    padding-left: 1em;
+    color: #ffffff;
+    text-shadow: 0 0 0 transparent;
+}
 
 #content #top-area .faceted-widget.faceted-layout-widget.section-affichage input {
     display: none;
@@ -265,14 +276,6 @@ fieldset.citizen {
     padding-left: 1em;
     padding-top: 0.5em;
     z-index: 1;
-}
-
-#content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li label:hover {
-    background: white none repeat scroll 0 0;
-    color: black;
-    padding-bottom: 0.4em;
-    padding-left: 1em;
-    text-shadow: 0 0 0 transparent;
 }
 
 #faceted-form .select2-container .select2-choice, .widget-fieldset input[type="text"] {
@@ -470,7 +473,8 @@ body.template-facetednavigation_view .contact-entry {
 
 .template-facetednavigation_view .contact-title,
 .template-facetednavigation_view .organization-title {
-    font-size: 100%;
+    font-size: 80%;
+    margin-left: 0;
 }
 
 .template-facetednavigation_view #viewlet-above-content-title .iconifiedDocumentActions,
@@ -538,12 +542,151 @@ body.template-facetednavigation_view .contact-entry {
     margin-bottom: 0.5em;
 }
 
- .faceted-drag-drop.faceted-widgets.faceted-default-widgets.faceted-top-widgets  .faceted-criteria a{
+.faceted-drag-drop.faceted-widgets.faceted-default-widgets.faceted-top-widgets  .faceted-criteria a{
     padding-right: 0.2em;
- }
-
+}
+.template-facetednavigation_view .contact-photo,
+.template-facetednavigation_view .organization-logo{
+    display:none;
+}
+.template-facetednavigation_view .contact-selection {
+    position: absolute;
+    left: 1em;
+    top: -0.85em;
+}
+.faceted-text-widget.section-search input {
+    padding: 0.55em;
+    background: linear-gradient(to top, #eee 0%, #fff 50%);
+}
+.faceted-text-widget.section-search form{
+    position: relative;
+}
+#content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li label{
+    padding-top: 0.25em;
+}
+body.template-facetednavigation_view .organization-entry, body.template-facetednavigation_view .contact-entry{
+    position:relative;
+    overflow:visible;
+    height:12em;
+    background: #f1f1f1;
+    border: 0px solid lightgray;
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px -1px rgba(0,0,0,0.3);
+}
+body.template-facetednavigation_view.userrole-authenticated .organization-entry,
+body.template-facetednavigation_view.userrole-authenticated .contact-entry {
+    padding-top: 2em;
+}
+.contacts-facetednav-actions {
+    position: absolute;
+    top: 0;
+    right: 1em;
+}
+.template-facetednavigation_view .organization-entry .contact-info,
+.template-facetednavigation_view .contact-entry .contact-info {
+    margin-left: 0;
+}
+.contact-details p, .contact-details > div {
+    clear: both;
+    display: inline-block;
+    float: left;
+}
 /* fin navigation par facettes  */
-
+/*  fiche annuaire   */
+#organization > .contact-details label,
+#person > .contact-details label{
+    color: #4d80d1;
+}
+#organization > .contact-details,
+#person > .contact-details {
+    background: #0047b1 none repeat scroll 0 0;
+    color: white;
+    padding: 1em;
+}
+#organization > .contact-details a,
+#person > .contact-details a {
+    clear: both;
+    color: white;
+    display: block;
+    text-decoration: underline;
+}
+.contact-details p a{
+    clear:both;
+}
+#organization #download_vcard, #person #download_vcard {
+    float: left;
+    margin-bottom: 1em;
+}
+#content .Schedule {
+    display: inline;
+    border: 0em solid #fff;
+    margin:0;
+}
+#content .Schedule legend {
+    font-size: 100%;
+    font-weight: bold;
+}
+div.schedule-widget-day {
+    width: 100%;
+    & .title {
+        box-sizing: border-box;
+        font-weight: normal;
+        margin-right: 1em;
+        min-width: 76px;
+        padding-left: 0.75em;
+    }
+    &:nth-child(2n) {
+        background: #f1f1f1 none repeat scroll 0 0;
+        float: left;
+    }
+}
+#portal-columns .schedule-widget-day div {
+    float: left;
+    margin-right: 0.5em;
+    padding: 0.25em 0 0.25em 0.75em;
+}
+.schedule > div {
+    float: right;
+}
+.activity {
+    clear: both;
+    padding-top: 1em;
+}
+.schedule {
+    display: inline-block;
+    max-width: 50%;
+    vertical-align: top;
+}
+#viewlet-above-content-body .wrapped-coord {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0.5em 1em 1.5em;
+    vertical-align: top;
+    width: 40%;
+}
+#viewlet-above-content-body .wrapped-coord div {
+    margin-bottom: 0.25em;
+}
+#organization > .contact-details label,
+#person > .contact-details label{
+    color: #4d80d1;
+}
+#organization > .contact-details, #person > .contact-details {
+    background: #0047b1 none repeat scroll 0 0;
+    color: white;
+    padding: 1em;
+}
+#organization > .contact-details a, #person > .contact-details a {
+    clear: both;
+    color: white;
+    display: block;
+    text-decoration: underline;
+}
+#visual-portal-wrapper .contact-details {
+    width: 50%;
+    float: left;
+}
 /*  related contact  */
 
 #aboveContentContact .related-contact {
@@ -590,7 +733,10 @@ body.template-facetednavigation_view .contact-entry {
 .subsection-vie-politique-conseil-communal-annuaire-des-conseillers .photo > img {
     width: 150px;
 }
-
+.related-contact .fax{
+    background: none;
+    padding: 0;
+}
 /*  event  */
 
 #content a.caltrigger {

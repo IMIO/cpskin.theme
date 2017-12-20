@@ -199,7 +199,6 @@ td:last-child.pretty_link {
 }
 
 #other-actions {
-    padding-top: 11.5em;
     position: relative;
 }
 
@@ -310,7 +309,7 @@ a[name*="section"] {
 
 #right-actions-viewlet {
     position: absolute;
-    right: 0.5em;
+    right: 1.5em;
     top: 2em;
     width: 2em;
 }
@@ -398,12 +397,12 @@ a[name*="section"] {
 
 #right-actions-viewlet-inner {
 	width: 2em;
-	padding-top:3em;
+	padding-top:1em;
     z-index: 1;
 }
 
 #right-actions-viewlet-inner a{
-    top: -3.5em;
+    top: 0;
 }
 
 #right-actions-viewlet-inner > a {
@@ -432,7 +431,22 @@ a[name*="section"] {
     border: 0px dotted lightgrey;
     width: 18em;
 }
-
+#viewlet-above-content #right-actions-viewlet #other-actions li a:before{
+    margin:0em;
+    padding: 1em;
+    color: @other-action-icon-color;
+}
+#other-actions [class^="icon-"]::before{
+    background: @other-action-icon-bg;
+}
+#right-actions-viewlet #other-actions #social-share::after{
+    color:  @other-action-icon-color;
+    margin-top: 0.5em;
+    margin-left: 0em;
+    padding: 1em;
+    background: @other-action-icon-bg;
+    width: 1em;
+}
 /*  Fin right actions  */
 
 // social
@@ -1056,14 +1070,8 @@ div#top-navigation div#top-navigation-inner ul#portal-globalnav-cpskinmenu.navTr
 #portal-globalnav .selected a:hover,
 #portal-globalnav a:hover,
 #portal-globalnav li a.activated{		
-		color:@nav-onglet-color-hover;
+		color:#fff;
 }
-
-#portal-globalnav .selected a {
-    text-decoration: underline;
-	text-decoration-style: dotted;
-}
-
 #portal-globalnav li a {
     background-color: @nav-onglet-bg;
 	color: @nav-onglet-color;
@@ -1902,7 +1910,7 @@ dl.portlet dt, .portletWrapper dl.portlet dt a {
 #flex #carousel-a-la-une ul li{
     background-color:#666666;
     margin-right: 4px;
-    width:233px !important;
+    width:213px !important;
 }
 
 #carousel-a-la-une .flex-caption h2 {
@@ -2551,17 +2559,15 @@ iframe .player .title{
 
 /*   Vue faceted agenda   */
 
-
-#top-area .faceted-simpledate-widget-form input, #top-area .faceted-daterange-widget-form input {
+#top-area .faceted-simpledate-widget-form input,
+#top-area .faceted-daterange-widget-form input {
     padding-right: 0;
     width: 6em;
 }
-
 #faceted-results .day {
     float: left;
     width: 100%;
 }
-
 .day-date {
     background: #01b0f0 none repeat scroll 0 0;
     color: #ffffff;
@@ -2572,19 +2578,41 @@ iframe .player .title{
     margin: 1.5em 0 1em;
     padding: 0.75em;
 }
-
 .event-entry {
     float: left;
-    margin-bottom: 1em;
-    margin-right: 1%;
-    width: 24%;
+    margin: 0 2% 4% 0;
 }
-
+.width-full .event-entry{
+    width: calc((100% - 12%) / @agenda-event-entry-0);
+}
+.width-3\:4 .event-entry{
+    width: calc((100% - 8%) / @agenda-event-entry-2);
+}
+.width-1\:2 .event-entry{
+    width: calc((100% - 4%) / @agenda-event-entry-3);
+}
+.width-full .faceted-agenda-ungrouped-view .event-entry:nth-child(4n){
+    margin-right: 0;
+    & .pageleadImage{
+        margin-right: 0;
+    }
+}
+.width-3\:4 .faceted-agenda-ungrouped-view .event-entry:nth-child(3n){
+    margin-right: 0;
+    & .pageleadImage{
+        margin-right: 0;
+    }
+}
+.width-1\:2 .faceted-agenda-ungrouped-view .event-entry:nth-child(2n){
+    margin-right: 0;
+    & .pageleadImage{
+        margin-right: 0;
+    }
+}
 .day .pageleadImage {
     width: 100%;
     padding-bottom: 60%;
 }
-
 .day .pagecaption {
     background: #f1f1f1;
     box-sizing: border-box;
@@ -2593,8 +2621,57 @@ iframe .player .title{
     padding: 1em;
     width: 100%;
 }
-
-
+.faceted-agenda-ungrouped-view {
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+.event-entry .pageleadImage{
+    width: 100%;
+    padding-bottom: 100%;
+}
+.event-entry .pagecaption{
+    width: 100%;
+}
+.event-entry .pagecaption h3 {
+    font-size: 1.1em;
+    line-height: 1.2em;
+    margin: 0.5em 0 0.25em 0;
+    font-weight: bold;
+}
+.faceted-taxonomy_select2-widget legend,
+.faceted-widget.faceted-text-widget.section-recherche legend {
+    display: none;
+}
+//pagination
+#content #faceted-results .listingBar a,
+#content #faceted-results .listingBar a:last-child,
+#faceted-form #center-content-area #faceted-results .listingBar a:hover:last-child{
+    border: none;
+}
+#visual-portal-wrapper #content #faceted-results .listingBar a:focus{
+    outline: none;
+}
+#faceted-form #center-content-area #faceted-results .listingBar a:hover{
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    border-right: 1px solid #dedede;
+}
+.pagination.listingBar .current{
+    border-right: 1px solid #dedede;
+    padding: 0.25em 0.5em;
+    font-size: 1.5em;
+}
+#content #faceted-results .listingBar a{
+    border-right: 1px solid #dedede;
+    font-size: 1.5em;
+}
+#content #faceted-results .listingBar .next,
+#faceted-form #center-content-area #faceted-results .listingBar a.next:hover{
+    border-right: none;
+    border-left: 1px solid #ccc;
+}
 /*    MINI SITE     */
 
 .mainThemeDependentCss(@couleur-onglet: @nav-onglet-bg-hover) {
@@ -2781,6 +2858,91 @@ div.formControls {
      box-shadow: 0 0 14px 7px #fff !important;
 }
 
-.galleria-thumb-nav-left, .galleria-thumb-nav-right, .galleria-info-link, .galleria-info-close, .galleria-image-nav-left, .galleria-image-nav-right {
+.galleria-thumb-nav-left, .galleria-thumb-nav-right,
+.galleria-info-link, .galleria-info-close,
+.galleria-image-nav-left, .galleria-image-nav-right {
     background-color: black;
+}
+
+//configuration faceted
+.template-configure_faceted-html #center-top-area {
+    position: relative;
+    z-index: 1;
+}
+// affichage réglements
+#formfield-form-widgets-texte label,
+#formfield-form-widgets-taxonomy_infospubliques label,
+#formfield-form-widgets-ILeadImage-image label,
+#formfield-form-widgets-ILeadImage-image_caption label,
+#form-widgets-ILeadImage-image .discreet {
+    display: none;
+}
+
+.portaltype-event #formfield-form-widgets-ILeadImage-image label {
+    display: inline;
+}
+
+#formfield-form-widgets-date_adoption_historique,
+#formfield-form-widgets-date_adoption,
+#formfield-form-widgets-date_publication_historique,
+#formfield-form-widgets-date_publication,
+#formfield-form-widgets-date_echeance {
+    background: #f2f2f2;
+    box-sizing: border-box;
+    clear: none;
+    color: white;
+    float: left;
+    margin-bottom: 0;
+    padding: 2em 0em 1.5em 1em;
+    position: relative;
+    width: 33.333%;
+    z-index: 0;
+}
+
+#formfield-form-widgets-date_adoption_historique > span,
+#formfield-form-widgets-date_adoption > span,
+#formfield-form-widgets-date_publication_historique > span,
+#formfield-form-widgets-date_publication > span,
+#formfield-form-widgets-date_echeance > span,
+.event-date > span,
+.event-dates > span{
+    padding-left: 1.5em;
+    background-size: 12px;
+    color:#333;
+}
+
+#formfield-form-widgets-date_adoption_historique label,
+#formfield-form-widgets-date_adoption label,
+#formfield-form-widgets-date_publication_historique label,
+#formfield-form-widgets-date_publication label,
+#formfield-form-widgets-date_echeance label{
+    color: #000;
+}
+
+
+#formfield-form-widgets-texte_legislatif label {
+    display: block;
+    padding-bottom: 1em;
+    padding-top: 3em;
+    position: relative;
+    text-transform: uppercase;
+}
+
+#formfield-form-widgets-date_adoption_historique.empty > span,
+#formfield-form-widgets-date_adoption.empty > span,
+#formfield-form-widgets-date_publication_historique.empty > span,
+#formfield-form-widgets-date_publication.empty > span,
+#formfield-form-widgets-date_echeance.empty > span {
+    background:none;
+}
+
+#formfield-form-widgets-date_adoption_historique.empty:before,
+#formfield-form-widgets-date_adoption.empty:before,
+#formfield-form-widgets-date_publication_historique.empty:before,
+#formfield-form-widgets-date_publication.empty:before,
+#formfield-form-widgets-date_echeance.empty:before {
+    bottom: 0;
+    content: "--";
+    left: 4em;
+    position: absolute;
 }
