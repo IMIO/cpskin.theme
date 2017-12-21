@@ -1,11 +1,12 @@
 Changelog
 =========
 
-0.6.1 (unreleased)
+0.6.1 (2017-12-21)
 ------------------
 
-- Nothing changed yet.
-
+- Add float for menu mobile.
+  Add css and variable for portlet acces directs and icones horizontal.
+  [mgennart]
 
 0.6.0 (2017-12-20)
 ------------------

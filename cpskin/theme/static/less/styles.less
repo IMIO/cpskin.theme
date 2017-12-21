@@ -1760,6 +1760,60 @@ dl.portlet dt, .portletWrapper dl.portlet dt a {
 #document-toc a{
     font-size:110%;
 }
+.portletStaticText.portlet-static-acces-directs {
+    display: inline-block;
+    background: transparent;
+}
+.portlet-static-acces-directs figure {
+    position: relative;
+    margin-bottom: 0.25em;
+    float: left;
+}
+.portlet-static-acces-directs .image figcaption{
+    color: @portlet-acces-caption-color;
+}
+.portlet-static-acces-directs figcaption {
+    background: @portlet-acces-caption-bg;
+    position: absolute;
+    bottom: 0;
+    font-weight: bold;
+    padding: 0 1em 0 0.25em;
+    width: 100%;
+    box-sizing: border-box;
+    float: left;
+}
+.portletStaticText.portlet-static-icones-horizontal {
+    margin: 1em 0;
+}
+.portletStaticText.portlet-static-icones-horizontal > ul {
+    margin-left: 0;
+}
+.portlet-static-icones-horizontal ul li {
+    background-color: @portlet-icones-horizontal-bg;
+    border-radius: 4px;
+    color: @portlet-icones-horizontal-color;
+    display: block;
+    font-size: 74%;
+    margin: 0 0em 0.5em 0;
+    padding: 1em ;
+    box-shadow: 2px 4px 4px 0 #c5c5c5;
+    list-style: none;
+}
+.portlet-static-icones-horizontal ul li:hover {
+    background-color: @portlet-icones-horizontal-bg-hover;
+}
+.portlet-static-icones-horizontal ul li a:last-child {
+    width: 88%;
+}
+.portlet-static-icones-horizontal ul li a {
+    color: #ffffff;
+    display: inline-block;
+    width: 12%;
+}
+.portlet-static-icones-horizontal ul li a img {
+    padding-right: 0.5em;
+}
+
 
 /* --- Fin portlets generaux --- */
 
@@ -2918,8 +2972,6 @@ div.formControls {
 #formfield-form-widgets-date_echeance label{
     color: #000;
 }
-
-
 #formfield-form-widgets-texte_legislatif label {
     display: block;
     padding-bottom: 1em;
@@ -2945,4 +2997,8 @@ div.formControls {
     content: "--";
     left: 4em;
     position: absolute;
+}
+/*   menu mobile */
+.advb-submenu .submenu{
+    float: left;
 }
