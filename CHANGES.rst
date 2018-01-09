@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.6.2 (unreleased)
+0.6.2 (2018-01-09)
 ------------------
 
-- Nothing changed yet.
+- Add top-menu-actions in top-actions.
+  [mgennart]
 
 
 0.6.1 (2017-12-21)

@@ -941,8 +941,29 @@ margin:0;
     margin-top: 3px;
     margin-right:2em;
 }
-
-
+[id="top-menu-actions"]{
+    float: left;
+}
+.top-menu-action {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 85%;
+}
+.top-menu-action .actionMenuContent{
+    background: #808080;
+    padding: 0.5em 0.25em;
+}
+.top-menu-action dl.actionMenu.activated dd a{
+    margin: 0 0.25em 0.4em 0.25em ;
+    padding: 0.25em;
+}
+#top-actions-inner .top-menu-action dl.actionMenu.activated dd a:hover{
+    background: #f2f2f2;
+    color: #333333;
+}
+.top-menu-action dl.actionMenu.activated dt {
+    margin: 0 0.25em;
+}
 dl.portlet ul.navTreeLevel0 > .navTreeItem{
     border-bottom-width: 0em;
     padding: 0;

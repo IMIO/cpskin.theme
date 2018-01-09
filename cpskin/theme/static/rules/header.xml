@@ -45,6 +45,7 @@
           <div id="top-actions">
             <div id="top-actions-inner">
               <div id="top-actions-actions">
+                <xsl:copy-of select="./*[@id='top-menu-actions']" />
                 <xsl:copy-of select="./*[@id='portal-personaltools-wrapper']" />
                 <xsl:copy-of select="//*[@id='portal-siteactions']" />
                 <xsl:apply-templates select="./*[@id='social-viewlet']" />
@@ -71,6 +72,7 @@
 
       <drop css:content="#portal-siteactions" />
       <drop css:content="#minisite-search" />
+      <drop css:content="#top-menu-actions" />
 
   </rules>
 </rules>
