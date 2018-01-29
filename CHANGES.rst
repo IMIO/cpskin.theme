@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.6.3 (unreleased)
+0.6.3 2018-01-29)
 ------------------
 
-- Nothing changed yet.
-
+- Change the label display in edition mode.
+  [mgennart]
 
 0.6.2 (2018-01-09)
 ------------------
