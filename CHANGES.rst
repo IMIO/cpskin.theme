@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.3 (2018-01-29)
+0.6.3 (2018-01-31)
 ------------------
 
 - Change the label display in edition mode.
