@@ -4,7 +4,8 @@ Changelog
 0.6.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Move organization photos before map : #19171
+  [laulaz]
 
 
 0.6.5 (2018-02-09)

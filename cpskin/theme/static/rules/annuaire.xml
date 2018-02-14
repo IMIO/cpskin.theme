@@ -17,6 +17,16 @@
     <drop content="//div[@id='organization']/div[@class='contact-details']" />
     <drop content="//div[@id='organization']/fieldset[@class='Schedule']" />
 
+    <rules css:if-content="#leaflet-content-viewlet">
+
+      <before css:content="#leaflet-content-viewlet">
+        <xsl:copy-of select="//div[@id='organization-photos']" />
+      </before>
+
+      <drop content="//div[@id='organization-photos']" />
+
+    </rules>
+
   </rules>
 
 </rules>
