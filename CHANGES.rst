@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.6.6 (unreleased)
+0.6.6 (2018-02-19)
 ------------------
 
-- Nothing changed yet.
+- Add news icon fontello.
+  [mgennart]
 
 
 0.6.5 (2018-02-09)
