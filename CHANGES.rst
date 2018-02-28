@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.7 (unreleased)
+0.6.7 (2018-02-28)
 ------------------
 
 - Move organization photos before map : #19171
