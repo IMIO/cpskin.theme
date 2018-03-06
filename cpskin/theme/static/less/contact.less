@@ -556,7 +556,9 @@ body.template-facetednavigation_view .contact-entry {
 }
 .faceted-text-widget.section-search input {
     padding: 0.55em;
-    background: linear-gradient(to top, #eee 0%, #fff 50%);
+    background: #fff;
+    border: 1px solid #f9f9f9 !important;
+    height: 25px;
 }
 .faceted-text-widget.section-search form{
     position: relative;
@@ -636,10 +638,6 @@ div.schedule-widget-day {
         min-width: 76px;
         padding-left: 0.75em;
     }
-    &:nth-child(2n) {
-        background: #f1f1f1 none repeat scroll 0 0;
-        float: left;
-    }
 }
 #portal-columns .schedule-widget-day div {
     float: left;
@@ -654,16 +652,12 @@ div.schedule-widget-day {
     padding-top: 1em;
 }
 .schedule {
-    display: inline-block;
-    max-width: 50%;
-    vertical-align: top;
+    padding:0;
+    flex: 1 1 auto;
 }
 #viewlet-above-content-body .wrapped-coord {
-    box-sizing: border-box;
-    display: inline-block;
-    padding: 0.5em 1em 1.5em;
-    vertical-align: top;
-    width: 40%;
+    padding: 0;
+    flex: 1 1 auto;
 }
 #viewlet-above-content-body .wrapped-coord div {
     margin-bottom: 0.25em;
@@ -868,4 +862,10 @@ fieldset#form-groups-related_contacts,
 
 .related-contact .photo {
     float: left;
+}
+#aboveContentContact .coordinates {
+    background: #f2f2f2;
+    display: flex;
+    padding: 2em 1em;
+    flex-wrap: wrap;
 }

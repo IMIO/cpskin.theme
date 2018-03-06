@@ -1071,12 +1071,13 @@ div#top-navigation div#top-navigation-inner ul#portal-globalnav-cpskinmenu.navTr
     padding: 0.25em 0.75em !important;
 }
 
-#portal-globalnav-cpskinmenu a:hover, #portal-globalnav-cpskinmenu-tabs a:hover, li.sfHover > span > a {
-    background-color: #FFFFFF;
+#portal-globalnav-cpskinmenu a:hover, 
+#portal-globalnav-cpskinmenu-tabs a:hover,
+li.sfHover > span > a {
+    background-color: #fff;
     border-radius: 5px;
     color:@nav-onglet-color-hover;
 }
-
 .navTreeItemInPath {
     border-bottom-width: 0 !important;
 }
@@ -1108,9 +1109,10 @@ div#top-navigation div#top-navigation-inner ul#portal-globalnav-cpskinmenu.navTr
 	background-color: @nav-onglet-jsjt-bg;
 }
 
-#navWrapper #portal-globalnav #portaltab-je-suis a:hover, #navWrapper #portal-globalnav #portaltab-je-trouve a:hover,
-#navWrapper #portal-globalnav #portaltab-je-suis.selected a, #navWrapper #portal-globalnav #portaltab-je-trouve.selected a,
-#navWrapper #portal-globalnav #portaltab-je-suis a.activated, #navWrapper #portal-globalnav #portaltab-je-trouve a.activated{
+#navWrapper #portal-globalnav #portaltab-je-suis a:hover,
+#navWrapper #portal-globalnav #portaltab-je-trouve a:hover,
+#navWrapper #portal-globalnav #portaltab-je-suis a.activated,
+#navWrapper #portal-globalnav #portaltab-je-trouve a.activated{
 	background-color: @nav-onglet-bg-hover;
 }
 
@@ -2377,7 +2379,7 @@ div.width-1\:2 .videos-container{
 #content .bloc-item{
 	box-sizing: border-box;
     list-style: outside none none;
-    margin: 1.5% 3% 1.5% 0;
+    margin: 1em 3% 1em 0;
 }
 
 .width-full .bloc-item{
@@ -2636,7 +2638,9 @@ iframe .player .title{
 
 #top-area .faceted-simpledate-widget-form input,
 #top-area .faceted-daterange-widget-form input {
+    border: 1px solid #f9f9f9 !important;
     padding-right: 0;
+    height: 35px;
     width: 6em;
 }
 #faceted-results .day {
@@ -2873,6 +2877,7 @@ body.template-login_form #content, .pb-ajax #login-form {
     margin-right: 0.5em;
     padding-top: 0.2em;
     text-align: left;
+    width: auto;
 }
 div.overlay label {
     margin-bottom: 1em;
@@ -3029,4 +3034,87 @@ div.formControls {
 /*   menu mobile */
 .advb-submenu .submenu{
     float: left;
+}
+//FACETED EVENT
+#visual-portal-wrapper #faceted-form .faceted-top-widgets {
+    padding-right: 0;
+}
+.faceted-widget {
+    min-height: 5em;
+}
+.faceted-widget {
+    float: left;
+}
+#faceted-form #top-area {
+    background: @faceted-area-bg;
+    padding: 2em 0;
+}
+#top-area {
+    position: relative;
+    padding-bottom: 2em;
+}
+#visual-portal-wrapper #faceted-form .widget-fieldset legend {
+    font-weight: normal;
+    font-size: 100%;
+    float: left;
+}
+#content legend {
+    padding: 0.5em 0.25em 0.25em;
+}
+#visual-portal-wrapper #faceted-form .widget-fieldset form {
+    display: flex;
+}
+.faceted-simpledate-widget-form div {
+    float: left;
+    margin-left: 0.5em;
+}
+#top-area .faceted-simpledate-widget-form input, 
+#top-area .faceted-daterange-widget-form input {
+    padding-right: 0;
+    width: 8em;
+}
+input {
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    padding: 0.25em 0.5em;
+    padding-right: 0.5em;
+}
+input {
+    font-family: "Lucida Grande", Arial, FreeSans;
+}
+.faceted-widget.faceted-layout-widget.section-affichage {
+    bottom: -1.75em;
+}
+.faceted-widget.faceted-layout-widget.section-affichage {
+    bottom: -1.35em;
+    position: absolute;
+    right: 20%;
+    z-index: 1;
+}
+#content .section-affichage fieldset.widget-fieldset ul {
+    margin-top: 1em;
+}
+#content .faceted-widget.faceted-layout-widget.section-affichage li {
+    clear: none;
+    margin-right: 0.25em;
+    min-width: 10px;
+}
+#c0-date-input,
+#c4-start-input ,
+#c4-end-input {
+    height: 1.8em;
+    margin-bottom: 0.6em;
+}
+#visual-portal-wrapper #faceted-form .faceted_select {
+    max-width: 20em;
+    min-width: 15em;
+}
+#visual-portal-wrapper #faceted-form .select2-container .select2-choice {
+    background: #ffffff;
+    height: 35px;
+    border: none;
+    line-height: 35px;
+    color: gray;
+    padding: 0.2em 1em;
+    font-size: 0.9em;
 }
