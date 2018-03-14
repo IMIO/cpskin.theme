@@ -198,10 +198,10 @@ fieldset.citizen {
 }
 
 .faceted-widget.faceted-layout-widget.section-affichage {
-    bottom: -1.35em;
-    position: absolute;
-    right: 20%;
-    z-index: 1;
+    width: 100%;
+    min-height: 0;
+    margin: 2em 0 0 0;
+    box-sizing: border-box;
 }
 
 .section-affichage fieldset legend {
@@ -209,7 +209,9 @@ fieldset.citizen {
 }
 
 #content .section-affichage fieldset.widget-fieldset ul {
-    margin-top: 1em;
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
 }
 
 #content #top-area .widget-fieldset.faceted-criteria {
@@ -222,17 +224,23 @@ fieldset.citizen {
     padding: 0 1em 0em 0;
     margin-bottom:0;
 }
-
+#faceted-form .faceted-widget.faceted-layout-widget.section-affichage fieldset {
+    margin: 0;
+    padding: 0;
+}
 
 #content .faceted-widget.faceted-layout-widget.section-affichage li {
+    flex: 1 1 auto;
     clear: none;
-    margin-right: 0.25em;
-    min-width: 10px;
+    margin: 0;
+    max-width: 100%;
+    text-align: center;
+    width: 50%;
 }
 
 .section-affichage .widget-fieldset ul li label {
     padding: 0.4em 1em 0 2em;
-    color: #545454;
+    color: #fff;
     font-size: 17px;
     text-transform: none;
 }
@@ -242,7 +250,11 @@ fieldset.citizen {
     font-family: fontello;
     margin-right: 0.5em;
 }
-
+.faceted-widget.faceted-layout-widget.section-affichage label[title="Vue agenda"]::before {
+    font-family: fontello;
+    content: "\e854";
+    margin: 0 0.5em 0 0;
+}
 
 .faceted-widget.faceted-layout-widget.section-affichage label[title="Vue annuaire"]::before {
     content: "\f00a";
@@ -250,19 +262,21 @@ fieldset.citizen {
     font-size: 14px;
     margin-right: 0.75em;
 }
-
+.faceted-widget:first-child {
+    margin-left: 1.5em;
+}
 #content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li input:checked + label {
-    background: @grey-bg;
-    color: #ffffff;
+    background: #808080;
+    color: #fff;
     padding-bottom: 0.6em;
     padding-left: 1em;
     text-shadow: 0 0 0 transparent;
 }
 #content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li label:hover {
-    background: @grey-bg;
+    background: #808080;
     padding-bottom: 0.6em;
     padding-left: 1em;
-    color: #ffffff;
+    color: #fff;
     text-shadow: 0 0 0 transparent;
 }
 
@@ -271,12 +285,18 @@ fieldset.citizen {
 }
 
 #content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li label {
+    background: #e0e0e0;
+    padding-top: 0.25em;
+    box-sizing: border-box;
     display: inline-block;
-    height: 18px;
+    height: 38px;
     padding-left: 1em;
     padding-top: 0.5em;
-    z-index: 1;
+    margin: 0;
+    width: 100%;
+    color: #000;
 }
+
 
 #faceted-form .select2-container .select2-choice, .widget-fieldset input[type="text"] {
     border-radius: 0;
@@ -510,7 +530,7 @@ body.template-facetednavigation_view .contact-entry {
     padding-right: 40px;
     width: calc(169px);
     border: 1px solid #aaaaaa !important;
-    background: #f9f9f9;
+    background: #fff;
 }
 
 .faceted-widget.faceted-text-widget.section-recherche fieldset form::after {
@@ -563,9 +583,7 @@ body.template-facetednavigation_view .contact-entry {
 .faceted-text-widget.section-search form{
     position: relative;
 }
-#content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li label{
-    padding-top: 0.25em;
-}
+
 body.template-facetednavigation_view .organization-entry, body.template-facetednavigation_view .contact-entry{
     position:relative;
     overflow:visible;
@@ -596,23 +614,6 @@ body.template-facetednavigation_view.userrole-authenticated .contact-entry {
 }
 /* fin navigation par facettes  */
 /*  fiche annuaire   */
-#organization > .contact-details label,
-#person > .contact-details label{
-    color: #4d80d1;
-}
-#organization > .contact-details,
-#person > .contact-details {
-    background: #0047b1 none repeat scroll 0 0;
-    color: white;
-    padding: 1em;
-}
-#organization > .contact-details a,
-#person > .contact-details a {
-    clear: both;
-    color: white;
-    display: block;
-    text-decoration: underline;
-}
 .contact-details p a{
     clear:both;
 }
@@ -662,24 +663,30 @@ div.schedule-widget-day {
 #viewlet-above-content-body .wrapped-coord div {
     margin-bottom: 0.25em;
 }
-#organization > .contact-details label,
-#person > .contact-details label{
-    color: #4d80d1;
-}
 #organization > .contact-details, #person > .contact-details {
-    background: #0047b1 none repeat scroll 0 0;
-    color: white;
-    padding: 1em;
+    padding: 1em 1em 1em 0;
 }
 #organization > .contact-details a, #person > .contact-details a {
     clear: both;
-    color: white;
     display: block;
     text-decoration: underline;
 }
 #visual-portal-wrapper .contact-details {
     width: 50%;
     float: left;
+}
+#visual-portal-wrapper .held_position.vcard .contact-details{
+    width: 100%;
+}
+.portaltype-person #held_positions .held_position:first-of-type{
+    margin: 1em 1em 1em 0;
+}
+.portaltype-person #held_positions .held_position{
+    min-height: 36em;
+}
+.portaltype-person #held_positions .held_position .organization{
+    float: left;
+    margin: 1em 1em 1em 0;
 }
 /*  related contact  */
 
@@ -698,6 +705,7 @@ div.schedule-widget-day {
     width: 90%;
     font-size:1.1em;
     font-weight:bold;
+    margin: 0 0 0.5em 0;
 }
 
 #belowContentContact .related-contact h4:hover {
@@ -862,10 +870,23 @@ fieldset#form-groups-related_contacts,
 
 .related-contact .photo {
     float: left;
+    margin: 0 0.75em 0 0;
 }
 #aboveContentContact .coordinates {
     background: #f2f2f2;
     display: flex;
     padding: 2em 1em;
     flex-wrap: wrap;
+}
+//VUE TOUT LE CONTENU
+.template-full_view #content-core .iconifiedDocumentActions{
+    display: none;
+}
+.template-full_view #aboveContentContact .coordinates,
+.subsection-vie-politique #aboveContentContact .coordinates{
+    background: transparent;
+    padding: 2em 1em 2em 0;
+}
+.template-full_view .bloc-main{
+    margin: 0 0 1.5em 0;
 }
