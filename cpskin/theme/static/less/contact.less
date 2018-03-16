@@ -464,9 +464,7 @@ body.template-facetednavigation_view .contact-entry {
     box-sizing: border-box;
     clear: none;
     float: left;
-    height: 10em;
     margin-right: 1%;
-    overflow: hidden;
     padding: 1em;
     width: 24%;
 }
@@ -567,7 +565,6 @@ body.template-facetednavigation_view .contact-entry {
 body.template-facetednavigation_view .organization-entry, body.template-facetednavigation_view .contact-entry{
     position:relative;
     overflow:visible;
-    height:12em;
     background: #f1f1f1;
     border: 0px solid lightgray;
     border-radius: 0px;
@@ -600,14 +597,11 @@ body.template-facetednavigation_view.userrole-authenticated .contact-entry {
 }
 #organization > .contact-details,
 #person > .contact-details {
-    background: #0047b1 none repeat scroll 0 0;
-    color: white;
     padding: 1em;
 }
 #organization > .contact-details a,
 #person > .contact-details a {
     clear: both;
-    color: white;
     display: block;
     text-decoration: underline;
 }
@@ -854,10 +848,6 @@ fieldset#form-groups-related_contacts,
     display: none;
 }
 
-.faceted-drag-drop.faceted-widgets.faceted-default-widgets.faceted-top-widgets {
-    padding-right: 13em;
-}
-
 .faceted-widget.faceted-criteria-widget.section-filtres-actifs legend{
     text-transform: uppercase;
 }
@@ -869,3 +859,192 @@ fieldset#form-groups-related_contacts,
 .related-contact .photo {
     float: left;
 }
+
+/* ANNUAIRE  */
+
+#before-activity::after {
+    content: "";
+    position: absolute;
+    background: #f2f2f2;
+    width: 100%;
+    bottom: -20em;
+    height: 20em;
+    z-index: 0;
+    left: 0;
+}
+
+#leaflet-content-viewlet {
+    background: #ffffff;
+    clear: both;
+    padding-top: 1.5em;
+    position: relative;
+}
+
+/* Vue annuaire  */
+
+body.template-facetednavigation_view #content .organization-entry-photos, body.template-facetednavigation_view #content .contact-entry-photos{
+    height: auto;
+    background-image: url("../images/camera.png");
+    background-repeat: no-repeat;
+    background-position: center 4em;
+    box-shadow:none;
+    width:18%;
+    margin: 0 2% 2em 0;
+}
+
+.contact-entry > a {
+    height: 16em;
+    display: block;
+}
+
+.dynamic-hover .organization-photos {
+    background-size: cover;
+    height: 65%;
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+}
+
+.dynamic-hover .organization-photos.hover{
+    opacity: 1;
+}
+
+.organization-informations {
+    padding: 1em;
+    margin: 0;
+}
+
+.organization-informations .indexview-categories {
+    top: 0;
+    margin-left: 0;
+    padding-left: 0;
+    font-style: italic;
+}
+
+.template-facetednavigation_view .contact-title, .template-facetednavigation_view .organization-title {
+    text-transform: lowercase;
+    font-size:140%;
+    font-weight:normal;
+}
+
+.template-facetednavigation_view .contact-title::first-letter, .template-facetednavigation_view .organization-title::first-letter {
+    text-transform: uppercase;
+}
+
+/* Vue fiche annuaire  */
+
+#logo {
+    width: 16%;
+    float: right;
+    text-align: center;
+}
+
+.dynamic-hover div {
+    background: #f2f2f2;
+}
+
+#before-activity {
+    float: left;
+    width: 30%;
+    background: #f2f2f2;
+    padding: 2em 0.5em 2em 2.75em;
+    margin-right: 2%;
+    box-sizing: border-box;
+    margin-bottom: 1.5em;
+    position:relative;
+}
+
+#activity, .contact-ttwfields, .addnewcontactfromorganization, div#organization-photos {
+    float: left;
+    clear: none;
+    display: block;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+#visual-portal-wrapper .contact-details {
+    width: 100%;
+}
+
+.contact-details label, .Schedule legend {
+    display: none !important;
+}
+
+.contact-details p, .contact-details > div {
+    width: 100%;
+}
+
+.street-address::before,
+#email::before,
+.telephone::before,
+#phone a::before,
+#cell_phone a::before,
+.Schedule::before,
+#website::before {
+    float: left;
+    margin-left: -1.75em;
+    margin-top: -3px;
+    width:1.75em;
+}
+
+#form-widgets-schedule {
+    float: left;
+}
+
+.street-address::before {
+    content: url(/ckeditortemplates/images/adresse.png);
+}
+
+#email::before {
+    content: url(/ckeditortemplates/images/courriel.png);
+}
+
+.telephone::before {
+    content: url(/ckeditortemplates/images/telephone.png);
+}
+
+#phone a::before {
+    content: url(/ckeditortemplates/images/telephone.png);
+}
+
+#cell_phone a::before {
+    content: url(/ckeditortemplates/images/gsm.png);
+}
+
+.Schedule::before {
+    content: url(/ckeditortemplates/images/horloge.png);
+    margin-top:4px !important;
+}
+
+#website::before {
+    content: url(/ckeditortemplates/images/lien.png);
+}
+
+.organization-photo a {
+    margin: 0.5em 1em 0.5em 0;
+    min-height: 10.8em;
+    min-width: 10.8em; 
+}
+
+/* Horaire  */
+
+.portaltype-organization #before-activity #contact-schedule .Schedule {
+    padding: 0;
+}
+
+/*.schedule-widget-day div:nth-child(2n)::after {
+    content: "-";
+    float: right;
+    margin-right: -0.25em;
+}
+
+.schedule-widget-day div:last-child::after,
+#organization #download_vcard, #person #download_vcard{
+    display:none;
+}*/
+
+#portal-columns .schedule-widget-day div {
+    float: left;
+    margin-right: 0.5em;
+    padding: 0.25em 0 0em 0em;
+}
+
