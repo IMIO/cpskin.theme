@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.6.8 (unreleased)
+0.6.8 (2018-03-16)
 ------------------
 
-- Nothing changed yet.
+- Add css for new view directory with photo, for view all with contact.
+  [mgennart]
 
 
 0.6.7 (2018-02-28)
