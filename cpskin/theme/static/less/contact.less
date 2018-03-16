@@ -582,7 +582,8 @@ body.template-facetednavigation_view .contact-entry {
     position: relative;
 }
 
-body.template-facetednavigation_view .organization-entry, body.template-facetednavigation_view .contact-entry{
+body.template-facetednavigation_view .organization-entry,
+body.template-facetednavigation_view .contact-entry{
     position:relative;
     overflow:visible;
     background: #f1f1f1;
@@ -590,6 +591,7 @@ body.template-facetednavigation_view .organization-entry, body.template-facetedn
     border-radius: 0px;
     overflow: hidden;
     box-shadow: 2px 2px 6px -1px rgba(0,0,0,0.3);
+    height: 16em;
 }
 body.template-facetednavigation_view.userrole-authenticated .organization-entry,
 body.template-facetednavigation_view.userrole-authenticated .contact-entry {
@@ -681,7 +683,7 @@ div.schedule-widget-day {
 #organization > .contact-details a, #person > .contact-details a {
     clear: both;
     display: block;
-    text-decoration: underline;
+    text-decoration: none;
 }
 #visual-portal-wrapper .contact-details {
     width: 50%;
@@ -920,7 +922,8 @@ fieldset#form-groups-related_contacts,
 
 /* Vue annuaire  */
 
-body.template-facetednavigation_view #content .organization-entry-photos, body.template-facetednavigation_view #content .contact-entry-photos{
+body.template-facetednavigation_view #content .organization-entry-photos,
+body.template-facetednavigation_view #content .contact-entry-photos{
     height: auto;
     background-image: url("../images/camera.png");
     background-repeat: no-repeat;
@@ -930,7 +933,7 @@ body.template-facetednavigation_view #content .organization-entry-photos, body.t
     margin: 0 2% 2em 0;
 }
 
-.contact-entry > a {
+.contact-entry-photos > a {
     height: 16em;
     display: block;
 }
