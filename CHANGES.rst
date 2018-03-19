@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.6.11 (unreleased)
+0.6.11 (2018-03-19)
 -------------------
 
-- Nothing changed yet.
+- change css directory with images.
+  [osnickers]
 
 
 0.6.10 (2018-03-19)
