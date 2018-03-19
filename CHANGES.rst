@@ -1,10 +1,31 @@
 Changelog
 =========
 
-0.6.8 (unreleased)
-------------------
+0.6.11 (unreleased)
+-------------------
 
 - Nothing changed yet.
+
+
+0.6.10 (2018-03-19)
+-------------------
+
+- Correction header.
+  [mgennart]
+
+
+0.6.9 (2018-03-19)
+------------------
+
+- Add css for cpskin navigation view with leadimage.
+  [mgennart]
+
+
+0.6.8 (2018-03-16)
+------------------
+
+- Add css for new view directory with photo, for view all with contact.
+  [mgennart]
 
 
 0.6.7 (2018-02-28)
