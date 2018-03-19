@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.6.9 (unreleased)
+0.6.9 (2018-03-19)
 ------------------
 
-- Nothing changed yet.
+- Add css for cpskin navigation view with leadimage.
+  [mgennart]
 
 
 0.6.8 (2018-03-16)
