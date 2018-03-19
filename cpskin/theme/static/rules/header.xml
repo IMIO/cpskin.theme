@@ -2,118 +2,77 @@
 <rules xmlns="http://namespaces.plone.org/diazo"
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
        xmlns:css="http://namespaces.plone.org/diazo/css">
-  
+
+  <replace css:content-children="#portaltab-index_html a">
+      <span class="icon-home" />
+  </replace>
   <before css:content="#portal-top">
     <xsl:copy-of select="//*[@id='messagesviewlet']" />
   </before>
-  <rules if-not="$isinminisitemode">
-      <!-- Logo in navigation -->
-    <after css:content-children=".theme3">
-      <li id="portaltab-index_html">
-        <xsl:copy-of select= "//*[@id='portal-logo']"/>
-      </li>
-    </after>
-    <!-- Search in banner -->
-    <before css:if-content=".main-homepage" css:content="#mobnav-btn">
-      <div id="top-banner-search">
-        <xsl:copy-of select="//*[@id='cpskin-banner']/img" />
-        <xsl:copy-of select="//*[@id='portal-searchbox']"/>
-      </div>
-    </before>
-    <before css:if-not-content=".main-homepage" css:content="#mobnav-btn">
-      <div id="top-banner-search">
-        <xsl:copy-of select="//*[@id='cpskin-banner']/img" />
-      </div>
-      <div id="top-title-breadcrumbs">
-        <xsl:copy-of select="//h1[1]" />
-        <xsl:copy-of select="//*[@id='portal-breadcrumbs']" />
-      </div>
-    </before>
-    <!-- Standard search -->
-    <after css:if-not-content=".main-homepage" css:content="#portal-globalnav">
-      <div id="search-wrapper">
-        <div id="btn-search">
-          <a href="#"  class="btn-search"></a>
-        </div>
-        <div id="hidden-search" class="portal-search-hidden">
-          <xsl:copy-of select="//*[@id='portal-searchbox']"/>
-        </div>
-      </div> 
-    </after>
-    
-    <!-- Action header -->
-    <before css:content="#portal-header p:first-of-type">
-      <div id="top-languages">
-        <xsl:copy-of select="//*[@id='portal-languageselector']" />
-      </div>
-      <div id="top-actions">
-        <div id="top-actions-inner">
-          <div id="top-actions-actions">
-            <xsl:copy-of select="//*[@id='social-viewlet']" />
-            <xsl:copy-of select="//*[@id='portal-siteactions']" />
-            <xsl:copy-of select="//*[@id='top-menu-actions']" />
-            <xsl:copy-of select="//*[@id='portal-personaltools-wrapper']" />
-          </div>
-        </div>
-      </div>
-    </before>
-    
-    <!--- logo on mobile -->
-    <before css:content="#search-btn">
-      <div id="logo-mobile">
-        <div class="logo-mobile-inner">
-          <xsl:copy-of select= "//*[@id='portal-logo']"/>
-        </div>
-      </div>
-    </before>
-    <after css:if-content="#mobnav-btn" css:content="#mobnav-btn">
-      <xsl:copy-of select="//*[@id='portal-searchbox']"/>
-    </after>
-    
-    <!-- nav minisite -->
-    <after if-not="$isinminisitemode" css:content="#portal-globalnav">
-      <div class="minisite-nav-logo">
-        <xsl:copy-of select="//*[@id='minisite-logo']" />
-        <xsl:copy-of select="//*[@id='container-minisite-globalnav']" />
-      </div>
-    </after>
-  
-    
-    <!-- DROP -->
-    <drop content="//h1[1]"/>
-    <drop css:content="#portaltab-index_html"/>
-    <drop css:content="#portal-logo"/>
-    <drop css:content="#portal-searchbox"/>
-    <drop css:content="#cpskin-banner"/>
-    <drop css:content="#portal-languageselector"/>
-    <drop css:content="#social-viewlet"/>
-    <drop css:content="#top-menu-actions"/>
-    <drop css:content="#portal-personaltools-wrapper"/>
-    <drop css:content="#portal-siteactions"/>
-    <drop css:content="#portal-breadcrumbs"/>
-    <drop css:content="#container-minisite-globalnav"/>
-    <drop css:content="#minisite-logo" />
-    <drop css:content="#portal-header #mobnav-btn"/>
-  
-  </rules>
-  
-  
-  <rules if="$isinminisitemode" >
-    <after css:content="#portal-header p:last-of-type">
-      <div class="minisite-nav-logo">
-        <xsl:copy-of select="//*[@id='minisite-logo']" />
-        <xsl:copy-of select="//*[@id='container-minisite-globalnav']" />
-      </div>
-    </after>
-    <after css:content="#search-btn">
-      <div id="top-banner-search">
-        <xsl:copy-of select="//*[@id='cpskin-banner']/img" />
-      </div>
-    </after>
-    
-    <drop css:content="ul#portal-globalnav"/>
-    <drop css:content="#cpskin-banner"/>
-  </rules>
-  
 
+  <!-- Header / banner specific to minisite mode -->
+  <rules if="$isinminisitemode">
+
+      <replace css:content-children="#portal-header">
+          <div id="top-languages">
+            <xsl:copy-of select="//*[@id='portal-languageselector']" />
+          </div>
+
+          <div id="top-actions" class="top-actions-minisites">
+            <div id="top-actions-inner" class="minisites">
+            </div>
+          </div>
+      </replace>
+
+      <replace css:content-children="#minisite-search">
+          <xsl:copy-of select="//*[@id='portal-searchbox']"/>
+      </replace>
+
+
+      <drop css:content="#viewlet-above-content #viewlet-minisite" />
+      <drop css:content="#portal-breadcrumbs" />
+
+  </rules>
+
+
+  <!-- Standard Header / banner -->
+  <rules if-not="$isinminisitemode">
+
+      <replace css:content-children="#portal-header">
+          <div id="top-languages">
+            <xsl:copy-of select="//*[@id='portal-languageselector']" />
+          </div>
+          <div id="top-actions">
+            <div id="top-actions-inner">
+              <div id="top-actions-actions">
+                <xsl:copy-of select="./*[@id='top-menu-actions']" />
+                <xsl:copy-of select="./*[@id='portal-personaltools-wrapper']" />
+                <xsl:copy-of select="//*[@id='portal-siteactions']" />
+                <xsl:apply-templates select="./*[@id='social-viewlet']" />
+              </div>
+              <div class="visualClear"></div>
+            </div>
+          </div>
+          <div id="top-search-logo">
+            <div id="top-search-logo-inner">
+              <xsl:copy-of select="./*[@id='portal-logo']"/>
+              <xsl:copy-of select="./*[@id='portal-searchbox']"/>
+            </div>
+          </div>
+          <div id="top-navigation">
+            <div id="top-navigation-inner">
+              <xsl:apply-templates select="./*[not(@id) or (@id!='portal-personaltools-wrapper'
+                                                            and @id!='portal-logo'
+                                                            and @id!='portal-searchbox'
+                                                            and @id!='social-viewlet'
+                                                            and @id!='portal-languageselector')]"/>
+            </div>
+          </div>
+      </replace>
+
+      <drop css:content="#portal-siteactions" />
+      <drop css:content="#minisite-search" />
+      <drop css:content="#top-menu-actions" />
+
+  </rules>
 </rules>

@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.6.10 (unreleased)
+0.6.10 (2018-03-19)
 -------------------
 
-- Nothing changed yet.
+- Correction header.
+  [mgennart]
 
 
 0.6.9 (2018-03-19)
