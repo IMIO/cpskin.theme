@@ -1,10 +1,31 @@
 Changelog
 =========
 
-0.6.9 (2018-03-20)
-------------------
+0.6.12 (2018-03-20)
+-------------------
 
 - Correction css for contact and directory.
+  [mgennart]
+
+
+0.6.11 (2018-03-19)
+-------------------
+
+- change css directory with images.
+  [osnickers]
+
+
+0.6.10 (2018-03-19)
+-------------------
+
+- Correction header.
+  [mgennart]
+
+
+0.6.9 (2018-03-19)
+------------------
+
+- Add css for cpskin navigation view with leadimage.
   [mgennart]
 
 
