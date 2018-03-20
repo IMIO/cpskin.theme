@@ -24,7 +24,6 @@
     float: right !important;
     color: white;
 }
-
 #fax{
     float:left;
 }
@@ -45,7 +44,6 @@
 div#other-contacts {
     padding-left: 1em;
     padding-bottom: 1em;
-    clear:both;
 }
 
 /*   Fin fiche annuaire  */
@@ -901,17 +899,6 @@ fieldset#form-groups-related_contacts,
 }
 /* ANNUAIRE  */
 
-#before-activity::after {
-    content: "";
-    position: absolute;
-    background: #f2f2f2;
-    width: 100%;
-    bottom: -20em;
-    height: 20em;
-    z-index: 0;
-    left: 0;
-}
-
 #leaflet-content-viewlet {
     background: #ffffff;
     clear: both;
@@ -972,7 +959,8 @@ body.template-facetednavigation_view #content .contact-entry-photos{
 
 /* Vue fiche annuaire  */
 
-#logo {
+#logo,
+.related-contact.logo{
     width: 16%;
     float: right;
     text-align: center;
@@ -986,7 +974,7 @@ body.template-facetednavigation_view #content .contact-entry-photos{
     float: left;
     width: 30%;
     background: #f2f2f2;
-    padding: 2em 0.5em 2em 2.75em;
+    padding: 2em 0.5em 20em 2em;
     margin-right: 2%;
     box-sizing: border-box;
     margin-bottom: 1.5em;
@@ -1012,53 +1000,9 @@ body.template-facetednavigation_view #content .contact-entry-photos{
 .contact-details p, .contact-details > div {
     width: 100%;
 }
-
-.street-address::before,
-#email::before,
-.telephone::before,
-#phone a::before,
-#cell_phone a::before,
-.Schedule::before,
-#website::before {
-    float: left;
-    margin-left: -1.75em;
-    margin-top: -3px;
-    width:1.75em;
-}
-
 #form-widgets-schedule {
     float: left;
 }
-
-.street-address::before {
-    content: url(/ckeditortemplates/images/adresse.png);
-}
-
-#email::before {
-    content: url(/ckeditortemplates/images/courriel.png);
-}
-
-.telephone::before {
-    content: url(/ckeditortemplates/images/telephone.png);
-}
-
-#phone a::before {
-    content: url(/ckeditortemplates/images/telephone.png);
-}
-
-#cell_phone a::before {
-    content: url(/ckeditortemplates/images/gsm.png);
-}
-
-.Schedule::before {
-    content: url(/ckeditortemplates/images/horloge.png);
-    margin-top:4px !important;
-}
-
-#website::before {
-    content: url(/ckeditortemplates/images/lien.png);
-}
-
 .organization-photo a {
     margin: 0.5em 1em 0.5em 0;
     min-height: 10.8em;

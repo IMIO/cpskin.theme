@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.6.9 (unreleased)
+0.6.9 (2018-03-20)
 ------------------
 
-- Nothing changed yet.
+- Correction css for contact and directory.
+  [mgennart]
 
 
 0.6.8 (2018-03-16)
