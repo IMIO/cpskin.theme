@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.6.13 (unreleased)
+0.6.13 (2018-03-21)
 -------------------
 
-- Nothing changed yet.
-
+- Change padding for widget faceted layout.
+  [mgennart]
 
 0.6.12 (2018-03-20)
 -------------------
