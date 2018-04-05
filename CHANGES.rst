@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.6.14 (unreleased)
+0.6.14 (2018-04-05)
 -------------------
 
-- Nothing changed yet.
-
+- Change css for faceted select 2.
+  [mgennart]
 
 0.6.13 (2018-03-21)
 -------------------
