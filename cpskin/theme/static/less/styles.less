@@ -588,11 +588,14 @@ h4 {
     clear: both;
     float: left;
 }
-
-.advb-submenu ul li{
-padding-left:10px;
+.advb-submenu ul li {
+    border-left: 0 dashed white;
+    border-top: 1px dashed #f2f2f2;
+    box-sizing: border-box;
+    font-size: 17px;
+    padding: 0.5em 0 0.25em 1.5em;
+    width: 100%;
 }
-
 .advb-submenu{
     float:left;
     clear:both;
@@ -603,12 +606,18 @@ padding-left:10px;
 }
 
 #advanced-breadcrumbs .nofollow::after {
-    content: "\bb";
+    content: " ‹";
+    float: left;
+    margin-left: -1.25em;
     padding-left: 0.25em;
+    transform: rotate(270deg);
 }
 
 #mobnav-btn {
-    margin: 5px 0 6px;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 0.6em 0;
+    margin: 0;
     background-color: #404040;
 }
 
@@ -632,20 +641,59 @@ div#mobile-first-level-wrapper a {
 
 #mobnav-btn, .advb-title {
     border-bottom: 0px solid #FFFFFF !important;
-    border-radius: 5px;
-    padding-left: 0.25em;
 }
 
 #mobnav-btn::before,
 .advb-title::before {
     content: "\f008" !important;
     font-family: "fontello" !important;
-    padding-right: 0.25em;
+    font-size: 15px;
+    margin-left: 1em;
+    padding-right: 0.5em;
+}
+.advb-submenu .advb-title::before{
+    font-size: 15px;
+    margin-left: 1em;
 }
 
 .iframe-responsive-wrapper .iframe-ratio {
     margin-bottom: 6px;
     min-height: 94px;
+}
+#advanced-breadcrumbs .advb-submenu {
+    border-top: 1px solid #0E213F;
+    margin: 0;
+    width: 100%;
+}
+#advanced-breadcrumbs #advb-submenu-level-2.advb-submenu {
+    border-top: 0 solid white;
+}
+.advb-submenu ul li:first-child {
+    border-top: 0 solid white;
+}
+.advb-submenu ul li:last-child {
+    padding-bottom: 0.6em;
+}
+#title-level-2,
+#title-level-3,
+#title-level-4{
+    padding: 0.5em 0;
+}
+#advanced-breadcrumbs .follow {
+    margin-left: 0.3em;
+}
+#advanced-breadcrumbs .follow::after {
+    content: "\e83f";
+    float: left;
+    font-family: fontello;
+    font-size: 60%;
+    margin-left: -2.1em;
+    margin-top: 0.3em;
+}
+#advb-submenu-level-2.advb-submenu,
+#advb-submenu-level-3.advb-submenu,
+#advb-submenu-level-4.advb-submenu{
+    padding-left: 0;
 }
 
 /* --- Fin version mobile --- */
@@ -3034,6 +3082,10 @@ div.formControls {
 /*   menu mobile */
 .advb-submenu .submenu{
     float: left;
+    border-radius: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 //FACETED EVENT
 #visual-portal-wrapper #faceted-form .faceted-top-widgets {

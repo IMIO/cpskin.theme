@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.6.15 (unreleased)
+0.6.15 (2018-04-09)
 -------------------
 
-- Nothing changed yet.
-
+- Changing the mobile menu css.
+  [mgennart]
 
 0.6.14 (2018-04-05)
 -------------------
