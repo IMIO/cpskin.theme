@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.6.16 (unreleased)
+0.6.16 (2018-04-11)
 -------------------
 
-- Nothing changed yet.
+- Add css for view faceted preview for album.
+  [mgennart]
 
 
 0.6.15 (2018-04-09)
