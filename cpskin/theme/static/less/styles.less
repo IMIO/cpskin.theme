@@ -1403,10 +1403,13 @@ ul.navTreeLevel0 {
     text-align: center;
     width: 16%;
 }
-
+.section-albums.template-facetednavigation_view #faceted-results .photoAlbumEntry a:hover::after {
+    display: none;
+}
 .section-albums #faceted-results .photoAlbumEntry a {
     border-bottom: 0 solid white !important;
     border-radius: 26px;
+    color: #bebebe;
     font-size: 100%;
     height: auto;
     margin: 0;
@@ -1415,7 +1418,12 @@ ul.navTreeLevel0 {
     text-align: center;
     width: 100%;
 }
-
+.section-albums.template-facetednavigation_view #faceted-results .photoAlbumEntryWrapper{
+    float: left;
+    margin-right: 0;
+    width: 100%;
+    height: auto;
+}
 .section-albums .photoAlbumEntry img {
     border: 0 solid #ccc;
     border-radius: 3px;
@@ -1446,7 +1454,9 @@ ul.navTreeLevel0 {
     margin-right: 15px;
     width: 55%;
 }
-
+#faceted-results .photoAlbumEntry a:hover .photoAlbumEntryDescription {
+    color: #333333 !important;
+}
 
 #navWrapper #portal-globalnav .menutools-1 a,
 #navWrapper #portal-globalnav .menutools-2 a,
@@ -1555,7 +1565,11 @@ ul.navTreeLevel0 {
     font-weight: bold;
     height: auto;
 }
-
+.section-albums.template-facetednavigation_view #faceted-results .photoAlbumEntry a,
+.section-albums.template-facetednavigation_view #faceted-results .photoAlbumEntry .photoAlbumEntryTitle {
+    width: 100% !important;
+    clear: left;
+}
 
 .photoAlbumEntryTitle::before, .faceted-criteria-hide-show, .faceted-criteria-hide {
     display: none;
@@ -1564,7 +1578,9 @@ ul.navTreeLevel0 {
 #faceted-results .photoAlbumEntry a:hover .photoAlbumEntryTitle {
     color: #3548b1 !important;
 }
-
+.section-albums.template-facetednavigation_view .photoAlbumEntry a::before {
+    display: none;
+}
 /*  Fin vue faceted liste  */
 
 .template-facetednavigation_view .photoAlbumEntry a::before {
