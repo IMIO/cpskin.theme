@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.16 (2018-04-11)
+0.6.16 (2018-04-12)
 -------------------
 
 - Add css for view faceted preview for album.
