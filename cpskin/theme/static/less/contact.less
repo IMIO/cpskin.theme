@@ -763,9 +763,12 @@ div.schedule-widget-day {
     padding: 0;
 }
 /*  event  */
-
+#content a.caltrigger::after {
+    content: "\e851";
+    font-family: fontello;
+}
 #content a.caltrigger {
-    background: rgba(0, 0, 0, 0) url("/popup-calendar.gif") no-repeat scroll 0 0 / 22px auto;
+    background: none;
     height: 22px;
     margin: 0.25em 0 0 0.5em;
     width: 22px;

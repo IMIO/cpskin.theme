@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.6.17 (unreleased)
+0.6.17 (2018-04-18)
 -------------------
 
-- Nothing changed yet.
+- Correction css comment to schedule widget and add fontello icon in the edition of event.
+  [mgennart]
 
 
 0.6.16 (2018-04-12)
