@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.18 (unreleased)
+0.6.18 (2018-04-23)
 -------------------
 
 - Update to https fonts.
