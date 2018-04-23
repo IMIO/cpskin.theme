@@ -4,7 +4,8 @@ Changelog
 0.6.18 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Update to https fonts.
+  [bsuttor]
 
 
 0.6.17 (2018-04-18)
