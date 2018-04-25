@@ -345,11 +345,12 @@ a[name*="section"] {
 }
 
 #right-actions-viewlet-inner > a::after {
+    background: #808080;
     color: white;
     font-family: fontello;
     font-size: 110%;
+    padding: 0.85em;
     position: absolute;
-    text-shadow: 0 0 4px #0e213f;
     top: 0;
     left:0;
     visibility: visible;
@@ -1389,19 +1390,21 @@ ul.navTreeLevel0 {
     text-align: center;
     width: 30%;
 }
-
+.section-albums.template-facetednavigation_view #faceted-results .eea-preview-items {
+    display: flex;
+    flex-wrap: wrap;
+}
 .section-albums #faceted-results .photoAlbumEntry {
     background-color: #f2f2f2;
     background-image: none;
     background-repeat: no-repeat;
     border: 0 solid #8e8d8d;
-    border-radius: 4px;
     float: left;
     height: auto;
-    margin: 3% 1% 0.5%;
+    margin: 3% 1% 1em;
     position: relative;
     text-align: center;
-    width: 16%;
+    width: 18%;
 }
 .section-albums.template-facetednavigation_view #faceted-results .photoAlbumEntry a:hover::after {
     display: none;

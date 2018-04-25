@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.6.19 (unreleased)
+0.6.19 (2018-04-25)
 -------------------
 
-- Nothing changed yet.
-
+- Change css for album view.
+  [mgennart]
 
 0.6.18 (2018-04-23)
 -------------------
