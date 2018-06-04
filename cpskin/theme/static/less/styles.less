@@ -1374,22 +1374,6 @@ ul.navTreeLevel0 {
 .template-facetednavigation_view .select2-results {
     max-height: 400px;
 }
-
-.section-je-suis .photoAlbumEntry img ,
-.section-je-trouve .photoAlbumEntry img{
-    display:none;
-}
-
-#faceted-results .photoAlbumEntry {
-    background-image: none;
-    background-repeat: no-repeat;
-    float: left;
-    height: auto;
-    margin: 1% 1% 0.5%;
-    position: relative;
-    text-align: center;
-    width: 30%;
-}
 .section-albums.template-facetednavigation_view #faceted-results .eea-preview-items {
     display: flex;
     flex-wrap: wrap;
@@ -1492,12 +1476,6 @@ ul.navTreeLevel0 {
 .eea-preview-items {
     clear: both;
 }
-
-.eea-preview-items .photoAlbumEntryDescription {
-    display: inline-block;
-    width: 96%;
-}
-
 .eea-view {
     float: left;
     width: 100%;
@@ -1512,98 +1490,258 @@ ul.navTreeLevel0 {
 }
 
 /*  Vue faceted liste  */
-
-#faceted-results .photoAlbumEntry {
-    box-sizing: border-box;
-    margin: 0;
-    padding-bottom: 0;
-    width: 100%;
-    padding: 0;
-    z-index: 0;
-}
-
-#faceted-results .photoAlbumEntry a {
-    border-bottom: 1px solid #e6e6e6 !important;
-    font-size: 100%;
-    height: auto;
-    margin: 0;
-    padding-left: 0.5em;
-    text-align: left;
-    width: 88% !important;
-    color:#bebebe;
-}
-
-#faceted-results .photoAlbumEntry a::after {
-    background: #fff none repeat scroll 0 0;
-    bottom: 0;
-    content: "";
-    display: block;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transition: all 0.75s ease 0.1s;
-    width: 0;
-    z-index: -1;
-}
-
-#faceted-results .photoAlbumEntry a:hover::after {
-    background: #f5f6fb none repeat scroll 0 0;
-    bottom: 0;
-    content: "";
-    display: block;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 91% !important;
-    z-index: -1;
-}
-
-#content-core #faceted-results .photoAlbumEntryTitle, .section-je-suis #faceted-results .photoAlbumEntryTitle, .section-je-trouve #faceted-results .photoAlbumEntryTitle {
-    background: transparent none repeat scroll 0 0;
-    bottom: 0;
-    color: #000;
-    position: relative;
-    transition: all 0.5s ease 0s;
-    width: 93%;
-    font-weight: bold;
-    height: auto;
-}
-.section-albums.template-facetednavigation_view #faceted-results .photoAlbumEntry a,
-.section-albums.template-facetednavigation_view #faceted-results .photoAlbumEntry .photoAlbumEntryTitle {
-    width: 100% !important;
-    clear: left;
-}
-
-.photoAlbumEntryTitle::before, .faceted-criteria-hide-show, .faceted-criteria-hide {
-    display: none;
-}
-
-#faceted-results .photoAlbumEntry a:hover .photoAlbumEntryTitle {
-    color: #3548b1 !important;
-}
-.section-albums.template-facetednavigation_view .photoAlbumEntry a::before {
-    display: none;
-}
+//.eea-preview-items .photoAlbumEntryDescription {
+//    display: inline-block;
+//    width: 96%;
+//}
+//
+//#faceted-results .photoAlbumEntry {
+//    box-sizing: border-box;
+//    margin: 0;
+//    padding-bottom: 0;
+//    width: 100%;
+//    padding: 0;
+//    z-index: 0;
+//}
+//
+//#faceted-results .photoAlbumEntry a {
+//    border-bottom: 1px solid #e6e6e6 !important;
+//    font-size: 100%;
+//    height: auto;
+//    margin: 0;
+//    padding-left: 0.5em;
+//    text-align: left;
+//    width: 88% !important;
+//    color:#bebebe;
+//}
+//
+//#faceted-results .photoAlbumEntry a::after {
+//    background: #fff none repeat scroll 0 0;
+//    bottom: 0;
+//    content: "";
+//    display: block;
+//    left: 0;
+//    position: absolute;
+//    top: 0;
+//    transition: all 0.75s ease 0.1s;
+//    width: 0;
+//    z-index: -1;
+//}
+//
+//#faceted-results .photoAlbumEntry a:hover::after {
+//    background: #f5f6fb none repeat scroll 0 0;
+//    bottom: 0;
+//    content: "";
+//    display: block;
+//    left: 0;
+//    position: absolute;
+//    top: 0;
+//    width: 91% !important;
+//    z-index: -1;
+//}
+//
+//#content-core #faceted-results .photoAlbumEntryTitle,
+//.section-je-suis #faceted-results .photoAlbumEntryTitle,
+//.section-je-trouve #faceted-results .photoAlbumEntryTitle {
+//    background: transparent none repeat scroll 0 0;
+//    bottom: 0;
+//    color: #000;
+//    position: relative;
+//    transition: all 0.5s ease 0s;
+//    width: 93%;
+//    font-weight: bold;
+//    height: auto;
+//}
+//.section-albums.template-facetednavigation_view #faceted-results .photoAlbumEntry a,
+//.section-albums.template-facetednavigation_view #faceted-results .photoAlbumEntry .photoAlbumEntryTitle {
+//    width: 100% !important;
+//    clear: left;
+//}
+//
+//.photoAlbumEntryTitle::before, .faceted-criteria-hide-show, .faceted-criteria-hide {
+//    display: none;
+//}
+//
+//#faceted-results .photoAlbumEntry a:hover .photoAlbumEntryTitle {
+//    color: #3548b1 !important;
+//}
+//.section-albums.template-facetednavigation_view .photoAlbumEntry a::before {
+//    display: none;
+//}
 /*  Fin vue faceted liste  */
 
-.template-facetednavigation_view .photoAlbumEntry a::before {
-    border-radius: 11px;
-    color: black;
-    content: "⌟";
-    float: right;
-    font-size: 110%;
-    font-weight: normal;
-    margin-right: 0;
+//.template-facetednavigation_view .photoAlbumEntry a::before {
+//    border-radius: 11px;
+//    color: black;
+//    content: "⌟";
+//    float: right;
+//    font-size: 110%;
+//    font-weight: normal;
+//    margin-right: 0;
+//    position: relative;
+//    top: -0.25em;
+//    transform: rotate(-44deg);
+//    width: 1em;
+//}
+//
+//#faceted-form #faceted-results .photoAlbumEntry a::after {
+//    transition: all 0.1s ease 0.1s;
+//}
+/*   view faceted list items  */
+.faceted-list-items {
+    display: inline-block;
+}
+.faceted-list-item{
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    &:before{
+        display: none;
+    }
+    a {
+        display: block;
+        border-bottom: 1px solid #e6e6e6 !important;
+        font-size: 100%;
+        height: auto;
+        margin: 0;
+        padding: 1.5%;
+        text-align: left;
+        width: 88%;
+        position: relative;
+        &:after{
+            background: #fff;
+            bottom: 0;
+            content: "";
+            display: block;
+            left: 0;
+            position: absolute;
+            top: 0;
+            transition: all 0.75s ease 0.1s;
+            width: 0;
+            z-index: -1;
+        }
+        &:before {
+            border-radius: 11px;
+            color: black;
+            content: "⌟";
+            float: right;
+            font-size: 110%;
+            font-weight: normal;
+            margin-right: 0;
+            position: relative;
+            top: -0.25em;
+            transform: rotate(-44deg);
+            width: 1em;
+        }
+        &:hover::after {
+            background: #f2f2f2;
+            bottom: 0;
+            content: "";
+            display: block;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100% !important;
+            z-index: -1;
+        }
+        &:hover .faceted-list-item-title{
+            color: #3548b1;
+        }
+        &:hover .faceted-list-item-description{
+            color: #000;
+        }
+    }
+}
+.faceted-list-item-title {
+    color: #000;
+    font-weight: bold;
+    max-width: 96%;
+    transition: all 0.5s ease 0s;
+    &:before{
+        display: none;
+    }
+}
+.faceted-list-item-description{
+    color: #bebebe;
+    transition: all 0.5s ease 0s;
+}
+/*   view faceted preview items  */
+#faceted-results .eea-preview-items {
+    box-sizing: border-box;
+    display: inline-block;
+    column-count: 4;
+    column-gap: 3em;
+    padding: 1em;
+    width: 100%;
+}
+#faceted-results .photoAlbumEntry::before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    bottom: 0%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(ellipse at center, rgba(165, 165, 165, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(165, 165, 165, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+}
+#faceted-results .photoAlbumEntry:hover::before{
+    opacity: 1;
+    transform: translateY(15px);
+    -webkit-transform: translateY(15px);
+}
+#faceted-results .photoAlbumEntry {
+    background: #f8f8f8;
+    border-radius: 4px;
+    display: inline-block;
+    float: none;
+    height: auto;
+    margin: 1% 1% 9.5% 0.5%;
     position: relative;
-    top: -0.25em;
-    transform: rotate(-44deg);
-    width: 1em;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    transition: all 0.3s;
+    overflow: visible;
+    a{
+        color: #000 !important;
+        padding: 0;
+        height: auto;
+        width: 100%;
+    }
+    &:hover{
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+    }
+    &:hover .photoAlbumEntryTitle{
+        color: #333;
+    }
 }
-
-#faceted-form #faceted-results .photoAlbumEntry a::after {
-    transition: all 0.1s ease 0.1s;
+#faceted-results .photoAlbumEntryTitle{
+    color: #000;
+    font-weight: bold;
+    height: auto;
+    width: 100%;
+    &:before{
+        display: none;
+    }
 }
-
+#faceted-results .photoAlbumEntry img{
+    display: inline-block;
+}
+/*   view faceted cards  */
+.project .image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 0 100% 0;
+    height: 100%;
+}
 /* ---  Je suis, je trouve --- */
 
 #content .widget-fieldset ul {
@@ -2685,22 +2823,6 @@ iframe .player .title{
 }
 
 /* >>> Fin cookies <<< */
-
-/*   Vue faceted list    */
-
-.faceted-list-item-title::before {
-    content: "\0027A5";
-    padding-right: 1%;
-    float: left;
-    display: block;
-}
-
-.faceted-list-item-title {
-    padding: 1% 0;
-    max-width: 31%;
-    margin-left: -1%;
-}
-
 /*   Vue faceted agenda   */
 
 #top-area .faceted-simpledate-widget-form input,
