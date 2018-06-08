@@ -2931,7 +2931,18 @@ iframe .player .title{
 .event-dates > span {
     float: left;
 }
-
+.event.summary{
+    width: 50%;
+    word-wrap: break-word;
+    &.details li strong {
+        display: inline-block;
+        padding: 0 0 0.25em 0;
+        width: 100%;
+    }
+    .event_contacts a{
+        display: block;
+    }
+}
 /* >>> FIN VUE EVENTS <<<  */
 
 .diagnosis {
@@ -3386,7 +3397,6 @@ div.formControls {
 #formfield-form-widgets-date_publication_historique > span,
 #formfield-form-widgets-date_publication > span,
 #formfield-form-widgets-date_echeance > span,
-.event-date > span,
 .event-dates > span{
     padding-left: 1.5em;
     background-size: 12px;
