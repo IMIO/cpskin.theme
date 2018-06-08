@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot?87384852');
-  src: url('../font/fontello.eot?87384852#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?87384852') format('woff2'),
-       url('../font/fontello.woff?87384852') format('woff'),
-       url('../font/fontello.ttf?87384852') format('truetype'),
-       url('../font/fontello.svg?87384852#fontello') format('svg');
+  src: url('../font/fontello.eot?63920099');
+  src: url('../font/fontello.eot?63920099#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?63920099') format('woff2'),
+       url('../font/fontello.woff?63920099') format('woff'),
+       url('../font/fontello.ttf?63920099') format('truetype'),
+       url('../font/fontello.svg?63920099#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?87384852#fontello') format('svg');
+    src: url('../font/fontello.svg?63920099#fontello') format('svg');
   }
 }
 */
@@ -162,10 +162,17 @@
 .icon-address-book:before { content: '\e868'; } /* '' */
 .icon-lightbulb:before { content: '\e869'; } /* '' */
 .icon-lightbulb-alt:before { content: '\e86a'; } /* '' */
+.icon-cancel-circled:before { content: '\e86b'; } /* '' */
+.icon-cancel:before { content: '\e86c'; } /* '' */
+.icon-cancel-1:before { content: '\e86d'; } /* '' */
+.icon-cancel-circled2-1:before { content: '\e86e'; } /* '' */
+.icon-acrobat:before { content: '\e86f'; } /* '' */
 .icon-menu-1:before { content: '\f008'; } /* '' */
 .icon-th-list:before { content: '\f009'; } /* '' */
 .icon-th-thumb:before { content: '\f00a'; } /* '' */
 .icon-th-thumb-empty:before { content: '\f00b'; } /* '' */
+.icon-user-male:before { content: '\f062'; } /* '' */
+.icon-user-female:before { content: '\f063'; } /* '' */
 .icon-chat-empty:before { content: '\f0e6'; } /* '' */
 .icon-medkit:before { content: '\f0fa'; } /* '' */
 .icon-quote-left:before { content: '\f10d'; } /* '' */

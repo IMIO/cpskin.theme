@@ -73,6 +73,7 @@
       <drop css:content="#portal-siteactions" />
       <drop css:content="#minisite-search" />
       <drop css:content="#top-menu-actions" />
+      <drop css:content="#messagesviewlet" />
 
   </rules>
 </rules>

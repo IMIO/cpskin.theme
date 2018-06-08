@@ -253,6 +253,16 @@ body.template-facetednavigation_view .contact-entry{
     height: 20em;
     width: 100%;
 }
+.faceted-widget:first-child {
+    margin-left: 0;
+}
+#visual-portal-wrapper #faceted-form .faceted_select {
+    max-width: 15em;
+    min-width: 13em;
+}
+#content .faceted-widget.faceted-layout-widget.section-affichage li{
+    min-width: 232px;
+}
 /*fiche annuaire*/
 #visual-portal-wrapper .contact-details{
     width: 100%;
@@ -286,4 +296,39 @@ body.template-facetednavigation_view .contact-entry{
 //view faceted preview items
 .eea-preview-items {
     column-count:  1 !important;
+}
+//view faceted cards
+.faceted-cards {
+    .eea-preview-items {
+        flex-flow: column;
+    }
+    #faceted-results .project {
+        flex: 1 1 auto;
+        margin: 0 0 1.5em 0;
+        width: 100%;
+    }
+}
+
+// SLIDER
+//slider element-en-evidence
+.element-en-evidence .pageleadImage{
+    padding: 0 0 46% 0;
+    width: 100%;
+}
+.element-en-evidence .pagecaption {
+    width: 100%;
+    padding: 1em 0 0 0;
+}
+// slider unique
+#accueil #flex.slider-unique-titre .slider .linkimg {
+    position: relative;
+}
+#accueil #flex.slider-unique-titre .slider .flex-viewport .flex-caption{
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+}
+#accueil #flex.slider-unique-titre .carousel {
+    display: none;
 }
