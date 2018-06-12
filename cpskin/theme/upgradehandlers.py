@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from cpskin.theme.setuphandlers import addCustomLessFiles
 from cpskin.theme.setuphandlers import CUSTOM_FOLDER_NAME
+from eea.facetednavigation.layout.interfaces import IFacetedLayout
+from eea.facetednavigation.subtypes.interfaces import IFacetedNavigable
 from plone import api
 from plone.app.theming.interfaces import IThemeSettings
 from plone.resource.interfaces import IResourceDirectory
@@ -12,6 +14,17 @@ import logging
 
 logger = logging.getLogger('cpskin.theme')
 
+
+def set_faceted_list_items(context):
+    portal_catalog = api.portal.get_tool('portal_catalog')
+    brains = portal_catalog.unrestrictedSearchResults(
+                    object_provides=IFacetedNavigable.__identifier__)
+    for brain in brains:
+        obj = brain.getObject()
+        if IFacetedLayout(obj).layout == 'faceted-preview-items':
+            IFacetedLayout(obj).update_layout('faceted-list-items')
+            logger.info('{0} faceted layout update'.format(
+                '/'.join(obj.getPhysicalPath())))
 
 def add_theme_parameter_expression(key, value):
     params = api.portal.get_registry_record(

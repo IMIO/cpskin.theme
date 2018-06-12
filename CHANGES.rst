@@ -4,7 +4,8 @@ Changelog
 0.6.21 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add upgrade step to use faceted-list-items instead of faceted-preview-items.
+  [bsuttor]
 
 
 0.6.20 (2018-05-18)

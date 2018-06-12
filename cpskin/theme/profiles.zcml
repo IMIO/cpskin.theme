@@ -22,6 +22,14 @@
         />
 
 
+    <genericsetup:upgradeStep
+        title="CPSKIN Theme: upgrade to v5 (set faceted-list-items instead of preview)"
+        description="Upgrade step for CPSKIN Theme to add add_ms_horizontal_navigation_any_mode variable"
+        handler=".upgradehandlers.set_faceted_list_items"
+        source="4"
+        destination="5"
+        profile="cpskin.theme:default"
+        />
 
     <genericsetup:upgradeStep
         title="CPSKIN Theme: upgrade to v4 (add add_ms_horizontal_navigation_any_mode variable)"
