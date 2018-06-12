@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.6.24 (unreleased)
+0.6.24 (2018-06-12)
 -------------------
 
-- Nothing changed yet.
-
+- Change width to faceted-list-items.
+  [mgennart]
 
 0.6.23 (2018-06-12)
 -------------------
