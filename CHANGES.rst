@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.6.22 (unreleased)
+0.6.22 (2018-06-12)
 -------------------
 
-- Nothing changed yet.
+- Change display to #contact-label and change margin to .faceted-cards.project.
+  [mgennart]
 
 
 0.6.21 (2018-06-12)
