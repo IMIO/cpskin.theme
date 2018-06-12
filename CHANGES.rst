@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.21 (unreleased)
+0.6.21 (2018-06-12)
 -------------------
 
 - Add upgrade step to use faceted-list-items instead of faceted-preview-items.
