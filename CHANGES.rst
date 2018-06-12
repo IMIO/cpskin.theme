@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.6.23 (unreleased)
+0.6.23 (2018-06-12)
 -------------------
 
-- Nothing changed yet.
+- Change position to .event-entry.
+  [mgennart]
 
 
 0.6.22 (2018-06-12)
