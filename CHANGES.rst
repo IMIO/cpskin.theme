@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.6.25 (unreleased)
+0.6.25 (2018-06-13)
 -------------------
 
-- Nothing changed yet.
-
+- Change display #portal-footer a[href*="mentions-legales"].
+  [mgennart]
 
 0.6.24 (2018-06-12)
 -------------------
