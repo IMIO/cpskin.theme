@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.6.26 (unreleased)
+0.6.26 (2018-06-14)
 -------------------
 
-- Nothing changed yet.
+- Delete css for #portal-footer a[href*="mentions-legales"].
+  [mgennart]
 
 
 0.6.25 (2018-06-13)
