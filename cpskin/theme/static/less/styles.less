@@ -2998,6 +2998,7 @@ iframe .player .title{
 }
 
 .footer-sitemap-item{
+    display: @footer-sitemap-display;
     float:left;
     max-width:13%;
     min-width:7%;
@@ -3027,7 +3028,33 @@ iframe .player .title{
 #visual-portal-wrapper > footer {
     clear: both;
 }
-
+//FOOTER
+.footer-bloc{
+    box-sizing: border-box;
+    float: left;
+    padding: 3em 3em 3em 0;
+    max-width: 25%;
+    p{
+        color : @font-white;
+        padding: 0 0 0.5em 0;
+    }
+    h3{
+        color : @font-white;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 0 0 0.5em 0;
+    }
+    ul{
+        list-style: none;
+    }
+    li{
+        display: block;
+        line-height: 1.5em;
+    }
+    a:hover{
+        border-bottom: 1px solid @font-white;
+    }
+}
 /* >>> FIN FOOTER <<< */
 
 /* >>> Cookies <<< */

@@ -1,11 +1,14 @@
 Changelog
 =========
 
-0.6.27 (unreleased)
+0.6.27 (2018-07-02)
 -------------------
 
-- Nothing changed yet.
-
+- Add CSS to footer bloc and variable @footer-sitemap-display for display.
+  [mgennart]
+  
+- Change display to .related-contact .fax::before
+  [mgennart]
 
 0.6.26 (2018-06-14)
 -------------------
