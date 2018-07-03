@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot?63920099');
-  src: url('../font/fontello.eot?63920099#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?63920099') format('woff2'),
-       url('../font/fontello.woff?63920099') format('woff'),
-       url('../font/fontello.ttf?63920099') format('truetype'),
-       url('../font/fontello.svg?63920099#fontello') format('svg');
+  src: url('../font/fontello.eot?81140756');
+  src: url('../font/fontello.eot?81140756#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?81140756') format('woff2'),
+       url('../font/fontello.woff?81140756') format('woff'),
+       url('../font/fontello.ttf?81140756') format('truetype'),
+       url('../font/fontello.svg?81140756#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?63920099#fontello') format('svg');
+    src: url('../font/fontello.svg?81140756#fontello') format('svg');
   }
 }
 */
@@ -167,6 +167,18 @@
 .icon-cancel-1:before { content: '\e86d'; } /* '' */
 .icon-cancel-circled2-1:before { content: '\e86e'; } /* '' */
 .icon-acrobat:before { content: '\e86f'; } /* '' */
+.icon-right-open-big:before { content: '\e870'; } /* '' */
+.icon-left-open-big:before { content: '\e871'; } /* '' */
+.icon-down-open-big:before { content: '\e872'; } /* '' */
+.icon-up-open-big:before { content: '\e873'; } /* '' */
+.icon-up-open-mini-1:before { content: '\e874'; } /* '' */
+.icon-right-open-mini-2:before { content: '\e875'; } /* '' */
+.icon-left-open-mini-1:before { content: '\e876'; } /* '' */
+.icon-down-open-mini-1:before { content: '\e877'; } /* '' */
+.icon-up-open-2:before { content: '\e878'; } /* '' */
+.icon-right-open-1:before { content: '\e879'; } /* '' */
+.icon-left-open-1:before { content: '\e87a'; } /* '' */
+.icon-down-open-1:before { content: '\e87b'; } /* '' */
 .icon-menu-1:before { content: '\f008'; } /* '' */
 .icon-th-list:before { content: '\f009'; } /* '' */
 .icon-th-thumb:before { content: '\f00a'; } /* '' */
