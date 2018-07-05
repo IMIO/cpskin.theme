@@ -4,7 +4,8 @@ Changelog
 0.6.29 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Delete padding to .footer-bloc p.
+  [mgennart]
 
 
 0.6.28 (2018-07-03)
