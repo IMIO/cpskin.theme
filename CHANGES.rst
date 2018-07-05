@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.29 (unreleased)
+0.6.29 (2018-07-05)
 -------------------
 
 - Delete padding to .footer-bloc p.
