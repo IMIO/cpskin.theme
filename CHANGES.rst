@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.30 (unreleased)
+0.6.30 (2018-07-19)
 -------------------
 
 - Add news icon fontello.
