@@ -4,7 +4,8 @@ Changelog
 0.6.30 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add news icon fontello.
+  [mgennart]
 
 
 0.6.29 (2018-07-05)
