@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.6.31 (unreleased)
+0.6.31 (2018-07-23)
 -------------------
 
-- Nothing changed yet.
-
+- Change css for slider multiple.
+  [mgennart]
 
 0.6.30 (2018-07-19)
 -------------------
