@@ -650,7 +650,6 @@ div.schedule-widget-day {
     flex: 1 1 auto;
 }
 #viewlet-above-content-body .wrapped-coord {
-    padding: 0;
     flex: 1 1 auto;
 }
 #viewlet-above-content-body .wrapped-coord div {
@@ -1003,17 +1002,30 @@ body.template-facetednavigation_view #content .contact-entry-photos{
     display: none;
 }
 /* Horaire  */
-
 .portaltype-organization #before-activity #contact-schedule .Schedule {
     padding: 0;
 }
-
-
 #portal-columns .schedule-widget-day div {
     float: left;
     margin-right: 0.5em;
     padding: 0.25em 0 0em 0em;
 }
-
-
+//logo
+.coordinates .logo {
+    flex-basis: 15%;
+    padding: 0 0.5em 0 0;
+    box-sizing: border-box;
+}
+.coordinates > div:nth-of-type(2n){
+    padding: 0 1em;
+}
+.coordinates > div:last-of-type{
+    padding: 0;
+}
+.logo + .wrapped-coord  + .schedule {
+    flex: 1 1 44%;
+}
+#viewlet-above-content-body .logo + .wrapped-coord {
+    flex: 1 1 30%;
+}
 
