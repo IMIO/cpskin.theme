@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.6.33 (unreleased)
+0.6.33 (2018-07-30)
 -------------------
 
-- Nothing changed yet.
-
+- Add css for view Faceted items OEmbeded.
+  [mgennart]
 
 0.6.32 (2018-07-30)
 -------------------
