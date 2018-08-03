@@ -4,7 +4,8 @@ Changelog
 0.6.34 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add new parameters for search box position : #21303
+  [laulaz]
 
 
 0.6.33 (2018-07-30)

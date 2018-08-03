@@ -26,6 +26,7 @@ def set_faceted_list_items(context):
             logger.info('{0} faceted layout update'.format(
                 '/'.join(obj.getPhysicalPath())))
 
+
 def add_theme_parameter_expression(key, value):
     params = api.portal.get_registry_record(
         'parameterExpressions',
@@ -44,6 +45,17 @@ def add_ms_horizontal_navigation_any_mode_variable(context):
     add_theme_parameter_expression(
         'ms_horizontal_navigation_any_mode',
         'context/@@horizontalNavActivated'
+    )
+
+
+def add_search_position_variables(context):
+    add_theme_parameter_expression(
+        'is_search_in_navigation',
+        'context/@@is_search_in_navigation'
+    )
+    add_theme_parameter_expression(
+        'is_search_in_actions',
+        'context/@@is_search_in_actions'
     )
 
 
