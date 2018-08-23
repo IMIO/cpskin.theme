@@ -434,12 +434,14 @@ a[name*="section"] {
     border: 0px dotted lightgrey;
     width: 18em;
 }
-#viewlet-above-content #right-actions-viewlet #other-actions li a:before{
+#viewlet-above-content #right-actions-viewlet #other-actions li a::before,
+.portaltype-formfolder .iconifiedDocumentActions li a::before{
     margin:0em;
     padding: 1em;
     color: @other-action-icon-color;
 }
-#other-actions [class^="icon-"]::before{
+#other-actions [class^="icon-"]::before,
+.portaltype-formfolder [class^="icon-"]::before{
     background: @other-action-icon-bg;
 }
 #right-actions-viewlet #other-actions #social-share::after{
@@ -944,7 +946,8 @@ margin:0;
 #right-actions-viewlet  #other-actions ul li a{
     position: relative;
 }
-#other-actions .iconifiedDocumentActions ul li a img {
+#other-actions .iconifiedDocumentActions ul li a img,
+.portaltype-formfolder .iconifiedDocumentActions ul li a img{
     position: absolute;
     left: 0;
     opacity: 0;
@@ -2217,6 +2220,7 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
     position: relative;
     opacity: 1;
     transition: all 0s ease;
+    z-index: 0;
 }
 .slider-multiple .flex-direction-nav .flex-next{
     right: 0;

@@ -4,7 +4,7 @@ Changelog
 0.6.33 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Change z-index to .slider-multiple .flex-direction-nav a.
 
 
 0.6.32 (2018-07-30)
