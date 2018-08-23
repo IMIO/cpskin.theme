@@ -1,11 +1,22 @@
 Changelog
 =========
 
-0.6.33 (unreleased)
+0.6.34 (unreleased)
 -------------------
 
 - Change z-index to .slider-multiple .flex-direction-nav a.
+ [mgennart]
 
+- Add new parameters for search box position : #21303
+  [laulaz]
+
+- Change icon send to manager for form.
+
+0.6.33 (2018-07-30)
+-------------------
+
+- Add css for view Faceted items OEmbeded.
+  [mgennart]
 
 0.6.32 (2018-07-30)
 -------------------

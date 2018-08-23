@@ -3,7 +3,7 @@ from Acquisition import aq_inner
 from plone import api
 from plone.app.layout.navigation.interfaces import INavigationRoot
 from plone.app.theming.utils import getCurrentTheme
-from plone.dexterity.interfaces import IDexterityContent 
+from plone.dexterity.interfaces import IDexterityContent
 from plone.outputfilters.filters.resolveuid_and_caption import ResolveUIDAndCaptionFilter  # noqa
 from Products.Five.browser import BrowserView
 from zope.component import getMultiAdapter
@@ -92,15 +92,27 @@ class DiazoView(BrowserView):
         env = os.getenv('ENV', 'prod')
         return env.lower()
 
+    def search_position(self):
+        return api.portal.get_registry_record(
+            'cpskin.core.interfaces.ICPSkinSettings.search_position')
+
     def is_search_in_banner(self):
-        """
-        Il reste à créé le parametre pour afficher ou pas la recherche
-        dans le banner
-        """
         context = self.context
         banner_view = getMultiAdapter((context, self.request),
                                       name='banner_activation')
-        return banner_view.is_enabled
+        if not banner_view.is_enabled:
+            return False
+        return self.search_position() == 'default_position'
+
+    def is_search_in_navigation(self):
+        if self.search_position() == 'always_in_navigation':
+            return True
+        elif self.search_position() == 'default_position':
+            return not(self.is_search_in_banner())
+        return False
+
+    def is_search_in_actions(self):
+        return self.search_position() == 'always_in_actions'
 
     def get_login_message(self):
         nav_root = api.portal.get_navigation_root(self.context)
