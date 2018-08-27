@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.34 (unreleased)
+0.6.34 (2018-08-27)
 -------------------
 
 - Change z-index to .slider-multiple .flex-direction-nav a.
