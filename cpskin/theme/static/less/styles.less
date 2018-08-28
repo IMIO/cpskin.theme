@@ -943,7 +943,8 @@ float:right;
 float:left;
 margin:0;
 }
-#right-actions-viewlet  #other-actions ul li a{
+#right-actions-viewlet  #other-actions ul li a,
+.portaltype-formfolder .iconifiedDocumentActions ul li a{
     position: relative;
 }
 #other-actions .iconifiedDocumentActions ul li a img,
@@ -963,11 +964,9 @@ margin:0;
     content: "\e80e";
 }
 
-.icon-sendtomanager{
-    position: relative;
-    &:before {
-        content: "\e84e";
-    }
+.icon-sendtomanager::before{
+    content: "\e84e";
+    
 }
 
 #content .iconifiedDocumentActions li a.icon-print::before{

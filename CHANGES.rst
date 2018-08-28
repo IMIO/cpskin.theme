@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.6.36 (unreleased)
+0.6.36 (2018-08-28)
 -------------------
 
-- Nothing changed yet.
-
+- Change position to .portaltype-formfolder .iconifiedDocumentActions ul li a.
+  [mgennart]
 
 0.6.35 (2018-08-28)
 -------------------
