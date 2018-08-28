@@ -19,7 +19,7 @@ instance: buildout
 	./bin/instance fg
 
 cleanall:
-	rm -rf bin develop-eggs downloads include lib parts .installed.cfg .mr.developer.cfg bootstrap.py parts/omelette
+	rm -rf bin develop-eggs downloads include lib parts .installed.cfg .mr.developer.cfg bootstrap.py parts/omelette cpskin/citizen
 
 docker-test:
 	docker pull docker-staging.imio.be/iasmartweb/test:$(shell id -u)
