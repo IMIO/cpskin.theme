@@ -963,8 +963,11 @@ margin:0;
     content: "\e80e";
 }
 
-.icon-sendtomanager::before {
-    content: "\e84e";
+.icon-sendtomanager{
+    position: relative;
+    &:before {
+        content: "\e84e";
+    }
 }
 
 #content .iconifiedDocumentActions li a.icon-print::before{

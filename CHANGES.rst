@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.6.35 (unreleased)
+0.6.35 (2018-08-28)
 -------------------
 
-- Nothing changed yet.
-
+- Change position to icon-sendtomanager.
+  [mgennart]
 
 0.6.34 (2018-08-27)
 -------------------
