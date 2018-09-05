@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.6.37 (unreleased)
+0.6.37 (2018-09-05)
 -------------------
 
-- Nothing changed yet.
-
+- Change display to footer-static.
+  [mgennart]
 
 0.6.36 (2018-08-28)
 -------------------

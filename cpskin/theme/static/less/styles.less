@@ -3027,13 +3027,17 @@ iframe .player .title{
 }
 
 #footer-sitemap div.footer-static {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    float:left;
     margin-left: 0;
     padding-bottom: 0.25em;
     padding-left: 0.5em;
-}
-
-.footer-static{
-	float:left;
+    a[href*="edit"]{
+        position: absolute;
+        top: -2em;
+    }
 }
 
 #portal-footer p{
@@ -3046,9 +3050,8 @@ iframe .player .title{
 //FOOTER
 .footer-bloc{
     box-sizing: border-box;
-    float: left;
     padding: 3em 3em 3em 0;
-    max-width: 25%;
+    flex: 1 1 25%;
     p{
         color : @font-white;
     }
