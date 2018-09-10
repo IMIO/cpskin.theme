@@ -21,6 +21,14 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
 
+    <genericsetup:upgradeStep
+        title="CPSKIN Theme: upgrade to v7 (allow Diazo remote access)"
+        description="Upgrade step for CPSKIN Theme to allow Diazo remote access"
+        handler=".upgradehandlers.allow_diazo_remote_access"
+        source="6"
+        destination="7"
+        profile="cpskin.theme:default"
+        />
 
     <genericsetup:upgradeStep
         title="CPSKIN Theme: upgrade to v6 (add search position variables)"

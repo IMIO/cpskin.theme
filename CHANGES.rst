@@ -4,7 +4,8 @@ Changelog
 0.6.38 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Depend on collective.themefragments and set needed variable
+  [laulaz]
 
 
 0.6.37 (2018-09-05)

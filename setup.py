@@ -44,7 +44,8 @@ setup(name='cpskin.theme',
           'collective.lesscss',
           'cpskin.core',
           'cpskin.locales',
-          'z3c.jbot'
+          'z3c.jbot',
+          'collective.themefragments',
           # -*- Extra requirements: -*-
       ],
       extras_require=dict(

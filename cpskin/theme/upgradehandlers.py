@@ -15,6 +15,14 @@ import logging
 logger = logging.getLogger('cpskin.theme')
 
 
+def allow_diazo_remote_access(context):
+    portal_setup = api.portal.get_tool('portal_setup')
+    api.portal.set_registry_record(
+        'plone.app.theming.interfaces.IThemeSettings.readNetwork',
+        True
+    )
+
+
 def set_faceted_list_items(context):
     portal_catalog = api.portal.get_tool('portal_catalog')
     brains = portal_catalog.unrestrictedSearchResults(

@@ -9,4 +9,8 @@
         <value>True</value>
     </record>
 
+    <record name="plone.app.theming.interfaces.IThemeSettings.readNetwork">
+        <value>True</value>
+    </record>
+
 </registry>
