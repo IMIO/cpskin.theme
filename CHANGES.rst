@@ -7,6 +7,8 @@ Changelog
 - Depend on collective.themefragments and set needed variable
   [laulaz]
 
+- Add width to .faceted-agenda-ungrouped-view.
+  [mgennart]
 
 0.6.37 (2018-09-05)
 -------------------

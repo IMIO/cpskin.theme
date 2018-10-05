@@ -2964,6 +2964,51 @@ iframe .player .title{
 .diagnosis {
     height: 1em;
 }
+/* >>> PRINT RSS <<<  */
+#content .bloc-collection-rss {
+    clear: both;
+    .rss-title {
+        margin: 0 0 1em 0;
+        display: inline-block;
+    }
+    .view-all {
+        float: right;
+        color: #828282;
+        position: relative;
+        top: -3px;
+        right: 4px;
+        &:hover{
+            color: #2980b9 !important;
+        }
+        &:after {
+            content: "\00279F";
+            font-size: 1.5em;
+            position: relative;
+            top: 2px;
+        }
+    }
+}
+#macros_feed {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .portletItem {
+        border: 1px solid #f2f2f2;
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        padding: 1em;
+        width: 22%;
+        margin: 0 0 3em 0;
+    }
+    .portletItemDetails { 
+        color: #808080;
+        font-family: arial;
+        font-size: 14px;
+        margin-left: 0;
+    }
+}
 
 /* >>> FOOTER <<< */
 
@@ -3156,6 +3201,7 @@ iframe .player .title{
     float: left;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 .event-entry .pageleadImage{
     width: 100%;
