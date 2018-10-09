@@ -9,7 +9,9 @@ Changelog
 
 - Add width to .faceted-agenda-ungrouped-view.
   [mgennart]
-
+  
+- Delete display to #social-share-container.hidden-right-panel 
+  [mgennart]
 0.6.37 (2018-09-05)
 -------------------
 
