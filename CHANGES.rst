@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.38 (unreleased)
+0.6.38 (2018-10-10)
 -------------------
 
 - Depend on collective.themefragments and set needed variable
@@ -12,6 +12,7 @@ Changelog
   
 - Delete display to #social-share-container.hidden-right-panel 
   [mgennart]
+  
 0.6.37 (2018-09-05)
 -------------------
 
