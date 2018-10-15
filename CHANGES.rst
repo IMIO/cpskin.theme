@@ -4,9 +4,18 @@ Changelog
 0.6.39 (unreleased)
 -------------------
 
-- Nothing changed yet.
-
-
+- Delete css for navTreeLevel3.
+  [mgennart]
+  
+- Change width and margin to .project.
+  [mgennart]
+  
+- Delete margin to #messagesviewlet .close-button.
+  [mgennart]
+  
+- Change right to #right-actions-viewlet.
+  [mgennart]
+  
 0.6.38 (2018-10-10)
 -------------------
 

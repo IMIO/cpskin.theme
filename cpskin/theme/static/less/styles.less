@@ -309,7 +309,7 @@ a[name*="section"] {
 
 #right-actions-viewlet {
     position: absolute;
-    right: 1.5em;
+    right: 1em;
     top: 2em;
     width: 2em;
 }
@@ -731,7 +731,6 @@ div.position-0 {
 }
 /* --- messagesviewlets --- */
 #messagesviewlet .close-button {
-    margin-top: -37px;
     visibility: hidden;
     &:before {
         content: "\e86d";
@@ -1264,7 +1263,7 @@ li.sfHover > span > a {
     padding-bottom:1.5em;
 }
 
-.sf-menu ul.navTreeLevel2, .sf-menu ul.navTreeLevel3 {
+.sf-menu ul.navTreeLevel2{
     background-color: #ffffff!important;
     border-top: 0px solid #999999 !important;
     position: absolute;
@@ -1301,10 +1300,6 @@ ul.navTreeLevel0 {
 	background: @nav-onglet-bg-hover;
     margin-top: 0em;
     padding-top: 0.5em;
-}
-
-.navTreeLevel3 {
-	background: @nav-onglet-bg-hover;
 }
 
 #portal-globalnav-cpskinmenu-tabs li, #portal-globalnav-cpskinmenu li{
@@ -1680,9 +1675,9 @@ ul.navTreeLevel0 {
         padding: 0;
     }
     .project {
-        flex: 1 1 22%;
-        margin: 1em;
-        &:nth-child(n+4){
+        width: 23.5%;
+        margin: 0 2% 1em 0;
+        &:nth-child(4n){
             margin-right: 0;
         }
     }

@@ -619,7 +619,9 @@ body.template-facetednavigation_view.userrole-authenticated .contact-entry {
 }
 div.schedule-widget-day {
     width: 100%;
-    clear: both;
+    border-top: 1px dotted #dfdfdf;
+    display: inline-block;
+    padding: 0.25em 0;
     & .title {
         box-sizing: border-box;
         font-weight: normal;
@@ -637,6 +639,20 @@ div.schedule-widget-day {
     float: right;
     width: 100%;
     margin: 0 0 0 0.5em;
+    font-style: italic;
+    color: #696767;
+    padding: 0 0 0 1.5em;
+    position: relative;
+    box-sizing: border-box;
+    &:first-child{
+        border: none;
+    }
+    &:before{
+        content: "\E862";
+        font-family: fontello;
+        position: absolute;
+        left: 0;
+    }
 }
 .schedule > div {
     float: right;
