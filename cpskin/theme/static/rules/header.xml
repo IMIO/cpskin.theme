@@ -10,6 +10,12 @@
     <xsl:copy-of select="//*[@id='messagesviewlet']" />
   </before>
 
+  <after css:content="#portal-top">
+    <xsl:copy-of select="//div[contains(@class, 'slider-top')]" />
+  </after>
+  <drop css:content="#accueil .slider-top" />
+  
+
   <!-- Header / banner specific to minisite mode -->
   <rules if="$isinminisitemode">
 

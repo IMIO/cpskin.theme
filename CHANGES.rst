@@ -4,6 +4,9 @@ Changelog
 0.6.39 (unreleased)
 -------------------
 
+- Add rules for special "top" slider
+  [laulaz]
+
 - Delete css for navTreeLevel3.
   [mgennart]
   
