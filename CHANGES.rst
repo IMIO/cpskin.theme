@@ -4,6 +4,9 @@ Changelog
 0.6.39 (unreleased)
 -------------------
 
+- Add css and variables for menu collapsable : WEB-2865
+  [mgennart]
+  
 - Add rules for special "top" slider
   [laulaz]
 

@@ -3707,3 +3707,43 @@ input {
 .faceted-list-oembed {
     flex-basis: 24%;
 }
+//Mini site menu collapsable
+[id="toggle-minisite-menu"]{
+    background: @ms-menu-collapsable-bg;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 1;
+    button{
+        background: @ms-menu-collapsable-a-bg;
+        color: @ms-menu-collapsable-a-color;
+        font-size: 1.25em;
+        padding: 0.5% 0 0;
+        border:none;
+        width: 100%;
+        &:focus{
+            outline: none;
+        }
+    }
+    span{
+        display: inline-block;
+        width: 100%;
+        &:hover{
+            cursor: pointer;
+        }
+        &:after{
+            content: " \00276F \00276F";
+            display: block;
+            transform: rotate(90deg);
+            padding: 0.5% 0;
+            margin: 0 auto;
+            width: 5%;
+        }
+    }
+    .hide-menu span::after{
+        transform: rotate(-90deg);
+    }
+}
+//for javascript
+.in-minisite-in-portal .minisite-collapsable{
+    display: none;
+}
