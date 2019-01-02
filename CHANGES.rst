@@ -4,6 +4,9 @@ Changelog
 0.6.39 (unreleased)
 -------------------
 
+- Adaptation css for slider with control nav.
+  [mgennart]
+  
 - Add css and variables for menu collapsable : WEB-2865
   [mgennart]
   
