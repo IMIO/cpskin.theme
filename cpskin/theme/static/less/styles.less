@@ -2452,6 +2452,47 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
     }
 }
 
+//SLIDER TOP
+.slider-top {
+    margin: 0 auto;
+    .slider.flexslider{
+        position: relative;
+    }
+    .flexslider .flex-caption ,
+    #slider-a-la-une.flexslider .flex-caption {
+        left: 18%;
+        position: absolute;
+        text-shadow: 2px 3px 8px #333;
+        top: 20%;
+        width: 50%;
+    }
+    .slides li{
+        position: relative;
+    }
+    .flexslider a{
+        color: @font-white !important;
+    }
+    .flexslider .flex-direction-nav li a{
+        color: @font-white !important;
+    }
+    .flex-control-nav.flex-control-paging{
+        position: absolute !important;
+        bottom: 0;
+        padding: 0.5% 0;
+    }
+    .flex-control-paging li a{
+        background: rgba(255,255,255,0.5);
+        &.flex-active{
+            background: rgba(255,255,255,0.9);
+        }
+    }
+}
+#visual-portal-wrapper #content .slider-top .slider .flex-direction-nav .flex-prev{
+    margin: 5em 0 0 2em;
+}
+#visual-portal-wrapper #content .slider-top .slider .flex-direction-nav .flex-next{
+    margin: -7em -3em 0 0;
+}
 
 /* >>> FIN SLIDER <<< */
 

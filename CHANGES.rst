@@ -4,6 +4,9 @@ Changelog
 0.6.39 (unreleased)
 -------------------
 
+- Add css for top slider : WEB-2407
+  [mgennart]
+
 - Adaptation css for slider with control nav.
   [mgennart]
   
