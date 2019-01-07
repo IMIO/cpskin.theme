@@ -2114,13 +2114,29 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
     margin-bottom: 0 !important;
 }
 
-.slider-carousel .flexslider .flex-caption{
-    background-color: #000000;
-    height: 80px;
-    margin-top: -93px;
-    opacity: 0.7;
-    padding: 0.25em 1% 0.75em;
-    width: 98%;
+.slider-carousel .flexslider{
+    .flex-caption{
+        float: left;
+        width: 100%;
+    }
+    &.slider .flex-caption-inner{
+        background-color: #000000;
+        height: 80px;
+        opacity: 0.7;
+        padding: 0.25em 1% 0.75em;
+        box-sizing: border-box;
+        margin-top:-80px;
+    }
+    &.slider .flex-category-date{
+        background-color: #000000;
+        margin-top: -145px;
+        opacity: 0.7;
+        padding: 0.25em 1% 0.75em;
+        box-sizing: border-box;
+        + .flex-caption-inner{
+            margin-top: 0;
+        }
+    }   
 }
 .flex-control-nav.flex-control-paging {
     margin: 2% auto 0 auto !important;
@@ -2129,11 +2145,6 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
     font-size: 1.75em;
 }
 
-.flexslider .flex-caption {
-    float: left;
-    height: 48px;
-    width: 100%;
-}
 
 #content #flex .flexslider a,
 #content #flex .flexslider #content #flex a:hover,
@@ -2149,27 +2160,45 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
     margin: 0;
 }
 
-#flex #carousel-a-la-une ul li{
+#flex.slider-carousel .carousel ul li{
     background-color:#666666;
     margin-right: 4px;
     width: calc(213px) !important;
 }
-
-#carousel-a-la-une .flex-caption h2 {
-    font-size: 12px;
-    font-weight: normal;
-    height: 52px;
-    margin-top: -2px;
-    padding: 8px;
+.slider-carousel .carousel{
+    .documentByLine,
+    .indexview-categories{
+        font-size: 12px;
+        font-weight: normal;
+        padding: 0 8px;
+    }
+    .flex-caption h2 {
+        height: 52px;
+        margin-top: -2px;
+        font-size: 12px;
+        font-weight: normal;
+        padding: 8px;
+    }
+}
+.slider-carousel .documentByLine{
+    display: inline-block;
 }
 
-#carousel-a-la-une .flex-caption h2 a {
+.slider-carousel .carousel .flex-caption h2 a {
     letter-spacing: 0.05em;
 }
 
-#slider-a-la-une .read-next-link,
-#carousel-a-la-une .read-next-link {
+.slider-carousel .slider .read-next-link,
+.slider-carousel .carousel .read-next-link {
     display: none;
+}
+.slider-carousel{
+    .indexview-categories{
+        color: @font-white;
+    }
+    .documentByLine{
+        color: @font-white;
+    }
 }
 //slider multiple
 .slider-multiple{
@@ -2194,13 +2223,29 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
         }
     }
     .flexslider .flex-caption{
+        width: 100%;
+    }
+    .flexslider .flex-caption-inner{
         box-sizing: border-box;
         height: 130px;
         padding: 8%;
     }
+    .flex-category-date + .flex-caption-inner{
+        padding-top: 0;
+    }
     .publication-date{
         box-sizing: border-box;
         padding: 4% 8% 0 8%;
+    }
+    .indexview-categories{
+        box-sizing: border-box;
+        padding: 2% 8% 0 8%;
+    }
+    .documentByLine{
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 4% 8% 0 8%;
+        text-transform: uppercase;
     }
     .flex-caption > h2 {
         font-size: 1.5em;
@@ -2363,6 +2408,15 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
     transition: color 1.2s;
     width: 100%;
 }
+#content #flex.slider-unique-titre .carousel .flex-viewport ul li .flex-caption .flex-category-date{
+    a{
+        font-size: 20px;
+        &:after{
+            display: none;
+        }
+    }
+
+}
 #accueil #flex.slider-unique-titre .carousel .flex-viewport ul li .read-next-link a {
     width: 100%;
     text-align: right;
@@ -2421,7 +2475,9 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
 #accueil .slider-unique-titre .flex-direction-nav {
     display: none;
 }
-
+.slider-unique-titre .carousel .flex-control-paging{
+    display: none;
+}
 .slider-unique-titre #slider-slider .slides {
     margin-top: 0 !important;
 }

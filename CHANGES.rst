@@ -4,6 +4,9 @@ Changelog
 0.6.39 (unreleased)
 -------------------
 
+- Add css for category and date for all slider : MWEBOTT-17
+  [mgennart]
+
 - Add css for top slider : WEB-2407
   [mgennart]
 
