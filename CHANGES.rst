@@ -4,6 +4,9 @@ Changelog
 0.6.39 (unreleased)
 -------------------
 
+- Change css to use the date of publication in single title slider.
+  [mgennart]
+
 - Add css for category and date for all slider : MWEBOTT-17
   [mgennart]
 

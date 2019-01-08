@@ -2384,8 +2384,9 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
 #accueil #flex.slider-unique-titre .carousel .flex-viewport .flex-caption {
     height: 100% !important;
 }
-#accueil .slider-unique-titre .flexslider .flex-caption {
+.slider-unique-titre .flexslider .flex-caption {
     height: auto;
+    width: 100%;
 }
 #accueil #flex.slider-unique-titre .carousel .flex-viewport li {
     background-color: transparent !important;
@@ -2423,6 +2424,7 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
 }
 #accueil #flex.slider-unique-titre .carousel .flex-viewport ul li .flex-caption a{
         position: relative;
+        display: block;
 }
 #accueil #flex.slider-unique-titre .carousel .flex-viewport ul li .flex-caption a::after {
     content: ".";
@@ -2492,7 +2494,12 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
 #accueil #flex.slider-unique-titre .carousel .flex-viewport ul li.flex-active-slide .flex-caption a{
     outline: 0 none;
 }
-
+.slider-unique-titre .slider .publication-date{
+    display: none;
+}
+.slider-unique-titre .publication-date{
+    width: 80%;
+}
 /*  SLIDER COUNT   */
 .slider-count{
     .flexslider .flex-caption{
