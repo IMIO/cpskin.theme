@@ -4,8 +4,8 @@ Changelog
 0.6.40 (unreleased)
 -------------------
 
-- Nothing changed yet.
-
+- Add css for publication date in to slider with carousel.
+  [mgennart]
 
 0.6.39 (2019-01-08)
 -------------------
