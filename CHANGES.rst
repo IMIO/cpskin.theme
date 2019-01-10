@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.40 (unreleased)
+0.6.40 (2019-01-10)
 -------------------
 
 - Add css for publication date in to slider with carousel.
