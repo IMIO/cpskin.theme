@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.41 (unreleased)
+0.6.41 (2019-01-10)
 -------------------
 
 - Delete .in-minisite-in-portal .minisite-collapsable on less.
