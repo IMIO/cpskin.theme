@@ -4,7 +4,8 @@ Changelog
 0.6.41 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Delete .in-minisite-in-portal .minisite-collapsable on less.
+  [mgennart]
 
 
 0.6.40 (2019-01-10)
