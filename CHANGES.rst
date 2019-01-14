@@ -4,7 +4,8 @@ Changelog
 0.6.42 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add css for incorrect captcha : WEB-2883
+  [mgennart]
 
 
 0.6.41 (2019-01-10)

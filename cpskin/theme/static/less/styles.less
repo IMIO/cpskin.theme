@@ -56,7 +56,20 @@
 .subsection-citizen-map .faceted-criteria-reset {
     display: none;
 }
-
+//RECAPTCHA
+.incorrect-captcha {
+    background: #fdc;
+    border: 1px solid red;
+    border-bottom: none;
+    padding: 0.5em;
+    margin: 1em 0 0 0;
+    + script + .g-recaptcha{
+        background: #fdc;
+        border: 1px solid red;
+        border-top: none;
+        padding: 0.5em;
+    }
+}
 /* fin citizen  */
 
 .user-citizen form p {
