@@ -1,0 +1,40 @@
+<dl class="actionMenu deactivated" id="portal-languageselector"
+    tal:condition="view/available">
+
+  <tal:def define="languages view/languages;">
+
+    <dt class="actionMenuHeader currentLanguage">
+      <tal:language repeat="lang languages">
+        <a href="#" class=""
+           tal:define="name lang/native|lang/name;
+                       code lang/code;
+                       codeclass string:language-${code};"
+           tal:condition="lang/selected"
+           tal:attributes="class codeclass;
+                           href lang/url;
+                           title name;"
+           tal:content="python: code.capitalize()"></a>
+      </tal:language>
+    </dt>
+    <dd class="actionMenuContent">
+      <ul>
+        <tal:language repeat="lang languages">
+          <li tal:define="code lang/code;
+                          selected lang/selected;
+                          codeclass string:language-${code};"
+              tal:condition="not: selected"
+              tal:attributes="class codeclass">
+            <a href=""
+               tal:define="name lang/native|lang/name;"
+               tal:attributes="href lang/url;
+                               title name;"
+               tal:content="python: code.capitalize()"></a>
+          </li>
+        </tal:language>
+      </ul>
+    </dd>
+
+  </tal:def>
+
+</dl>
+

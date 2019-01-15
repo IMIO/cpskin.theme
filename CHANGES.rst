@@ -4,6 +4,9 @@ Changelog
 0.6.42 (unreleased)
 -------------------
 
+- Transform language selector menu into a drop down menu : WEB-2888
+  [laulaz]
+
 - Add useful hidden class : WEB-2885
   [laulaz]
 
