@@ -4,6 +4,9 @@ Changelog
 0.6.42 (unreleased)
 -------------------
 
+- Add useful hidden class : WEB-2885
+  [laulaz]
+
 - Add css for incorrect captcha : WEB-2883
   [mgennart]
 
