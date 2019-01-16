@@ -4,12 +4,16 @@ Changelog
 0.6.42 (unreleased)
 -------------------
 
+
 - Change variable for cpskin.diazotheme.newDream : WEB-2884
   [mgennart]
 
 - Change css for publication date for carousel in slider
   [mgennart]
   
+- Add useful hidden class : WEB-2885
+  [laulaz]
+
 - Add css for incorrect captcha : WEB-2883
   [mgennart]
 
