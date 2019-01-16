@@ -738,7 +738,7 @@ div.position-0 {
 }
 
 #portal-header #navWrapper {
-    background-color: #ECEAEB;
+    background-color: @nav-wapper-bg;
     margin: 0;
 	height: auto !important;
 }
@@ -1117,9 +1117,9 @@ dl.portlet ul.navTree .navTreeCurrentItem{
 /* --- ajout menu dynamique --- */
 
 .portal-globalnav-cpskinmenu a:hover, .portal-globalnav-cpskinmenu-tabs a:hover{
-	border-radius:5px;
-	background-color:white;
-	color:@nav-menu-color-hover;
+	border-radius: @sub-onglet-border;
+	background-color: @sub-onglet-bg-hover;
+	color: @sub-onglet-color-hover;
 }
 
 ul.navTreeLevel0 li a {
@@ -2160,7 +2160,10 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
         + .flex-caption-inner{
             margin-top: 0;
         }
-    }   
+    }
+    .publication-date{
+        color: @font-white;
+    }
 }
 .flex-control-nav.flex-control-paging {
     margin: 2% auto 0 auto !important;
@@ -2195,6 +2198,10 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
         font-size: 12px;
         font-weight: normal;
         padding: 0 8px;
+    }
+    .publication-date{
+        font-size: 12px;
+        padding: 8px;
     }
     .flex-caption h2 {
         height: 52px;
