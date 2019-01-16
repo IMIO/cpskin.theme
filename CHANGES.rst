@@ -4,6 +4,8 @@ Changelog
 0.6.42 (unreleased)
 -------------------
 
+- Fix buildout
+  [laulaz]
 
 - Change variable for cpskin.diazotheme.newDream : WEB-2884
   [mgennart]
