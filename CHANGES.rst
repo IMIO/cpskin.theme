@@ -6,7 +6,10 @@ Changelog
 
 - Add css for portlet sendinblue : WEB-2886
   [mgennart]
-  
+
+- Fix buildout
+  [laulaz]
+
 - Change variable for cpskin.diazotheme.newDream : WEB-2884
   [mgennart]
 
