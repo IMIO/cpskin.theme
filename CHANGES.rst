@@ -18,7 +18,7 @@ Changelog
 
 - Change css for publication date for carousel in slider
   [mgennart]
-  
+
 - Add useful hidden class : WEB-2885
   [laulaz]
 
