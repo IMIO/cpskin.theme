@@ -4,6 +4,9 @@ Changelog
 0.6.42 (unreleased)
 -------------------
 
+- Add css for collapsible main menu in minisites
+  [osnickers]
+
 - Add css for portlet sendinblue : WEB-2886
   [mgennart]
 

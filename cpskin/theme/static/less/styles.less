@@ -61,9 +61,6 @@
     display: none;
 }
 //RECAPTCHA
-[id="captcha"]{
-    margin: 2% 0;
-}
 .incorrect-captcha {
     background: #fdc;
     border: 1px solid red;
@@ -1384,40 +1381,9 @@ ul.navTreeLevel0 {
 .portletNavigationTree .navTree li{
     margin-bottom:0em;
 }
+
+
 /* --- fin portlet navigation --- */
-.portlet.portletSendinblue {
-    background: #f2f2f2;
-    padding: 0.75em 1em;
-    margin: 2em 0;
-    border: none !important;
-    .portletHeader {
-        background: transparent;
-    }
-    .field input[type="text"]{
-        padding: 0.5em 0;
-        margin: 0.5em 0 0;
-    }
-    #formfield-form-widgets-captcha label{
-        line-height: 3em;
-    }
-    #formfield-form-widgets-legal_conditions {
-        margin: 0 0 0.5em 0;
-        input{
-            float: left;
-        }
-        label{
-            padding: 0 0 0 1.5em;
-            width: 100%;
-            display: block;
-        }
-        .formHelp{
-            padding: 0.5em 0 0 1.5em;
-            font-size: 95%;
-        }
-        
-    }
-}
-//sendinblue
 
 /* >>> FIN NAVIGATION <<< */
 
@@ -3905,18 +3871,25 @@ input {
     flex-basis: 24%;
 }
 //Mini site menu collapsable
+
+[id="toggle-minisite-menu"] .hide-menu span::before {
+    transform: rotate(-90deg);
+}
+
 [id="toggle-minisite-menu"]{
     background: @ms-menu-collapsable-bg;
     box-shadow: 0 5px 5px rgba(0,0,0,0.2);
     position: relative;
     z-index: 1;
+    text-align: center;
     button{
         background: @ms-menu-collapsable-a-bg;
         color: @ms-menu-collapsable-a-color;
-        font-size: 1.25em;
-        padding: 0.5% 0 0;
+        font-size: 110%;
+        padding: 0.5em 0;
         border:none;
         width: 100%;
+        cursor:pointer;
         &:focus{
             outline: none;
         }
@@ -3924,16 +3897,25 @@ input {
     span{
         display: inline-block;
         width: 100%;
+        position:relative;
+        width:auto;
         &:hover{
             cursor: pointer;
         }
+        &:before{
+            margin-right:1em;
+            right: 100%;
+        }
         &:after{
-            content: " \00276F \00276F";
-            display: block;
+            margin-left:1em;
+            left: 100%;
+        }
+        &:before,
+        &:after{
+            content: "\00276F";
             transform: rotate(90deg);
-            padding: 0.5% 0;
-            margin: 0 auto;
-            width: 5%;
+            position: absolute;
+            top:1px;
         }
     }
     .hide-menu span::after{
