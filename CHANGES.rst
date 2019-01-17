@@ -4,7 +4,9 @@ Changelog
 0.6.42 (unreleased)
 -------------------
 
-
+- Add css for portlet sendinblue : WEB-2886
+  [mgennart]
+  
 - Change variable for cpskin.diazotheme.newDream : WEB-2884
   [mgennart]
 

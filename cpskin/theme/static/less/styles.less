@@ -61,6 +61,9 @@
     display: none;
 }
 //RECAPTCHA
+[id="captcha"]{
+    margin: 2% 0;
+}
 .incorrect-captcha {
     background: #fdc;
     border: 1px solid red;
@@ -1381,9 +1384,40 @@ ul.navTreeLevel0 {
 .portletNavigationTree .navTree li{
     margin-bottom:0em;
 }
-
-
 /* --- fin portlet navigation --- */
+.portlet.portletSendinblue {
+    background: #f2f2f2;
+    padding: 0.75em 1em;
+    margin: 2em 0;
+    border: none !important;
+    .portletHeader {
+        background: transparent;
+    }
+    .field input[type="text"]{
+        padding: 0.5em 0;
+        margin: 0.5em 0 0;
+    }
+    #formfield-form-widgets-captcha label{
+        line-height: 3em;
+    }
+    #formfield-form-widgets-legal_conditions {
+        margin: 0 0 0.5em 0;
+        input{
+            float: left;
+        }
+        label{
+            padding: 0 0 0 1.5em;
+            width: 100%;
+            display: block;
+        }
+        .formHelp{
+            padding: 0.5em 0 0 1.5em;
+            font-size: 95%;
+        }
+        
+    }
+}
+//sendinblue
 
 /* >>> FIN NAVIGATION <<< */
 
@@ -3906,5 +3940,4 @@ input {
         transform: rotate(-90deg);
     }
 }
-
 
