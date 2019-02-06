@@ -4,6 +4,9 @@ Changelog
 0.6.42 (unreleased)
 -------------------
 
+- Bug fix for IE : WEB-2920
+  [mgennart]
+
 - Add css for collapsible main menu in minisites
   [osnickers]
 
