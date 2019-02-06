@@ -4,6 +4,9 @@ Changelog
 0.6.42 (unreleased)
 -------------------
 
+- Change css for view directory in responsive : WEB-2921
+  [mgennart]
+
 - Bug fix for IE : WEB-2920
   [mgennart]
 
