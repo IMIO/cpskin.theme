@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.42 (unreleased)
+0.6.42 (2019-02-11)
 -------------------
 
 - Change css for view directory in responsive : WEB-2921
