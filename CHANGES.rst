@@ -4,7 +4,8 @@ Changelog
 0.6.43 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Remove cookiecuttr message from print
+  [laulaz]
 
 
 0.6.42 (2019-02-11)
