@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.43 (unreleased)
+0.6.43 (2019-03-19)
 -------------------
 
 - Remove cookiecuttr message from print
