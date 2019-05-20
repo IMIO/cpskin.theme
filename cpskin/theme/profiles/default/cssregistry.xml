@@ -20,7 +20,7 @@
 
  <stylesheet title="CPSkin mobile medium styles"
     id="++theme++cpskin.theme.base/css/mobilemedium.css"
-    media="handheld, screen and (max-device-width: 768px), screen and (max-width: 768px)"
+    media="handheld, screen and (min-device-width: 481px) and (max-device-width: 768px), screen and(min-width: 481px) and (max-width: 768px)"
     rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
@@ -29,7 +29,7 @@
 
  <stylesheet title="CPSkin mobile large styles"
     id="++theme++cpskin.theme.base/css/mobilelarge.css"
-    media="handheld, screen and (max-device-width: 1024px), screen and (max-width: 1024px)"
+    media="handheld, screen and (min-device-width: 769px) and (max-device-width: 1024px), screen and(min-width: 769px) and (max-width: 1024px)"
     rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing"
