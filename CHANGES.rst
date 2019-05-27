@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.44 (unreleased)
+0.6.44 (2019-05-27)
 -------------------
 
 - Improve print.css : WEB-3032
