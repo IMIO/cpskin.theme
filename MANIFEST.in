@@ -6,6 +6,7 @@ exclude bootstrap.py
 exclude Makefile
 exclude .coveragerc
 exclude .editorconfig
+exclude requirements.txt
 graft cpskin
 recursive-include docs LICENSE.*
 global-exclude *.pyc
