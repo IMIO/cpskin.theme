@@ -4,6 +4,9 @@ Changelog
 0.6.44 (unreleased)
 -------------------
 
+- Improve print.css : WEB-3032
+  [laulaz]
+
 - Improve CSS media queries sizes
   [laulaz]
 

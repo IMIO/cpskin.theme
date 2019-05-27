@@ -1,5 +1,6 @@
 div.cc-cookies,
 #portal-header,
+#portal-top,
 #cpskin-banner,
 #edit-bar,
 #flex,
@@ -8,10 +9,19 @@ div.cc-cookies,
 #viewlet-below-content-title,
 #viewlet-below-content,
 #portal-column-one,
-#portal-column-two {
+#portal-column-two,
+#social-document-actions,
+#document-toc,
+#scroll-to-top {
     display: none;
 }
 
 #portal-column-content {
     margin-left: 0 !important;
+}
+
+#portal-columns {
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
 }
