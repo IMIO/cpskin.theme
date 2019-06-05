@@ -1,6 +1,4 @@
 div.cc-cookies,
-#portal-header,
-#portal-top,
 #cpskin-banner,
 #edit-bar,
 #flex,
@@ -14,6 +12,15 @@ div.cc-cookies,
 #document-toc,
 #scroll-to-top {
     display: none;
+}
+
+#portal-header,
+#portal-top {
+    visibility: hidden;
+}
+
+#top-slogan-inner {
+    visibility: visible;
 }
 
 #portal-column-content {
