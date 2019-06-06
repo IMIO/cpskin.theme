@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.45 (unreleased)
+0.6.45 (2019-06-06)
 -------------------
 
 - Fix h1 slogan in print : WEB-3032
