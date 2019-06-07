@@ -4,7 +4,8 @@ Changelog
 0.6.46 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix h1 slogan in print when too big : WEB-3032
+  [laulaz]
 
 
 0.6.45 (2019-06-06)

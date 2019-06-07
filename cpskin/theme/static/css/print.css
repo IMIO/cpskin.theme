@@ -11,7 +11,7 @@ div.cc-cookies,
 #social-document-actions,
 #document-toc,
 #scroll-to-top {
-    display: none;
+    display: none !important;
 }
 
 #portal-header,
@@ -19,8 +19,20 @@ div.cc-cookies,
     visibility: hidden;
 }
 
+#portal-columns #portal-column-content {
+    width: 100%;
+    padding-right: 0px !important;
+}
+
+#top-logo-slogan #top-slogan {
+    width: 100%;
+    margin-right: 0px;
+    height: auto;
+}
+
 #top-slogan-inner {
     visibility: visible;
+    position: relative !important;
 }
 
 #portal-column-content {
