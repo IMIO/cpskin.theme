@@ -3,6 +3,10 @@
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
        xmlns:css="http://namespaces.plone.org/diazo/css">
 
+  <replace css:content-children="#event-booking-sl" css:if-content="#viewlet-social-like">
+      <xsl:copy-of select="//div[@id='viewlet-social-like']" />
+  </replace>
+
   <!-- Hide Subject field in edit for and in collection criteria / sort -->
   <drop css:content="#archetypes-fieldname-subject" />
   <drop content="//div[@class='criteria']/select[@class='addIndex']/*/option[@value='Subject']" />
