@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.47 (unreleased)
+0.6.47 (2019-08-22)
 -------------------
 
 - Add rule to load social media (without container) in cpskin.agenda 
