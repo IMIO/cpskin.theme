@@ -4,7 +4,8 @@ Changelog
 0.6.47 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add rule to load social media (without container) in cpskin.agenda 
+  [boulch]
 
 
 0.6.46 (2019-06-25)
