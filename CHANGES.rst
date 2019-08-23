@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.48 (unreleased)
+0.6.48 (2019-08-23)
 -------------------
 
 - Cancel float on direct access
