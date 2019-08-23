@@ -4,7 +4,8 @@ Changelog
 0.6.48 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Cancel float on direct access
+  [nballeux]
 
 
 0.6.47 (2019-08-22)
