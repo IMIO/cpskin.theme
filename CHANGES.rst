@@ -4,7 +4,8 @@ Changelog
 0.6.49 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Adding new fontello
+  [tlambert]
 
 
 0.6.48 (2019-08-23)
