@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.49 (unreleased)
+0.6.49 (2019-12-02)
 -------------------
 
 - Adding new fontello
