@@ -4,7 +4,8 @@ Changelog
 0.6.50 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- WEB-3411: Color correction for better accessibility
+  [thomlamb]
 
 
 0.6.49 (2019-12-02)
