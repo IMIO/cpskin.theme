@@ -178,7 +178,7 @@ Changelog
 -------------------
 
 - Change z-index to .slider-multiple .flex-direction-nav a.
- [mgennart]
+  [mgennart]
 
 - Add new parameters for search box position : #21303
   [laulaz]
