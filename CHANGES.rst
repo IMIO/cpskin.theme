@@ -4,7 +4,8 @@ Changelog
 0.6.51 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- WEB-3476: Keep old minisite-logo behavior intact when there is no banner
+  [laulaz]
 
 
 0.6.50 (2020-08-24)
