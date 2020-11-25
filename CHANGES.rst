@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.51 (unreleased)
+0.6.51 (2020-11-25)
 -------------------
 
 - WEB-3476: Keep old minisite-logo behavior intact when there is no banner
