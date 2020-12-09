@@ -4,7 +4,9 @@ Changelog
 0.6.52 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- WEB-3476 : Revert Keep old minisite-logo behavior intact when there is no banner
+  We want to keep original behavior for all themes except newdream
+  [laulaz]
 
 
 0.6.51 (2020-11-25)
