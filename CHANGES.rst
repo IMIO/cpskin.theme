@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.53 (unreleased)
+0.6.53 (2021-01-25)
 -------------------
 
 - Hide the export button for anonymous users
