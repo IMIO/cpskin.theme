@@ -4,8 +4,8 @@ Changelog
 0.6.53 (unreleased)
 -------------------
 
-- Nothing changed yet.
-
+- Hide the export button for anonymous users
+  [thomlamb]
 
 0.6.52 (2020-12-09)
 -------------------
