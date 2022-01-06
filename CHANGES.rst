@@ -4,7 +4,9 @@ Changelog
 0.6.54 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- WEB-3524: Change views permissions that are used in diazo manifest.
+  Fix some recurring unauthorized access to these views.
+  [boulch]
 
 
 0.6.53 (2021-01-25)

@@ -7,7 +7,7 @@
         for="*"
         class=".diazo.DiazoView"
         attribute="isInMinisiteMode"
-        permission="zope2.View"
+        permission="zope.Public"
         layer="..interfaces.ICPSkinThemeLayer"
         />
 
@@ -16,7 +16,7 @@
         for="*"
         class=".diazo.DiazoView"
         attribute="withMinisiteHorizontalNav"
-        permission="zope2.View"
+        permission="zope.Public"
         layer="..interfaces.ICPSkinThemeLayer"
         />
 
@@ -25,7 +25,7 @@
         for="*"
         class=".diazo.DiazoView"
         attribute="horizontalNavActivated"
-        permission="zope2.View"
+        permission="zope.Public"
         layer="..interfaces.ICPSkinThemeLayer"
         />
 
@@ -34,7 +34,7 @@
         for="*"
         class=".diazo.DiazoView"
         attribute="getCurrentTheme"
-        permission="zope2.View"
+        permission="zope.Public"
         layer="..interfaces.ICPSkinThemeLayer"
         />
 
@@ -43,7 +43,7 @@
         for="*"
         class=".diazo.DiazoView"
         attribute="is_homepage"
-        permission="zope2.View"
+        permission="zope.Public"
         layer="..interfaces.ICPSkinThemeLayer"
         />
 
@@ -52,7 +52,7 @@
         for="*"
         class=".diazo.DiazoView"
         attribute="is_folder_view"
-        permission="zope2.View"
+        permission="zope.Public"
         layer="..interfaces.ICPSkinThemeLayer"
         />
 
@@ -61,7 +61,7 @@
         for="*"
         class=".diazo.DiazoView"
         attribute="get_environment"
-        permission="zope2.View"
+        permission="zope.Public"
         layer="..interfaces.ICPSkinThemeLayer"
         />
 
@@ -70,7 +70,7 @@
         for="*"
         class=".diazo.DiazoView"
         attribute="is_search_in_banner"
-        permission="zope2.View"
+        permission="zope.Public"
         layer="..interfaces.ICPSkinThemeLayer"
         />
 
@@ -79,7 +79,7 @@
         for="*"
         class=".diazo.DiazoView"
         attribute="is_search_in_navigation"
-        permission="zope2.View"
+        permission="zope.Public"
         layer="..interfaces.ICPSkinThemeLayer"
         />
 
@@ -88,7 +88,7 @@
         for="*"
         class=".diazo.DiazoView"
         attribute="is_search_in_actions"
-        permission="zope2.View"
+        permission="zope.Public"
         layer="..interfaces.ICPSkinThemeLayer"
         />
 
@@ -97,7 +97,7 @@
         for="*"
         class=".diazo.DiazoView"
         attribute="get_login_message"
-        permission="zope2.View"
+        permission="zope.Public"
         layer="..interfaces.ICPSkinThemeLayer"
         />
     
@@ -106,7 +106,7 @@
         for="*"
         class=".diazo.DiazoView"
         attribute="isInPortalMode"
-        permission="zope2.View"
+        permission="zope.Public"
         layer="..interfaces.ICPSkinThemeLayer"
         />
 </configure>
