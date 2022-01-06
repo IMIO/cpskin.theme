@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.54 (unreleased)
+0.6.54 (2022-01-06)
 -------------------
 
 - WEB-3524: Change views permissions that are used in diazo manifest.
