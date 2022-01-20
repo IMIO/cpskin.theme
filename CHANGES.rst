@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.56 (unreleased)
+0.6.56 (2022-01-20)
 -------------------
 
 - Revert last release to handle cookies viewlet in cpskin.core directly
