@@ -4,7 +4,8 @@ Changelog
 0.6.55 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add cookies consent viewlet in minisite mode (in Diazo rules)
+  [laulaz]
 
 
 0.6.54 (2022-01-06)
