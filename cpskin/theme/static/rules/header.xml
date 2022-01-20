@@ -20,8 +20,6 @@
   <rules if="$isinminisitemode">
 
       <replace css:content-children="#portal-header">
-          <xsl:copy-of select="//div[@id='gdpr-consent-banner']" />
-
           <div id="top-languages">
             <xsl:copy-of select="//*[@id='portal-languageselector']" />
           </div>
